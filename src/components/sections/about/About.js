@@ -23,7 +23,7 @@ export function About({ bio, highlights, focus, currentRole, availability }) {
   const visibleCards = focus.slice(activeIndex, activeIndex + VISIBLE);
 
   return (
-    <section id="aboutSection" className="relative overflow-hidden py-24 sm:py-32">
+    <section id="aboutSection" className="relative py-24 sm:py-32">
       <div className="pointer-events-none absolute -left-24 top-1/3 h-72 w-72 rounded-full bg-[var(--primary)]/5 blur-3xl" />
       <div className="pointer-events-none absolute -right-24 bottom-1/4 h-64 w-64 rounded-full bg-[var(--secondary)]/10 blur-3xl" />
 

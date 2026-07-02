@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowDown, Facebook, Github, Linkedin, Mail } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -18,38 +18,47 @@ const typingSteps = [
 ];
 
 export function Hero({ greeting, name, role, summary, resumeUrl }) {
-  const [displayText, setDisplayText] = useState(typingSteps[0]);
-  const [stepIndex, setStepIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
   const [cursorVisible, setCursorVisible] = useState(true);
+  const stepRef = useRef(0);
+  const charRef = useRef(0);
+  const intervalRef = useRef(null);
 
   useEffect(() => {
-    const currentText = typingSteps[stepIndex];
-    let char = 0;
-    setDisplayText("");
-    const interval = setInterval(() => {
-      setDisplayText(currentText.slice(0, char + 1));
-      char += 1;
-      if (char === currentText.length) {
-        clearInterval(interval);
-        if (stepIndex < typingSteps.length - 1) {
-          const timeout = setTimeout(() => setStepIndex(stepIndex + 1), 1200);
-          return () => clearTimeout(timeout);
+    const startTyping = () => {
+      intervalRef.current = setInterval(() => {
+        const step = stepRef.current;
+        const currentText = typingSteps[step];
+
+        setDisplayText(currentText.slice(0, charRef.current + 1));
+        charRef.current += 1;
+
+        if (charRef.current >= currentText.length) {
+          clearInterval(intervalRef.current);
+          if (step < typingSteps.length - 1) {
+            setTimeout(() => {
+              stepRef.current = step + 1;
+              charRef.current = 0;
+              setDisplayText("");
+              startTyping();
+            }, 1200);
+          }
         }
-      }
-    }, 70);
+      }, 70);
+    };
 
-    return () => clearInterval(interval);
-  }, [stepIndex]);
+    startTyping();
+    return () => clearInterval(intervalRef.current);
+  }, []);
 
   useEffect(() => {
-    const blink = setInterval(() => setCursorVisible((value) => !value), 500);
+    const blink = setInterval(() => setCursorVisible((v) => !v), 500);
     return () => clearInterval(blink);
   }, []);
 
   return (
-    <section id="homeIntro" className="relative overflow-hidden py-24 sm:py-32">
-      <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-80 bg-gradient-to-br from-[#C7EEFF]/20 via-transparent to-transparent blur-3xl" />
-      <div className="pointer-events-none absolute right-0 top-16 hidden h-80 w-80 rounded-full bg-[#C7EEFF]/15 blur-3xl sm:block" />
+    <section id="homeIntro" className="relative overflow-hidden pb-24 pt-20 sm:pb-32 sm:pt-36 pb-safe">
+      <div className="pointer-events-none absolute right-0 top-16 hidden h-80 w-80 rounded-full bg-[var(--primary)]/5 blur-3xl sm:block" />
 
       <Container>
         <motion.div
@@ -75,7 +84,7 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
                   {role}
                 </span>
                 <span className="text-sm font-medium text-[var(--foreground-muted)]">
-                  PostgreSQL · Express.js · TypeScript · Prisma
+                  TypeScript · Next.js · Express.js · Prisma
                 </span>
               </div>
             </motion.div>
@@ -88,7 +97,7 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
                   style={{ backgroundColor: "var(--foreground)", opacity: cursorVisible ? 1 : 0 }}
                 />
               </div>
-              <p className="max-w-2xl text-lg leading-8 text-[var(--foreground-muted)]">
+              <p className="max-w-2xl text-lg leading-8 text-[var(--foreground-muted)] font-[family-name:var(--font-roboto)] font-light tracking-wide">
                 {summary}
               </p>
             </motion.div>
@@ -143,13 +152,12 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
             <div className="relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-4 shadow-glow backdrop-blur-xl sm:p-6">
               <div className="absolute -left-8 top-8 h-20 w-20 rounded-full bg-[var(--primary)]/15 blur-2xl" />
               <div className="absolute -right-8 bottom-8 h-24 w-24 rounded-full bg-[var(--secondary)]/15 blur-2xl" />
-              <div className="relative overflow-hidden rounded-[1.75rem] bg-[#1D242B]/95">
+              <div className="relative overflow-hidden rounded-[1.75rem] bg-[#1D242B]/95" style={{ aspectRatio: "3/4" }}>
                 <Image
-                  src="/assets/images/Picture1.png"
+                  src="/assets/images/profile/main_profile_image.jpg"
                   alt="Portrait of Khandoker Shamimul Haque"
-                  width={640}
-                  height={700}
-                  className="h-auto w-full object-cover"
+                  fill
+                  className="object-cover object-top"
                   priority
                 />
               </div>

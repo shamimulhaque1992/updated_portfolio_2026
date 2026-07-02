@@ -3,14 +3,12 @@ const config = {
   theme: {
     extend: {
       colors: {
-        foreground: {
-          light: "#0d0f14",
-          dark: "#ECDFCC",
-        },
-        accent: {
-          light: "#0077C0",
-          dark: "#697565",
-        },
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        muted: "var(--foreground-muted)",
+        surface: "var(--surface)",
+        border: "var(--border)",
       },
       boxShadow: {
         glow: "0 32px 120px rgba(0, 119, 192, 0.12)",

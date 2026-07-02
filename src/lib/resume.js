@@ -16,7 +16,7 @@ export const siteConfig = {
   phone: "+880 1779-312970",
   resumeUrl: "/assets/data/khandoker_shamimul_haque_resume.pdf",
   heroSummary:
-    "I build polished frontend experiences and scalable backend systems with PostgreSQL, Express.js, TypeScript, and Prisma.",
+    "Three years ago I wrote my first component. Since then I've shipped a checkout flow used by 1000+ shoppers daily, built an agency platform trusted by a UK insurance firm, and won Hustler of the Year for delivering features before the deadline even got nervous. I turn Figma files into pixel-perfect products and complex requirements into clean, maintainable code — fast.",
   heroHighlights: ["Next.js", "PostgreSQL", "Express.js", "Prisma"],
   socialLinks: {
     github: "#",

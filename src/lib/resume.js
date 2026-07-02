@@ -1,11 +1,14 @@
 export const navItems = [
-  { id: 1, title: "Home", slug: "homeIntro" },
-  { id: 2, title: "Projects", slug: "landingProjects" },
-  { id: 3, title: "Skills", slug: "skillsSection" },
-  { id: 4, title: "Experience", slug: "experienceSection" },
-  { id: 5, title: "About", slug: "aboutSection" },
-  { id: 6, title: "Blogs", slug: "blogSection" },
-  { id: 7, title: "Contact", slug: "contactSection" },
+  { id: 1,  title: "Hero",                  slug: "homeIntro" },
+  { id: 2,  title: "About",                 slug: "aboutSection" },
+  { id: 3,  title: "Experience",            slug: "experienceSection" },
+  { id: 4,  title: "Skills",                slug: "skillsSection" },
+  { id: 5,  title: "Projects",              slug: "landingProjects" },
+  { id: 6,  title: "Featured Work",         slug: "featuredWork" },
+  { id: 7,  title: "Services",              slug: "servicesSection" },
+  { id: 8,  title: "Education",             slug: "educationSection" },
+  { id: 9,  title: "Awards & Certs",        slug: "awardsSection" },
+  { id: 10, title: "Contact",               slug: "contactSection" },
 ];
 
 export const siteConfig = {

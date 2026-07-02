@@ -1,0 +1,1305 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "slug": "aranya",
+      "name": "Aranya.",
+      "short_about": "A B2C E-commerce website.",
+      "type": "front-end",
+      "live_site": "https://aranya.com.bd/",
+      "thumbImg": "/assets/images/projectImages/aranya/aranya_shop_new-1-cut.png",
+      "thumbDesc": "Crafted Aranya's e-commerce site with Next.js, Material UI, Redux, Firebase, Laravel, and MySQL for seamless shopping.",
+      "description": "Developed an engaging e-commerce platform for Aranya, a renowned Bangladesh clothing brand. Leveraged Next.js, Material UI, Redux, and Firebase for front-end, with Laravel and MySQL for robust back-end functionality. Seamlessly integrates sales of men's, women's, children's clothing, and jewelry.",
+      "status": "Complete",
+      "start_date": "2023-05-15",
+      "end_date": "2023-12-31",
+      "team": ["Khandoker Shamimul Haque", "Masum Mollah", "Arifujjaman"],
+      "project_insight_images": [
+        {
+          "img": "/assets/images/projectImages/aranya/meag_menu.PNG",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/aranya/aranya_shop_new-1.png",
+          "title": "Breakfast"
+        },
+        {
+          "img": "/assets/images/projectImages/aranya/product_inner_first_half.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/aranya/product_inner_new.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/aranya/cart_new.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/aranya/wishlist_new.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/aranya/checkout.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/aranya/story.png",
+          "title": "Coffee"
+        }
+      ],
+      "tools": [
+        "Next.Js",
+        "Redux toolkit",
+        "RTK Query",
+        "Material UI",
+        "Firebase"
+      ],
+      "project_summery": [
+        {
+          "title": "Strategy",
+          "tech_list": [
+            { "title": "Architecture", "item": ["Modular"] },
+            { "title": "Routing", "item": ["Dynamic routing"] },
+            { "title": "State Management", "item": ["Redux Toolkit"] },
+
+            {
+              "title": "Data Fetching",
+              "item": ["RTK Query"]
+            },
+            {
+              "title": "SEO",
+              "item": ["Custom meta tags and structured data"]
+            }
+          ]
+        },
+        {
+          "title": "Technology",
+          "tech_list": [
+            { "title": "Language", "item": ["JavaScript", "PHP"] },
+            { "title": "FrameWork", "item": ["Next.js", "Laravel"] },
+            { "title": "Payment Gateway", "item": ["SSLCOMMERZ"] },
+            {
+              "title": "Online Shipping Service",
+              "item": ["eCourier", "DHL"]
+            }
+          ]
+        },
+
+        {
+          "title": "Client",
+          "tech_list": [{ "title": null, "item": ["Aranya Crafts Limited"] }]
+        }
+      ],
+
+      "project_details": [
+        {
+          "title": "Project Features",
+          "status": true,
+          "icon": "/assets/images/logo/menu1.png",
+          "features_list": [
+            "Category and subcategory wise product showcasing",
+            "Showing product price in multiple currency.",
+            "Load big amount of product using pagination, lazyloading and infinite scrolling methodology.",
+            "Adding product into cart based on multiple options(e.g., color-size, only color, only size, direct cart add)",
+            "Adding product in wish list.",
+            "SSL commerce is used for payment gateway and eCourier, dhl and cash on delivery is implemented for shipping purposes."
+          ],
+          "bullet_points": [
+            "TypeScript",
+            "JavaScript",
+            "React.js",
+            "Next.js",
+            "Redux",
+            "Redux Toolkit",
+            "RTK Query",
+            "Tailwind CSS"
+          ]
+        },
+        {
+          "title": "Challenges",
+          "status": false,
+          "icon": "/assets/images/logo/perseverance.png",
+          "features_list": [
+            "Pricing of all product shown in multi currency",
+            "Final pricing of order is calculated in selected currency.",
+            "Persist users details and selected product to provide better user experience",
+            "Implementing custom product loading on scroll.",
+            "Synchronies with backend for order, payment, and user management",
+            "Showing order status to user according to the payment and delivery status"
+          ],
+          "bullet_points": [
+            "SSL commerce",
+            "Info. Persist",
+            "Currency conversion",
+            "Current currency",
+            "Authentication",
+            "State management",
+            "UI/UX"
+          ]
+        },
+        {
+          "title": "Responsibilities",
+          "status": false,
+          "icon": "/assets/images/logo/responsibility1.png",
+          "features_list": [
+            "My responsibility was to design and develop the front end of that website including the integration of the payment gateway and Facebook pixel integration. The website showcases a diverse collection of clothing options, from trendy casual wear to elegant formal attire. In addition, customers can explore a wide array of accessories, including handbags, footwear, and jewelry, to complement their outfits. Aranya's e-commerce platform offers a seamless shopping experience, featuring user-friendly navigation, secure payment options, and prompt delivery services."
+          ],
+          "bullet_points": [
+            "Front-End Development",
+            "State management",
+            "Currency conversion",
+            "Feature integration",
+            "Front-end authentication",
+            "Updated price synchronization",
+            "UI/UX"
+          ]
+        },
+        {
+          "title": "Resources",
+          "status": false,
+          "icon": "/assets/images/logo/data.png",
+          "features_list": ["Website: https://aranya.com.bd"],
+          "bullet_points": [
+            "Digital Ocean",
+            "Cloudinary",
+            "Facebook Pixel",
+            "Facebook Shop",
+            "Google analytics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "mave-cms",
+      "name": "Mave CMS.",
+      "short_about": "A Headless CMS.",
+      "type": "front-end",
+      "live_site": "",
+      "thumbImg": "/assets/images/projectImages/mave/thumb-update.jpeg",
+      "thumbDesc": "Headless CMS powered by Next.js and Ant Design for frontend, Laravel for backend, and MySQL for database management.",
+      "description": "Introducing our headless CMS built on Next.js and Ant Design for sleek front-end experiences. Powered by Laravel and MySQL on the back end for seamless content management. Simplify your workflow and elevate your web projects with our powerful solution.",
+      "status": "In Progress",
+      "start_date": "2023-12-23",
+      "end_date": "On going",
+      "team": ["Khandoker Shamimul Haque", "Atiq israk niloy", "Zeesan Akhtar"],
+      "project_insight_images": [
+        {
+          "img": "/assets/images/projectImages/mave/thumb.jpeg",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/mave/media.png",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/mave/menuItem.PNG",
+          "title": "Breakfast"
+        },
+        {
+          "img": "/assets/images/projectImages/mave/menus.PNG",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/mave/nav.PNG",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/mave/form_builders.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/mave/sliders.PNG",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/mave/page_landing.PNG",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/mave/pageInner.PNG",
+          "title": "Coffee"
+        }
+      ],
+      "tools": ["Next.Js", "React Context api", "Ant Design"],
+      "project_summery": [
+        {
+          "title": "Strategy",
+          "tech_list": [
+            { "title": "Architecture", "item": ["Modular"] },
+            { "title": "Routing", "item": ["Dynamic routing"] },
+            { "title": "State Management", "item": ["React Context api"] },
+
+            {
+              "title": "Data Fetching",
+              "item": ["axios"]
+            },
+            {
+              "title": "SEO",
+              "item": ["Custom meta tags and structured data"]
+            }
+          ]
+        },
+        {
+          "title": "Technology",
+          "tech_list": [
+            { "title": "Language", "item": ["JavaScript", "PHP"] },
+            { "title": "FrameWork", "item": ["Next.js", "Laravel"] }
+          ]
+        },
+
+        {
+          "title": "Client",
+          "tech_list": [{ "title": null, "item": ["Company product"] }]
+        }
+      ],
+
+      "project_details": [
+        {
+          "title": "Project Features",
+          "status": true,
+          "icon": "/assets/images/logo/menu1.png",
+          "features_list": [
+            "Upload media items like images, videos, pdf, etc.",
+            "Create custom component like slider, cards, navbar, menu items, etc.",
+            "Create events selecting multiple cards or sliders.",
+            "Create custom page for your any type of portfolio website.",
+            "Create forms to collect user data and show them in dashboard.",
+            "Show google analytics."
+          ],
+          "bullet_points": [
+            "JavaScript",
+            "React.js",
+            "Next.js",
+            "Context api",
+            "Ant Design"
+          ]
+        },
+        {
+          "title": "Challenges",
+          "status": false,
+          "icon": "/assets/images/logo/perseverance.png",
+          "features_list": [
+            "Creating multiple section to build a complete page and persist the change during building the page.",
+            "Update and delete the exact same component and the exact same element of the component.",
+            "Managing different type of data to create different type of component.",
+            "Handel multiple file upload and keeping the according order for the respective component.",
+            "Providing multiple language features for the content.",
+            "Synchronies with the existing data and deleted data with a view to avoid bugs."
+          ],
+          "bullet_points": [
+            "Multi language",
+            "Info. Persist",
+            "Custom components",
+            "Custom page",
+            "Authentication",
+            "State management",
+            "UI/UX"
+          ]
+        },
+        {
+          "title": "Responsibilities",
+          "status": false,
+          "icon": "/assets/images/logo/responsibility1.png",
+          "features_list": [
+            "I spearheaded the development of a versatile headless CMS using Next.js and Ant Design, tailored for various companies to manage their portfolio websites efficiently. My role encompassed crafting the front-end, including essential features such as a dynamic page builder and custom component creation like cards and sliders. Additionally, I ensured seamless data synchronization with the server, prioritizing logical functionalities for an intuitive user experience.",
+            "Moreover, I implemented robust functionalities for updating page data and managing component data, along with seamless media uploads including images, videos, and documents like PDFs. This comprehensive solution offers businesses complete control over their website content, empowering them to showcase their portfolios with ease and sophistication."
+          ],
+          "bullet_points": [
+            "Front-End Development",
+            "State management",
+            "Currency conversion",
+            "Feature integration",
+            "Front-end authentication",
+            "Updated content synchronization",
+            "UI/UX"
+          ]
+        },
+        {
+          "title": "Resources",
+          "status": false,
+          "icon": "/assets/images/logo/data.png",
+          "features_list": ["Website: https://mave.etherstaging.xyz/"],
+          "bullet_points": ["Digital Ocean", "Cloudinary", "Google analytics"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "united-hospital",
+      "name": "United Hospital Limited.",
+      "short_about": "A Medical and Healthcare Website.",
+      "type": "front-end",
+      "live_site": "https://uhlbd.com/",
+      "thumbImg": "/assets/images/projectImages/uhl/landingImg.png",
+      "thumbDesc": "Created a user-friendly medical website using React.js and Bootstrap for accessibility to health resources and information.",
+      "description": "Crafted an intuitive medical website for United Hospital Limited, Bangladesh, using React.js with Bootstrap for frontend excellence. Integrated Swiper.js for dynamic content display and AOS for captivating animations, ensuring a seamless and engaging user experience.",
+      "status": "In Progress",
+      "start_date": "2022-11-01",
+      "end_date": "On going",
+      "team": [
+        "Khandoker Shamimul Haque",
+        "Masum Mollah",
+        "Arifujjaman",
+        "Zeesan Akhtar"
+      ],
+      "project_insight_images": [
+        {
+          "img": "/assets/images/projectImages/uhl/new_landign_image.png",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/search.png",
+          "title": "Breakfast"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/book_appointment.PNG",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/departments.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/all_departments.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/departmet_inner.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/find_a_doctor.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/doctor-inner.png",
+          "title": "Hats"
+        },
+
+        {
+          "img": "/assets/images/projectImages/uhl/packages.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/packages_inner.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/emergency.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/career.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/patient_portal.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/uhl/photo_gallery.png",
+          "title": "Coffee"
+        }
+      ],
+      "tools": ["React.Js", "swiperjs", "Aos", "Bootstrap", "Firebase"],
+      "project_summery": [
+        {
+          "title": "Strategy",
+          "tech_list": [
+            { "title": "Architecture", "item": ["Modular"] },
+            {
+              "title": "Routing",
+              "item": ["Dynamic routing: React router dom"]
+            },
+            { "title": "State Management", "item": ["Context api"] },
+
+            {
+              "title": "Data Fetching",
+              "item": ["axios"]
+            },
+            {
+              "title": "SEO",
+              "item": ["Custom meta tags and structured data"]
+            }
+          ]
+        },
+        {
+          "title": "Technology",
+          "tech_list": [
+            { "title": "Language", "item": ["JavaScript", "PHP"] },
+            { "title": "FrameWork", "item": ["React.js", "Laravel"] },
+            { "title": "Payment Gateway", "item": ["SSLCOMMERZ"] }
+          ]
+        },
+
+        {
+          "title": "Client",
+          "tech_list": [{ "title": null, "item": ["United Hospital Limited"] }]
+        }
+      ],
+
+      "project_details": [
+        {
+          "title": "Project Features",
+          "status": true,
+          "icon": "/assets/images/logo/menu1.png",
+          "features_list": [
+            "Selection of department for consultation by selecting body parts from both male and female body diagrams",
+            "Display of all hospital departments and doctors within each department",
+            "Appointment scheduling with a specific doctor",
+            "User registration and profile management functionality",
+            "Online payment integration for appointment booking",
+            "Access to checkup reports, previous appointments, upcoming appointments, and prescriptions",
+            "Health status tracking based on previous checkups",
+            "Emergency services request (ambulance and home service)",
+            "Seat booking within the hospital premises"
+          ],
+          "bullet_points": [
+            "JavaScript",
+            "React.js",
+            "Context api",
+            "Bootstrap"
+          ]
+        },
+        {
+          "title": "Challenges",
+          "status": false,
+          "icon": "/assets/images/logo/perseverance.png",
+          "features_list": [
+            "Showing the department according to the body parts.",
+            "Integrating the existing erp api with the web app.",
+            "Synchronies with available slots for appointment of a particular doctor in real time.",
+            "Handling the request for unavailable slots.",
+            "Showing the uncertain health checkup reports and prescription in the user dashboard.",
+            "Managing payment through ssl commerce."
+          ],
+          "bullet_points": [
+            "API integration",
+            "SSL commerce",
+            "Info. Persist",
+            "Authentication",
+            "State management",
+            "UI/UX"
+          ]
+        },
+        {
+          "title": "Responsibilities",
+          "status": false,
+          "icon": "/assets/images/logo/responsibility1.png",
+          "features_list": [
+            "My responsibility was to develop some of the major pages of that website and solve some major bugs in it. It stands as a beacon of healthcare excellence, offering a wide range of medical services and cutting-edge facilities. Situated in the heart of Dhaka, it caters to diverse healthcare needs. The hospital boasts a team of highly skilled doctors, nurses, and staff committed to delivering top-notch patient care. United Hospital features state-of-the-art technology for diagnostics, surgery, and treatment across various specialties, including cardiology, oncology, orthopedics, and more."
+          ],
+          "bullet_points": [
+            "Front-End Development",
+            "State management",
+            "Feature integration",
+            "Front-end authentication",
+            "UI/UX"
+          ]
+        },
+        {
+          "title": "Resources",
+          "status": false,
+          "icon": "/assets/images/logo/data.png",
+          "features_list": ["Website: https://etherstaging.com/"],
+          "bullet_points": [
+            "Digital Ocean",
+            "Cloudinary",
+            "Facebook Pixel",
+            "Google analytics"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "al-muslim-group",
+      "name": "Al Muslim - Group.",
+      "short_about": "A Corporate Website.",
+      "type": "front-end",
+      "live_site": "",
+      "thumbImg": "/assets/images/projectImages/al-muslim/landing.png",
+      "thumbDesc": "Dynamic garment company website built with Next.js, Bootstrap, and scroll animations for engaging user experience.",
+      "description": "Crafted a dynamic website for Al Muslim Group, integrating Next.js and Bootstrap for seamless UI/UX. Employed AOS and React-animate-on-scroll for engaging animations. Delivered a modern digital presence with Next.js proficiency at the forefront.",
+      "status": "Complete",
+      "start_date": "2024-03-10",
+      "end_date": "2023-04-22",
+      "team": ["Khandoker Shamimul Haque", "Atiq israk niloy", "Zeesan Akhtar"],
+      "project_insight_images": [
+        {
+          "img": "/assets/images/projectImages/al-muslim/landing.png",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/al-muslim/about.png",
+          "title": "Breakfast"
+        },
+        {
+          "img": "/assets/images/projectImages/al-muslim/partner.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/al-muslim/machineries.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/al-muslim/product.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/al-muslim/product-inner.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/al-muslim/sister-concern.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/al-muslim/sustain.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/al-muslim/contact.png",
+          "title": "Coffee"
+        }
+      ],
+      "tools": ["Next.Js", "Bootstrap", "SwiperJs", "Aos"],
+      "project_summery": [
+        {
+          "title": "Strategy",
+          "tech_list": [
+            { "title": "Architecture", "item": ["Modular"] },
+            { "title": "Routing", "item": ["Dynamic routing"] },
+            { "title": "State Management", "item": ["React Context api"] },
+
+            {
+              "title": "Data Fetching",
+              "item": ["axios"]
+            },
+            {
+              "title": "SEO",
+              "item": ["Custom meta tags and structured data"]
+            }
+          ]
+        },
+        {
+          "title": "Technology",
+          "tech_list": [
+            { "title": "Language", "item": ["JavaScript", "PHP"] },
+            { "title": "FrameWork", "item": ["Next.js", "Laravel"] }
+          ]
+        },
+
+        {
+          "title": "Client",
+          "tech_list": [{ "title": null, "item": ["Al Muslim - Group."] }]
+        }
+      ],
+
+      "project_details": [
+        {
+          "title": "Project Features",
+          "status": true,
+          "icon": "/assets/images/logo/menu1.png",
+          "features_list": [
+            "Show company profile, certificates, machinery, trusted partners, audit, training CSR, sister concerns, and gallery of photos and videos.",
+            "Utilize Next.js, Bootstrap, AOS, and SwiperJS for website development.",
+            "Create custom components for displaying company information, certificates, machinery details, etc.",
+            "Implement smooth transitions and animations for a visually appealing user experience.",
+            "Provide responsive design for seamless viewing across devices."
+          ],
+          "bullet_points": ["Next.js", "Bootstrap", "AOS", "SwiperJS"]
+        },
+        {
+          "title": "Challenges",
+          "status": false,
+          "icon": "/assets/images/logo/perseverance.png",
+          "features_list": [
+            "Organizing and presenting diverse content sections like company profile, certificates, machinery, etc., effectively within the website's structure.",
+            "Ensuring seamless integration of media items such as images and videos within the website.",
+            "Maintaining consistency in design and layout across various sections of the website.",
+            "Optimizing website performance for smooth loading and browsing experience.",
+            "Implementing user-friendly navigation for easy exploration of different sections."
+          ],
+          "bullet_points": [
+            "Content organization",
+            "Media integration",
+            "Design consistency",
+            "Performance optimization",
+            "Navigation design"
+          ]
+        },
+        {
+          "title": "Responsibilities",
+          "status": false,
+          "icon": "/assets/images/logo/responsibility1.png",
+          "features_list": [
+            "Lead the development of a dynamic website using Next.js, Bootstrap, AOS, and SwiperJS to showcase company profile, certificates, machinery, etc.",
+            "Design and develop custom components tailored to display company information, certificates, machinery details, etc.",
+            "Ensure seamless integration of media items such as images and videos for enhanced visual appeal.",
+            "Implement intuitive navigation and user interface elements for effortless exploration of website content.",
+            "Synchronize data with the server to ensure real-time updates and consistency."
+          ],
+          "bullet_points": [
+            "Front-End Development",
+            "Custom component design",
+            "Media integration",
+            "UI/UX design",
+            "Data synchronization"
+          ]
+        },
+        {
+          "title": "Resources",
+          "status": false,
+          "icon": "/assets/images/logo/data.png",
+          "features_list": [
+            "Website: https://al-muslim-internal-env.etherstaging.xyz/"
+          ],
+          "bullet_points": ["Next.js", "Bootstrap", "AOS", "SwiperJS"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "slic",
+      "name": "Sandhani Life Insurance.",
+      "short_about": "Financial Services Website.",
+      "type": "front-end",
+      "live_site": "",
+      "thumbImg": "/assets/images/projectImages/slic/Home.png",
+      "thumbDesc": "Built a dynamic insurance website using Next.js, Material UI, and SwiperJS, featuring a premium calculator and comprehensive company details.",
+      "description": "Crafted a user-friendly insurance website integrating Next.js, Material UI, and SwiperJS. Developed a precise premium calculator for accurate insurance estimations. Included sections for company details, board members, partners, and policies, ensuring transparency and credibility. Optimized for performance and seamless user experience across devices.",
+      "status": "Complete",
+      "start_date": "2023-02-15",
+      "end_date": "2023-04-31",
+      "team": ["Khandoker Shamimul Haque", "Atiq israk niloy", "Zeesan Akhtar"],
+      "project_insight_images": [
+        {
+          "img": "/assets/images/projectImages/slic/Home.png",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/slic/mission-vission.png",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/slic/Board-Memeber.png",
+          "title": "Breakfast"
+        },
+        {
+          "img": "/assets/images/projectImages/slic/Service.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/slic/Products.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/slic/Contact.png",
+          "title": "Hats"
+        }
+      ],
+      "tools": ["Next.Js", "React Context api", "Ant Design"],
+      "project_summery": [
+        {
+          "title": "Strategy",
+          "tech_list": [
+            { "title": "Architecture", "item": ["Modular"] },
+            { "title": "Routing", "item": ["Dynamic routing"] },
+            { "title": "State Management", "item": ["React Context api"] },
+
+            {
+              "title": "Data Fetching",
+              "item": ["axios"]
+            },
+            {
+              "title": "SEO",
+              "item": ["Custom meta tags and structured data"]
+            }
+          ]
+        },
+        {
+          "title": "Technology",
+          "tech_list": [
+            { "title": "Language", "item": ["JavaScript", "PHP"] },
+            { "title": "FrameWork", "item": ["Next.js", "Laravel"] }
+          ]
+        },
+
+        {
+          "title": "Client",
+          "tech_list": [
+            { "title": null, "item": ["Sandhani Life Insurance Co.Ltd."] }
+          ]
+        }
+      ],
+
+      "project_details": [
+        {
+          "title": "Project Features",
+          "status": true,
+          "icon": "/assets/images/logo/menu1.png",
+          "features_list": [
+            "Utilize Next.js, Material UI, SwiperJS, and Axios for website development.",
+            "Integrate a premium calculator to calculate insurance amounts based on user input.",
+            "Display comprehensive details about the insurance company, including its history, mission, and vision.",
+            "Showcase board members, partners, and the trust committee for transparency and credibility.",
+            "Provide information about investors and policies for potential stakeholders.",
+            "Include sections for notices, updates, and announcements to keep users informed.",
+            "Implement responsive design for seamless viewing on different devices.",
+            "Optimize website performance for fast loading and smooth browsing experience."
+          ],
+          "bullet_points": ["Next.js", "Material UI", "SwiperJS", "Axios"]
+        },
+        {
+          "title": "Challenges",
+          "status": false,
+          "icon": "/assets/images/logo/perseverance.png",
+          "features_list": [
+            "Developing a robust premium calculator that accurately calculates insurance amounts based on various factors.",
+            "Integrating data from multiple sources such as APIs and databases to populate dynamic content.",
+            "Designing an intuitive user interface for easy navigation and information retrieval.",
+            "Ensuring data security and privacy compliance for sensitive information like user details and policies.",
+            "Handling different types of content, including text, images, and documents, within the website structure.",
+            "Implementing dynamic updates for notices and announcements while maintaining website performance.",
+            "Testing across various devices and browsers to ensure compatibility and consistency."
+          ],
+          "bullet_points": [
+            "Premium calculator",
+            "Data integration",
+            "UI/UX design",
+            "Data security",
+            "Dynamic content management",
+            "Performance optimization",
+            "Cross-browser testing"
+          ]
+        },
+        {
+          "title": "Responsibilities",
+          "status": false,
+          "icon": "/assets/images/logo/responsibility1.png",
+          "features_list": [
+            "Lead the development of a dynamic insurance website using Next.js, Material UI, SwiperJS, and Axios.",
+            "Design and implement the premium calculator feature to provide users with accurate insurance estimates.",
+            "Develop components to display company details, board members, partners, trust committee, investors, policies, notices, and updates.",
+            "Ensure seamless integration of data from external sources and APIs.",
+            "Optimize website performance and user experience for enhanced usability.",
+            "Collaborate with stakeholders to gather requirements and implement necessary features.",
+            "Conduct testing and debugging to ensure the website's functionality and reliability."
+          ],
+          "bullet_points": [
+            "Front-End Development",
+            "Premium calculator design",
+            "Custom component development",
+            "Data integration",
+            "Performance optimization",
+            "Stakeholder collaboration",
+            "Testing and debugging"
+          ]
+        },
+        {
+          "title": "Resources",
+          "status": false,
+          "icon": "/assets/images/logo/data.png",
+          "features_list": ["Website: http://64.23.194.15:3000/"],
+          "bullet_points": ["Next.js", "Material UI", "SwiperJS", "Axios"]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "aygaz",
+      "name": "United Aygaz LPG.",
+      "short_about": "A Corporate Website.",
+      "type": "front-end",
+      "live_site": "https://unitedaygaz.com/",
+      "thumbImg": "/assets/images/projectImages/aygaz/landing.png",
+      "thumbDesc": "UnitedAygaz's dual-language website with Next.js, featuring product details, order management, and dealership forms for optimal user experience.",
+      "description": "Design and develop UnitedAygaz's dual-language website using Next.js, Redux, and BootStrap, featuring product details, order management, dealership forms, and a user-friendly interface for optimal performance.",
+      "status": "Complete",
+      "start_date": "2022-10-04",
+      "end_date": "2023-05-31",
+      "team": ["Khandoker Shamimul Haque", "Atiq israk niloy", "Zeesan Akhtar"],
+      "project_insight_images": [
+        {
+          "img": "/assets/images/projectImages/aygaz/landing.png",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/about.png",
+          "title": "Breakfast"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/cylender.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/order-placemetn.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/deler.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/autogas.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/bulkgas.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/safety.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/career.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/aygaz/contact.png",
+          "title": "Coffee"
+        }
+      ],
+      "tools": ["Next.Js", "React Context api", "Ant Design"],
+      "project_summery": [
+        {
+          "title": "Strategy",
+          "tech_list": [
+            { "title": "Architecture", "item": ["Modular"] },
+            { "title": "Routing", "item": ["Dynamic routing"] },
+            { "title": "State Management", "item": ["React Context api"] },
+
+            {
+              "title": "Data Fetching",
+              "item": ["axios"]
+            },
+            {
+              "title": "SEO",
+              "item": ["Custom meta tags and structured data"]
+            }
+          ]
+        },
+        {
+          "title": "Technology",
+          "tech_list": [
+            { "title": "Language", "item": ["JavaScript", "PHP"] },
+            { "title": "FrameWork", "item": ["Next.js", "Laravel"] }
+          ]
+        },
+
+        {
+          "title": "Client",
+          "tech_list": [{ "title": null, "item": ["Company product"] }]
+        }
+      ],
+
+      "project_details": [
+        {
+          "title": "Project Features",
+          "status": true,
+          "icon": "/assets/images/logo/menu1.png",
+          "features_list": [
+            "Design and develop the front end of the website showcasing UnitedAygaz's products and services.",
+            "Collaborate with the team to design and develop the front end of the CMS for the website.",
+            "Integrate dual-language feature supporting both English and Bengali for wider accessibility.",
+            "Utilize Next.js, Redux, Material UI, SwiperJS, and Axios for website development.",
+            "Provide detailed information about product range, pricing, and delivery options for cylinder gas, auto gas, and bulk gas.",
+            "Implement an order management system allowing users to order products such as cylinder gas, auto gas, and bulk gas.",
+            "Enable users to submit dealer requests by filling out a form for dealership opportunities.",
+            "Ensure a user-friendly interface for easy navigation and information retrieval.",
+            "Optimize website performance for fast loading and smooth browsing experience."
+          ],
+          "bullet_points": [
+            "Next.js",
+            "Redux",
+            "Material UI",
+            "SwiperJS",
+            "Axios",
+            "Dual-language support",
+            "Order management system",
+            "Dealer request form"
+          ]
+        },
+        {
+          "title": "Challenges",
+          "status": false,
+          "icon": "/assets/images/logo/perseverance.png",
+          "features_list": [
+            "Integrating dual-language support for seamless switching between English and Bengali content.",
+            "Designing a user-friendly interface that caters to both individual consumers and industrial clients.",
+            "Implementing an intuitive order management system to handle product orders efficiently.",
+            "Ensuring data security and privacy compliance for user information and dealership requests.",
+            "Handling dynamic content updates and synchronization between front end and CMS.",
+            "Optimizing website performance for handling heavy traffic during peak times.",
+            "Testing across multiple devices and browsers to ensure compatibility and responsiveness.",
+            "Providing comprehensive documentation and support for future maintenance and updates."
+          ],
+          "bullet_points": [
+            "Dual-language integration",
+            "User interface design",
+            "Order management",
+            "Data security",
+            "Content synchronization",
+            "Performance optimization",
+            "Cross-browser testing",
+            "Documentation and support"
+          ]
+        },
+        {
+          "title": "Responsibilities",
+          "status": false,
+          "icon": "/assets/images/logo/responsibility1.png",
+          "features_list": [
+            "Lead the front-end development of the UnitedAygaz website, collaborating with the team to ensure project success.",
+            "Design and develop a user-friendly interface for showcasing products, pricing, and delivery options.",
+            "Integrate dual-language feature supporting both English and Bengali for wider accessibility.",
+            "Implement an order management system and dealer request form to facilitate user interactions.",
+            "Ensure seamless integration of data from the CMS to provide dynamic content updates.",
+            "Optimize website performance and responsiveness for a smooth user experience across devices.",
+            "Collaborate with stakeholders to gather requirements and provide solutions tailored to their needs.",
+            "Provide technical guidance and support to ensure the project's success and sustainability."
+          ],
+          "bullet_points": [
+            "Front-End Development",
+            "User interface design",
+            "Dual-language integration",
+            "Order management system",
+            "Data integration",
+            "Performance optimization",
+            "Stakeholder collaboration",
+            "Technical guidance and support"
+          ]
+        },
+        {
+          "title": "Resources",
+          "status": false,
+          "icon": "/assets/images/logo/data.png",
+          "features_list": ["Website: https://unitedaygaz.com/"],
+          "bullet_points": [
+            "Next.js",
+            "Redux",
+            "Material UI",
+            "SwiperJS",
+            "Axios"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "university-management-system",
+      "name": "University Management System.",
+      "short_about": "An API server.",
+      "type": "back-end",
+      "live_site": "https://university-auth-service-backend-server.vercel.app/api/v1/students",
+      "thumbImg": "/assets/images/projectImages/ums/ums-hat-tall.jpg",
+      "thumbDesc": "University management API built with Express.js, MongoDB (Mongoose), and TypeScript for secure and scalable student, course, and faculty data management.",
+      "description": "This university management system API, built with Express.js, MongoDB, Mongoose, and TypeScript, provides a robust backend for managing students, faculty, courses, and administrative tasks. Leverage its functionalities through secure endpoints for CRUD operations, ensuring type safety and scalability for your institution.",
+      "status": "Complete",
+      "start_date": "2023-05-15",
+      "end_date": "2023-12-31",
+      "team": ["Khandoker Shamimul Haque", "Atiq israk niloy", "Zeesan Akhtar"],
+      "swagger_path": "/assets/data/UMS.yml",
+      "tools": ["Next.Js", "React Context api", "Ant Design"],
+      "project_summery": [
+        {
+          "title": "Strategy",
+          "tech_list": [
+            { "title": "Architecture", "item": ["Modular"] },
+            { "title": "Routing", "item": ["Dynamic routing"] },
+            { "title": "State Management", "item": ["React Context api"] },
+
+            {
+              "title": "Data Fetching",
+              "item": ["axios"]
+            },
+            {
+              "title": "SEO",
+              "item": ["Custom meta tags and structured data"]
+            }
+          ]
+        },
+        {
+          "title": "Technology",
+          "tech_list": [
+            { "title": "Language", "item": ["JavaScript", "PHP"] },
+            { "title": "FrameWork", "item": ["Next.js", "Laravel"] }
+          ]
+        },
+
+        {
+          "title": "Client",
+          "tech_list": [{ "title": null, "item": ["Company product"] }]
+        }
+      ],
+
+      "project_details": [
+        {
+          "title": "Project Features",
+          "status": true,
+          "icon": "/assets/images/logo/menu1.png",
+          "features_list": [
+            "Creation and management of users as students, faculty, and administrators.",
+            "Creation and management of academic semesters, faculty, and departments.",
+            "Authentication and authorization with role permission management.",
+            "Implementation of transactions and rollbacks when working with multiple tables or documents.",
+            "Custom error handling.",
+            "Schema validation using Zod and Mongoose schemas."
+          ],
+          "bullet_points": [
+            "JavaScript",
+            "TypeScript",
+            "expressjs",
+            "mongodb",
+            "mongoose",
+            "zod",
+            "cors",
+            "dotenv"
+          ]
+        },
+        {
+          "title": "Challenges",
+          "status": false,
+          "icon": "/assets/images/logo/perseverance.png",
+          "features_list": [
+            "Ensuring consistent schema validation between Zod and Mongoose across different parts of the application.",
+            "Managing complex role-based access control for diverse user types like students, faculty, and admins.",
+            "Implementing atomic transactions and rollbacks in MongoDB to maintain data integrity.",
+            "Handling custom error scenarios effectively and providing meaningful error messages.",
+            "Maintaining synchronization between academic entities like semesters, faculties, and departments.",
+            "Ensuring secure authentication and authorization while protecting against common vulnerabilities."
+          ],
+          "bullet_points": [
+            "Schema consistency",
+            "Access control",
+            "Atomic transactions",
+            "Error handling",
+            "Data synchronization",
+            "Secure auth",
+            "Performance optimization"
+          ]
+        },
+        {
+          "title": "Responsibilities",
+          "status": false,
+          "icon": "/assets/images/logo/responsibility1.png",
+          "features_list": [
+            "Design and implement RESTful APIs for user creation and management, ensuring proper role-based access control and permission management.",
+            "Develop and manage schemas for academic entities like semesters, faculties, and departments using Mongoose, ensuring Zod validation.",
+            "Implement authentication and authorization mechanisms, including JWT tokens, to securely handle user login and role-based access.",
+            "Ensure smooth transactions and rollback mechanisms across multiple MongoDB collections to maintain data integrity during operations.",
+            "Handle custom error scenarios gracefully and provide meaningful error messages to the client for better debugging and user experience.",
+            "Configure CORS to allow cross-origin requests while securing the API endpoints from unauthorized access.",
+            "Set up environment variables using dotenv for secure and scalable configuration management across different deployment environments."
+          ],
+          "bullet_points": [
+            "API Design",
+            "Role Management",
+            "Schema Development",
+            "Data Validation",
+            "Auth Implementation",
+            "Transaction Handling",
+            "Error Handling",
+            "CORS Configuration",
+            "Environment Setup"
+          ]
+        },
+        {
+          "title": "Resources",
+          "status": false,
+          "icon": "/assets/images/logo/data.png",
+          "features_list": [
+            "GitHub Repository: https://github.com/shamimulhaque1992/university_managemetn_system_AUTH_service/tree/main",
+            "API: https://university-auth-service-backend-server.vercel.app/api/v1"
+          ],
+          "bullet_points": ["Digital Ocean", "Cloudinary", "Google analytics"]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "slug": "cs-compsolution",
+      "name": "Comp-Solution.",
+      "short_about": "Full Stack B2B Websit for PC Component Manufacturer and Retailer.",
+      "type": "back-end",
+      "live_site": "https://comp-solution-ab5ea.web.app/",
+      "thumbImg": "/assets/images/projectImages/cs-compsolution/landing.png",
+      "thumbDesc": "Cs - Compsolution is a full-stack MERN project designed for a PC component retailer, utilizing React.js, Express.js, MongoDB, Tailwind, Firebase, and more..",
+      "description": "Cs - Compsolution represents a comprehensive approach to PC component retail, leveraging cutting-edge technologies including React.js, Express.js, MongoDB, Tailwind, and Firebase. Our platform ensures seamless user experience and robust backend support, providing customers with the latest in hardware solutions and unparalleled shopping convenience.",
+      "status": "Complete",
+      "start_date": "2022-05-22",
+      "end_date": "2022-09-04",
+      "team": ["Khandoker Shamimul Haque", "Atiq israk niloy", "Zeesan Akhtar"],
+      "swagger_path": "/assets/data/comp.yaml",
+      "tools": [
+        "React.Js",
+        "React Context api",
+        "TailwindCss",
+        "Firebase",
+        "SwiperJs"
+      ],
+      "project_insight_images": [
+        {
+          "img": "/assets/images/projectImages/cs-compsolution/landing.png",
+          "title": "Honey",
+          "author": "@arwinneil"
+        },
+        {
+          "img": "/assets/images/projectImages/cs-compsolution/product-inner.png",
+          "title": "Breakfast"
+        },
+        {
+          "img": "/assets/images/projectImages/cs-compsolution/user-order.png",
+          "title": "Camera"
+        },
+        {
+          "img": "/assets/images/projectImages/cs-compsolution/strip-payment-portal.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/cs-compsolution/admin-dashboard.png",
+          "title": "Hats"
+        },
+        {
+          "img": "/assets/images/projectImages/cs-compsolution/order-management.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/cs-compsolution/manage-product.png",
+          "title": "Coffee"
+        },
+        {
+          "img": "/assets/images/projectImages/cs-compsolution/user-profile.png",
+          "title": "Coffee"
+        }
+      ],
+      "project_summery": [
+        {
+          "title": "Strategy",
+          "tech_list": [
+            { "title": "Architecture", "item": ["Modular"] },
+            { "title": "Routing", "item": ["Dynamic routing"] },
+            { "title": "State Management", "item": ["React Context api"] },
+
+            {
+              "title": "Data Fetching",
+              "item": ["axios", "React Qurey"]
+            },
+            {
+              "title": "SEO",
+              "item": ["Custom meta tags and structured data"]
+            }
+          ]
+        },
+        {
+          "title": "Technology",
+          "tech_list": [
+            { "title": "Language", "item": ["JavaScript", "NodeJs"] },
+            { "title": "FrameWork", "item": ["Expressjs", "Laravel"] },
+            { "title": "Database", "item": ["MongoDB"] }
+          ]
+        },
+
+        {
+          "title": "Client",
+          "tech_list": [{ "title": null, "item": ["Personal Project"] }]
+        }
+      ],
+      "project_details": [
+        {
+          "title": "Project Features",
+          "status": true,
+          "icon": "/assets/images/logo/menu1.png",
+          "features_list": [
+            "In this project, ReactJS serves as the foundational framework for crafting an intuitive and dynamic front-end interface, ensuring an engaging user experience. Leveraging the robust capabilities of Node.js, the back-end infrastructure is developed to support seamless data management and efficient server-side operations, fostering scalability and performance optimization.",
+
+            "Authentication functionalities are seamlessly integrated utilizing Firebase, enhancing security measures and facilitating user management with streamlined processes. The inclusion of Google authentication further enhances accessibility and user convenience, providing multiple authentication options for diverse user preferences and requirements.",
+
+            "Efficient navigation is facilitated through React Router Dom, empowering users to seamlessly traverse between different sections of the application with ease and fluidity. Leveraging the capabilities of Daisy UI and Tailwind CSS libraries, the project boasts a visually appealing and responsive design, ensuring optimal user engagement across various devices and screen sizes.",
+
+            "Empowering users with control over their experience, the platform enables order updates and seamless payment processing, enhancing convenience and user satisfaction. Additionally, an admin route is implemented to facilitate administrative tasks and management functionalities, ensuring efficient oversight and control over the platform's operations.",
+
+            "Security measures are bolstered through the implementation of JWT exclusively for email login, reinforcing authentication protocols and safeguarding user data against unauthorized access. Furthermore, the integration of Stripe Payment processing enriches the platform with secure and efficient payment functionalities, enhancing transactional reliability and user trust."
+          ],
+          "bullet_points": [
+            "JavaScript",
+            "React.js",
+            "Firebase",
+            "Expressjs",
+            "Stripe",
+            "JWT",
+            "Tailwind CSS",
+            "Daisy UI"
+          ]
+        },
+        {
+          "title": "Challenges",
+          "status": false,
+          "icon": "/assets/images/logo/perseverance.png",
+          "features_list": [
+            "Integrating Firebase authentication seamlessly with the backend poses a challenge in ensuring secure communication and synchronization between frontend and backend components",
+            "Managing user sessions and permissions effectively, especially with multiple authentication options, requires meticulous implementation to prevent unauthorized access and maintain data integrity",
+            "Implementing robust error handling and validation mechanisms for user inputs and interactions is crucial to ensure a smooth and error-free user experience across various application functionalities",
+            "Optimizing performance and scalability of the application, particularly with complex routing and data processing tasks, demands strategic architectural decisions and efficient resource utilization",
+            "Ensuring consistent and responsive design across different devices and screen sizes, while utilizing multiple CSS libraries, necessitates careful attention to detail and rigorous testing methodologies",
+            "Managing and securing sensitive user data, especially during payment processing with Stripe, requires stringent adherence to compliance standards and robust encryption protocols to safeguard against potential security breaches",
+            "Balancing the complexity of administrative functionalities with user-friendly interfaces, to ensure efficient management without overwhelming users with unnecessary complexities, demands thoughtful UX/UI design considerations"
+          ],
+          "bullet_points": [
+            "Firebase integration",
+            "Session management",
+            "Error handling",
+            "Performance optimization",
+            "Responsive design",
+            "Data security",
+            "UI/UX balance"
+          ]
+        },
+        {
+          "title": "Responsibilities",
+          "status": false,
+          "icon": "/assets/images/logo/responsibility1.png",
+          "features_list": [
+            "Designing and implementing the front-end interface using ReactJS, ensuring intuitive navigation and seamless user interaction with a focus on responsiveness across various devices and screen sizes",
+            "Developing robust back-end functionalities with Node.js, including user authentication, session management, and data processing, to support secure and efficient server-side operations",
+            "Integrating Firebase authentication for user authentication and management, configuring authentication options, and ensuring secure communication between frontend and backend components",
+            "Implementing error handling and validation mechanisms to maintain data integrity and ensure a smooth user experience, with comprehensive testing to identify and address potential issues",
+            "Optimizing application performance and scalability through strategic architectural decisions, efficient resource utilization, and thorough testing methodologies to ensure seamless operation under varying loads",
+            "Ensuring compliance with security standards and protocols, especially regarding sensitive user data and payment processing with Stripe, by implementing encryption, adhering to best practices, and regularly updating security measures"
+          ],
+          "bullet_points": [
+            "Front-end design",
+            "Back-end development",
+            "Firebase integration",
+            "Error handling",
+            "Performance optimization",
+            "Security compliance"
+          ]
+        },
+        {
+          "title": "Resources",
+          "status": false,
+          "icon": "/assets/images/logo/data.png",
+          "features_list": [
+            "Website: https://comp-solution-ab5ea.web.app/",
+            "GitHub Repository(Client): https://github.com/shamimulhaque1992/CompSolution_client_fullstack-react-node/tree/main",
+            "GitHub Repository(Server): https://github.com/shamimulhaque1992/CompSolution_server_fullstack-react-node"
+          ],
+          "bullet_points": ["firebase", "stripe", "vercel", "firebase hosting"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+openapi: 3.0.0
+info:
+  title: Comp solution
+  description: >-
+    
+  version: 1.0.0
+servers:
+  - url: https://com-solution-server.vercel.app
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+tags:
+  - name: operations
+paths:
+  /tools:
+    post:
+      tags:
+        - operations
+      summary: create tools
+      description: >-
+        This is a GET request and it is used to "get" data from an endpoint.
+        There is no request body for a GET request, but you can use query
+        parameters to help specify the resource you want data on (e.g., in this
+        request, we have `id=1`).
+
+
+        A successful GET response will have a `200 OK` status, and should
+        include some kind of response body - for example, HTML web content or
+        JSON data.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: sdssdf
+                description: sdssdf
+                price: sdssdf
+                quantiry: 100
+                minimumquantity: sdssdf
+                img: >-
+                  https://t3.ftcdn.net/jpg/00/81/24/72/360_F_81247213_OYvGTCn5mnQQ2c0gWJ1U5ixcbmNBaMOp.jpg
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    get:
+      tags:
+        - operations
+      summary: get tools
+      description: >-
+        This is a GET request and it is used to "get" data from an endpoint.
+        There is no request body for a GET request, but you can use query
+        parameters to help specify the resource you want data on (e.g., in this
+        request, we have `id=1`).
+
+
+        A successful GET response will have a `200 OK` status, and should
+        include some kind of response body - for example, HTML web content or
+        JSON data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /reviews:
+    get:
+      tags:
+        - operations
+      summary: get reviews
+      description: >-
+        This is a GET request and it is used to "get" data from an endpoint.
+        There is no request body for a GET request, but you can use query
+        parameters to help specify the resource you want data on (e.g., in this
+        request, we have `id=1`).
+
+
+        A successful GET response will have a `200 OK` status, and should
+        include some kind of response body - for example, HTML web content or
+        JSON data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /tools/663140071a42fc3d22704dd0:
+    get:
+      tags:
+        - operations
+      summary: get tools by id
+      description: >-
+        This is a GET request and it is used to "get" data from an endpoint.
+        There is no request body for a GET request, but you can use query
+        parameters to help specify the resource you want data on (e.g., in this
+        request, we have `id=1`).
+
+
+        A successful GET response will have a `200 OK` status, and should
+        include some kind of response body - for example, HTML web content or
+        JSON data.
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /order:
+    get:
+      tags:
+        - operations
+      summary: get orders by email
+      description: >-
+        This is a GET request and it is used to "get" data from an endpoint.
+        There is no request body for a GET request, but you can use query
+        parameters to help specify the resource you want data on (e.g., in this
+        request, we have `id=1`).
+
+
+        A successful GET response will have a `200 OK` status, and should
+        include some kind of response body - for example, HTML web content or
+        JSON data.
+      security:
+        - bearerAuth: []
+      parameters:
+        - name: customeremail
+          in: query
+          schema:
+            type: string
+          example: khandoker15-1992@diu.edu.b
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    post:
+      tags:
+        - operations
+      summary: create orders
+      description: >-
+        This is a POST request, submitting data to an API via the request body.
+        This request submits JSON data, and the data is reflected in the
+        response.
+
+
+        A successful POST request typically returns a `200 OK` or `201 Created`
+        response code.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                productName: fgasfasdf
+                productID: 663140071a42fc3d22704dd0
+                productPrice: '234234'
+                productDescription: asdfasdf
+                productimg: >-
+                  https://t3.ftcdn.net/jpg/00/81/24/72/360_F_81247213_OYvGTCn5mnQQ2c0gWJ1U5ixcbmNBaMOp.jpg
+                customerName: Khandoker Shamimul Haque
+                customerEmail: khandokershamimulhaque@gmail.com
+                customerAddress: Dhaka, Bangladesh.
+                customerPhone: '01779312970'
+                porductQuantity: '78'
+                paymentMethod: nogod
+                paymentStatus: Unpaid
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

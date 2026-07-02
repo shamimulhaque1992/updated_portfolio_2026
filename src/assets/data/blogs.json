@@ -1,0 +1,1752 @@
+[
+  {
+    "id": 1,
+    "thumbnail": "/assets/images/blogs-images/mern-stack.jpg",
+    "title": "Getting Started with MERN Stack",
+    "timeline": "2024-04-18",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Introduction to MERN Stack",
+      "paragraph": "In this blog post, we'll dive into the fundamentals of the MERN stack - MongoDB, Express.js, React, and Node.js. We'll cover everything from installation to building your first full-stack application."
+    },
+    "point_description": [
+      {
+        "title": "Basic React Native",
+        "points": [
+          "Learn the basics of React Native development",
+          "Setting up your development environment",
+          "Creating your first React Native app",
+          "Understanding components and props",
+          "Navigating between screens",
+          "Handling user input and state management"
+        ]
+      },
+      {
+        "title": "Advanced Redux Techniques",
+        "points": [
+          "Implementing middleware for async actions",
+          "Creating reusable action creators",
+          "Combining reducers effectively",
+          "Using Redux DevTools for debugging",
+          "Handling complex state with selectors",
+          "Optimizing performance with memoization"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "thumbnail": "/assets/images/blogs-images/nextjs.jpg",
+    "title": "Deploying Next.js Applications on AWS",
+    "timeline": "2024-04-17",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Hosting Next.js Apps on AWS",
+      "paragraph": "This guide will walk you through the process of deploying your Next.js applications on AWS using services like EC2, S3, and Route 53. We'll cover setting up your infrastructure, configuring deployment pipelines, and optimizing for performance."
+    },
+    "point_description": [
+      {
+        "title": "AWS Lambda Functions with Next.js",
+        "points": [
+          "Understanding serverless architecture",
+          "Integrating Next.js with AWS Lambda",
+          "Configuring API Gateway for serverless functions",
+          "Securing Lambda functions with IAM roles",
+          "Monitoring and logging Lambda executions",
+          "Managing dependencies and environment variables"
+        ]
+      },
+      {
+        "title": "Scaling Next.js Apps with CloudFront",
+        "points": [
+          "Configuring CDN caching for Next.js assets",
+          "Optimizing images and static files for performance",
+          "Setting up custom domain with CloudFront",
+          "Enabling HTTPS with ACM certificates",
+          "Implementing caching strategies for dynamic content",
+          "Monitoring CloudFront distributions for insights"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "thumbnail": "/assets/images/blogs-images/redux.jpg",
+    "title": "Mastering Redux for State Management",
+    "timeline": "2024-04-16",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Deep Dive into Redux",
+      "paragraph": "In this comprehensive guide, we'll explore advanced techniques for managing application state with Redux. From middleware to selectors, we'll cover everything you need to know to build scalable and maintainable React applications."
+    },
+    "point_description": [
+      {
+        "title": "Middleware for Advanced Redux",
+        "points": [
+          "Understanding the role of middleware in Redux",
+          "Implementing custom middleware for logging",
+          "Throttling actions with Redux Thunk",
+          "Using Redux Saga for complex async flows",
+          "Combining multiple middleware in Redux",
+          "Testing middleware with Jest and Enzyme"
+        ]
+      },
+      {
+        "title": "Selectors and Reselect",
+        "points": [
+          "Introduction to selectors in Redux",
+          "Creating memoized selectors with Reselect",
+          "Optimizing rendering performance with memoization",
+          "Chaining selectors for complex state slices",
+          "Testing selectors for correctness",
+          "Best practices for structuring selectors"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "thumbnail": "/assets/images/blogs-images/React-Native-Titre.jpg",
+    "title": "Optimizing React Native Performance",
+    "timeline": "2024-04-15",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Boosting Performance in React Native",
+      "paragraph": "Learn how to optimize the performance of your React Native applications for a smoother user experience. We'll cover profiling, debugging, and implementing performance enhancements to make your apps lightning-fast."
+    },
+    "point_description": [
+      {
+        "title": "Profiling React Native Apps",
+        "points": [
+          "Understanding performance bottlenecks in React Native",
+          "Using Chrome DevTools for performance profiling",
+          "Analyzing CPU and memory usage",
+          "Identifying slow components and renders",
+          "Benchmarking app performance with React DevTools",
+          "Interpreting performance metrics"
+        ]
+      },
+      {
+        "title": "Performance Optimization Techniques",
+        "points": [
+          "Implementing PureComponent and shouldComponentUpdate",
+          "Memoizing expensive computations with useMemo",
+          "Lazy loading components for better initial render",
+          "Optimizing images and assets for smaller bundle size",
+          "Reducing unnecessary re-renders with React.memo",
+          "Fine-tuning navigation and animations"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "thumbnail": "/assets/images/blogs-images/hero.png",
+    "title": "Securing Your Next.js Applications",
+    "timeline": "2024-04-14",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Ensuring Security in Next.js",
+      "paragraph": "Discover best practices for securing your Next.js applications against common web vulnerabilities. From authentication to data validation, we'll cover essential techniques to keep your users and data safe."
+    },
+    "point_description": [
+      {
+        "title": "Authentication and Authorization",
+        "points": [
+          "Implementing authentication with NextAuth.js",
+          "Securing routes with authentication middleware",
+          "Managing user sessions and tokens securely",
+          "Role-based access control (RBAC)",
+          "OAuth and social login integration",
+          "Preventing CSRF and XSS attacks"
+        ]
+      },
+      {
+        "title": "Data Validation and Sanitization",
+        "points": [
+          "Validating user input with Yup and Formik",
+          "Sanitizing input to prevent SQL injection",
+          "Preventing NoSQL injection in MongoDB queries",
+          "Implementing input validation on the client and server",
+          "Handling file uploads securely",
+          "Escaping and encoding user-generated content"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "thumbnail": "/assets/images/blogs-images/soketio.png",
+    "title": "Building Real-Time Chat Apps with Socket.io",
+    "timeline": "2024-04-13",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Interactive Chat Applications",
+      "paragraph": "Learn how to build real-time chat applications using Socket.io and React. We'll cover the basics of WebSocket communication, implementing chat features, and handling scalability and performance challenges."
+    },
+    "point_description": [
+      {
+        "title": "Introduction to Socket.io",
+        "points": [
+          "Understanding WebSocket communication",
+          "Installing and configuring Socket.io in Node.js",
+          "Establishing connections between clients and server",
+          "Broadcasting messages to multiple clients",
+          "Handling disconnections and reconnections",
+          "Monitoring server and client events"
+        ]
+      },
+      {
+        "title": "Building a React Chat Interface",
+        "points": [
+          "Creating UI components for chat messages",
+          "Handling user input and sending messages",
+          "Displaying real-time updates with useEffect",
+          "Implementing features like typing indicators and emojis",
+          "Styling chat components with CSS or styled-components",
+          "Testing chat functionality with Jest and Enzyme"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "thumbnail": "/assets/images/blogs-images/postgrase-mastering.png",
+    "title": "Mastering PostgreSQL for Full-Stack Developers",
+    "timeline": "2024-04-12",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Deep Dive into PostgreSQL",
+      "paragraph": "Explore the ins and outs of PostgreSQL, the powerful open-source relational database. From schema design to advanced querying, this guide will equip you with the knowledge to leverage PostgreSQL effectively in your projects."
+    },
+    "point_description": [
+      {
+        "title": "Schema Design Best Practices",
+        "points": [
+          "Understanding relational database concepts",
+          "Creating tables and defining relationships",
+          "Normalization and denormalization techniques",
+          "Indexing strategies for performance optimization",
+          "Data modeling for scalability and flexibility",
+          "Migrating and versioning database schemas"
+        ]
+      },
+      {
+        "title": "Advanced Querying and Optimization",
+        "points": [
+          "Writing complex SQL queries with JOINs and subqueries",
+          "Optimizing query performance with indexes",
+          "Using EXPLAIN ANALYZE to analyze query plans",
+          "Caching query results for improved speed",
+          "Monitoring and tuning database performance",
+          "Implementing full-text search with tsvector and tsquery"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "thumbnail": "/assets/images/blogs-images/graph-apollo.png",
+    "title": "Creating GraphQL APIs with Apollo Server",
+    "timeline": "2024-04-11",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Building Scalable APIs with GraphQL",
+      "paragraph": "Learn how to design and implement GraphQL APIs using Apollo Server. We'll cover schema definition, resolvers, data fetching, authentication, and other advanced features to create robust and flexible APIs for your applications."
+    },
+    "point_description": [
+      {
+        "title": "Getting Started with Apollo Server",
+        "points": [
+          "Setting up Apollo Server with Express.js",
+          "Defining GraphQL schema with SDL",
+          "Implementing resolvers for query and mutation fields",
+          "Connecting to data sources like databases or REST APIs",
+          "Testing GraphQL queries and mutations with Apollo Client",
+          "Integrating authentication and authorization"
+        ]
+      },
+      {
+        "title": "Advanced GraphQL Features",
+        "points": [
+          "Pagination and cursor-based pagination",
+          "Batching and caching data with DataLoader",
+          "Optimizing GraphQL queries for performance",
+          "Securing GraphQL APIs with rate limiting and validation",
+          "Handling file uploads and downloads",
+          "Implementing real-time subscriptions with GraphQL subscriptions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "thumbnail": "/assets/images/blogs-images/web-testing.png",
+    "title": "Testing Strategies for Modern Web Development",
+    "timeline": "2024-04-10",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Comprehensive Guide to Software Testing",
+      "paragraph": "Discover best practices and techniques for testing modern web applications. From unit tests to end-to-end testing, we'll cover a variety of testing strategies to ensure the reliability and stability of your software."
+    },
+    "point_description": [
+      {
+        "title": "Unit Testing with Jest and Enzyme",
+        "points": [
+          "Writing test cases for React components with Jest",
+          "Mocking dependencies for isolated unit tests",
+          "Testing component rendering and behavior with Enzyme",
+          "Snapshot testing for UI consistency",
+          "Testing asynchronous code with async/await",
+          "Coverage reporting and analysis"
+        ]
+      },
+      {
+        "title": "End-to-End Testing with Cypress",
+        "points": [
+          "Setting up Cypress for end-to-end testing",
+          "Writing and organizing test suites and specs",
+          "Interacting with elements and performing actions",
+          "Handling HTTP requests and responses",
+          "Running tests in headless mode and CI/CD pipelines",
+          "Debugging and troubleshooting test failures"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "thumbnail": "/assets/images/blogs-images/web-architecture.jpg",
+    "title": "Scalable Architecture Patterns for Web Development",
+    "timeline": "2024-04-09",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Designing Robust and Scalable Systems",
+      "paragraph": "Explore proven architecture patterns and principles for building scalable web applications. From monolithic to microservices, we'll discuss various approaches to designing systems that can grow with your business."
+    },
+    "point_description": [
+      {
+        "title": "Monolithic vs. Microservices",
+        "points": [
+          "Understanding the pros and cons of monolithic architecture",
+          "Decomposing monolithic applications into microservices",
+          "Designing bounded contexts and service boundaries",
+          "Implementing communication between microservices",
+          "Scaling individual services independently",
+          "Managing data consistency and transactionality"
+        ]
+      },
+      {
+        "title": "Event-Driven Architecture",
+        "points": [
+          "Introduction to event-driven design principles",
+          "Publishing and subscribing to events with message brokers",
+          "Implementing event sourcing and CQRS patterns",
+          "Handling eventual consistency and idempotency",
+          "Scaling event-driven systems for high throughput",
+          "Monitoring and troubleshooting event streams"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "thumbnail": "/assets/images/blogs-images/images.png",
+    "title": "Managing State in React Applications",
+    "timeline": "2024-04-08",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Effective State Management with React",
+      "paragraph": "Learn different approaches to managing state in React applications and choose the best option for your project. From local component state to global state with Redux, we'll cover everything you need to know."
+    },
+    "point_description": [
+      {
+        "title": "Local State Management",
+        "points": [
+          "Understanding component state in React",
+          "Using setState for updating local state",
+          "Handling form inputs and user interactions",
+          "Passing state as props to child components",
+          "Lifting state up for sharing between components",
+          "Using React hooks for managing local state"
+        ]
+      },
+      {
+        "title": "Global State with Redux",
+        "points": [
+          "Introduction to Redux for state management",
+          "Defining actions and reducers for state updates",
+          "Connecting components to Redux store with mapStateToProps",
+          "Dispatching actions to update global state",
+          "Implementing middleware for async actions",
+          "Structuring Redux code for scalability and maintainability"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "thumbnail": "/assets/images/blogs-images/hooks.png",
+    "title": "Creating Dynamic User Interfaces with React Hooks",
+    "timeline": "2024-04-07",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Building Interactive UIs with Hooks",
+      "paragraph": "Explore the power of React hooks for building dynamic and responsive user interfaces. From useState to useEffect, we'll cover various hooks and how to use them to enhance your React applications."
+    },
+    "point_description": [
+      {
+        "title": "useState and useEffect",
+        "points": [
+          "Managing component state with useState",
+          "Using useEffect for side effects and lifecycle methods",
+          "Fetching data with useEffect and handling cleanup",
+          "Optimizing performance with useCallback and useMemo",
+          "Implementing custom hooks for reusable logic",
+          "Testing hooks with React Testing Library"
+        ]
+      },
+      {
+        "title": "useContext and useReducer",
+        "points": [
+          "Sharing state between components with useContext",
+          "Creating context providers and consumers",
+          "Managing complex state with useReducer",
+          "Dispatching actions and updating state",
+          "Combining useContext and useReducer for global state",
+          "Testing context providers and consumers"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "thumbnail": "/assets/images/blogs-images/next-auth.png",
+    "title": "Mastering Authentication in Next.js",
+    "timeline": "2024-04-06",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Implementing Secure Authentication",
+      "paragraph": "Learn how to add authentication and authorization to your Next.js applications using industry-standard techniques. From JWT tokens to OAuth providers, we'll cover everything you need to know to keep your users' data safe."
+    },
+    "point_description": [
+      {
+        "title": "JWT Authentication",
+        "points": [
+          "Understanding JSON Web Tokens (JWT)",
+          "Implementing JWT authentication in Next.js",
+          "Securing routes with authentication middleware",
+          "Persisting tokens securely in cookies or local storage",
+          "Refreshing tokens and handling expiration",
+          "Protecting sensitive routes and API endpoints"
+        ]
+      },
+      {
+        "title": "OAuth Integration",
+        "points": [
+          "Configuring OAuth providers like Google or Facebook",
+          "Implementing OAuth authentication flows in Next.js",
+          "Handling callback redirects and token exchange",
+          "Storing OAuth tokens securely",
+          "Accessing user data from OAuth providers",
+          "Customizing authentication UI for OAuth"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "thumbnail": "/assets/images/blogs-images/next-pwa.png",
+    "title": "Building Progressive Web Apps with Next.js",
+    "timeline": "2024-04-05",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Fast and Reliable PWAs",
+      "paragraph": "Discover how to turn your Next.js applications into Progressive Web Apps (PWAs) for a seamless user experience across devices. From service workers to offline support, we'll cover the essential features of PWAs and how to implement them."
+    },
+    "point_description": [
+      {
+        "title": "Service Worker Basics",
+        "points": [
+          "Understanding service workers and their role in PWAs",
+          "Registering and installing service workers in Next.js",
+          "Caching assets and data for offline access",
+          "Updating service workers for new app versions",
+          "Managing cache storage and expiration",
+          "Implementing background sync for reliable offline support"
+        ]
+      },
+      {
+        "title": "Add to Home Screen and Push Notifications",
+        "points": [
+          "Prompting users to install the app to the home screen",
+          "Configuring manifest.json for PWA metadata",
+          "Implementing push notifications with the Notifications API",
+          "Subscribing users to push notifications",
+          "Handling notification clicks and displaying content",
+          "Managing notification permissions and subscriptions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "thumbnail": "/assets/images/blogs-images/react-native-security.png",
+    "title": "Securing React Native Applications",
+    "timeline": "2024-04-04",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Ensuring Security in Mobile Apps",
+      "paragraph": "Learn how to implement security best practices in your React Native applications to protect user data and prevent unauthorized access. From secure storage to network security, we'll cover essential techniques for building secure mobile apps."
+    },
+    "point_description": [
+      {
+        "title": "Secure Data Storage",
+        "points": [
+          "Encrypting sensitive data with AsyncStorage",
+          "Implementing secure storage with Keychain (iOS) and Keystore (Android)",
+          "Protecting user credentials and authentication tokens",
+          "Using biometric authentication for sensitive operations",
+          "Preventing data leakage through logs and screenshots",
+          "Securing WebView components from XSS attacks"
+        ]
+      },
+      {
+        "title": "Network Security",
+        "points": [
+          "Implementing HTTPS with SSL pinning for secure communication",
+          "Validating server certificates to prevent man-in-the-middle attacks",
+          "Using secure communication protocols like TLS",
+          "Securing API endpoints with authentication and authorization",
+          "Protecting against common network vulnerabilities",
+          "Monitoring network traffic for suspicious activity"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "thumbnail": "/assets/images/blogs-images/lemda.png",
+    "title": "Exploring Serverless Architecture with AWS Lambda",
+    "timeline": "2024-04-03",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Building Scalable Applications with Serverless",
+      "paragraph": "Discover the benefits of serverless architecture and learn how to leverage AWS Lambda for building scalable and cost-effective applications. From event-driven functions to serverless APIs, we'll cover everything you need to know."
+    },
+    "point_description": [
+      {
+        "title": "Introduction to AWS Lambda",
+        "points": [
+          "Understanding serverless architecture and AWS Lambda",
+          "Creating and deploying Lambda functions with the AWS Management Console",
+          "Configuring triggers for invoking Lambda functions",
+          "Implementing event-driven functions for processing data",
+          "Handling asynchronous operations with Lambda",
+          "Monitoring and troubleshooting Lambda executions"
+        ]
+      },
+      {
+        "title": "Serverless APIs with API Gateway",
+        "points": [
+          "Creating RESTful APIs with API Gateway",
+          "Integrating Lambda functions with API Gateway endpoints",
+          "Securing APIs with API keys and IAM policies",
+          "Implementing rate limiting and throttling",
+          "Deploying and managing serverless APIs",
+          "Monitoring API Gateway metrics and logs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "thumbnail": "/assets/images/blogs-images/react-redux-saga.png",
+    "title": "Scaling React Native Apps with Redux",
+    "timeline": "2024-04-02",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Managing State at Scale",
+      "paragraph": "Learn how to scale your React Native applications with Redux for state management. From structuring your store to optimizing performance, we'll cover advanced techniques to handle complex state and UI logic."
+    },
+    "point_description": [
+      {
+        "title": "Redux Store Configuration",
+        "points": [
+          "Setting up a Redux store in a React Native app",
+          "Defining actions and reducers for state updates",
+          "Creating action creators for dispatching actions",
+          "Connecting components to the Redux store with useSelector and useDispatch",
+          "Initializing state from AsyncStorage or remote storage",
+          "Testing Redux actions and reducers"
+        ]
+      },
+      {
+        "title": "Optimizing Performance with Redux",
+        "points": [
+          "Using Reselect for memoized selectors",
+          "Normalizing state for efficient updates",
+          "Batching actions for reduced re-renders",
+          "Implementing middleware for async actions",
+          "Monitoring Redux performance with Redux DevTools",
+          "Debugging and profiling Redux applications"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "thumbnail": "https://example.com/thumbnail18.jpg",
+    "title": "Real-Time Data Visualization with D3.js",
+    "timeline": "2024-04-01",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Interactive Charts and Graphs",
+      "paragraph": "Explore the power of D3.js for building stunning data visualizations in your web applications. From basic charts to complex dashboards, we'll cover the essential concepts and techniques for creating dynamic and interactive data visualizations."
+    },
+    "point_description": [
+      {
+        "title": "Introduction to D3.js",
+        "points": [
+          "Understanding the role of D3.js in data visualization",
+          "Getting started with basic shapes and SVG elements",
+          "Binding data to DOM elements with D3",
+          "Creating scales and axes for charting",
+          "Handling user interactions like zoom and pan",
+          "Styling and animating SVG elements with D3"
+        ]
+      },
+      {
+        "title": "Building Interactive Charts",
+        "points": [
+          "Creating bar charts, line charts, and scatter plots with D3",
+          "Adding tooltips and labels to data points",
+          "Implementing brushing and linking for coordinated views",
+          "Rendering maps and geospatial data with D3",
+          "Customizing chart appearance with CSS and D3",
+          "Optimizing performance for large datasets"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "thumbnail": "https://example.com/thumbnail19.jpg",
+    "title": "Advanced React Patterns and Techniques",
+    "timeline": "2024-03-31",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Leveling Up Your React Skills",
+      "paragraph": "Take your React skills to the next level with advanced patterns and techniques. From render props to compound components, we'll explore a variety of patterns to solve common problems and write more maintainable and flexible React code."
+    },
+    "point_description": [
+      {
+        "title": "Render Props and Function as Child Components",
+        "points": [
+          "Understanding the render props pattern",
+          "Creating reusable components with render props",
+          "Passing data and functions as props",
+          "Implementing context with render props",
+          "Using function as child components for cleaner syntax",
+          "Testing components using render props"
+        ]
+      },
+      {
+        "title": "Compound Components and Controlled Components",
+        "points": [
+          "Building compound components for encapsulated logic",
+          "Implementing controlled components for form handling",
+          "Sharing state between sibling components",
+          "Using prop getters for flexible component customization",
+          "Testing compound components and controlled components",
+          "Best practices for designing reusable components"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "thumbnail": "https://example.com/thumbnail20.jpg",
+    "title": "Building Scalable APIs with Node.js and Express",
+    "timeline": "2024-03-30",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Designing Robust Backend Services",
+      "paragraph": "Learn how to create scalable and maintainable APIs with Node.js and Express. From routing to middleware, we'll cover essential concepts and best practices for building backend services that can handle high traffic and complex business logic."
+    },
+    "point_description": [
+      {
+        "title": "Setting Up a Node.js Project",
+        "points": [
+          "Initializing a new Node.js project with npm or yarn",
+          "Installing and configuring Express.js for routing",
+          "Creating a basic server with Express",
+          "Adding middleware for parsing requests and responses",
+          "Configuring error handling and logging",
+          "Setting up environment variables for configuration"
+        ]
+      },
+      {
+        "title": "Designing RESTful APIs",
+        "points": [
+          "Understanding REST principles and best practices",
+          "Defining routes and endpoints for CRUD operations",
+          "Implementing request validation and error handling",
+          "Documenting APIs with Swagger or OpenAPI",
+          "Testing APIs with tools like Postman or Insomnia",
+          "Securing APIs with authentication and authorization"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "thumbnail": "https://example.com/thumbnail21.jpg",
+    "title": "GraphQL Best Practices and Design Patterns",
+    "timeline": "2024-03-29",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Optimizing GraphQL APIs for Performance",
+      "paragraph": "Explore best practices and design patterns for building efficient and scalable GraphQL APIs. From schema design to query optimization, we'll cover advanced techniques to improve the performance and usability of your GraphQL APIs."
+    },
+    "point_description": [
+      {
+        "title": "Schema Design Principles",
+        "points": [
+          "Defining a clear and consistent schema structure",
+          "Using types and interfaces for schema composition",
+          "Implementing custom scalar types for specialized data",
+          "Avoiding over-fetching and under-fetching",
+          "Designing mutations for predictable side effects",
+          "Versioning and evolving schemas gracefully"
+        ]
+      },
+      {
+        "title": "Query Optimization Strategies",
+        "points": [
+          "Reducing resolver complexity with data loaders",
+          "Batching and caching requests for improved performance",
+          "Optimizing resolver execution with dataloader batching",
+          "Using persisted queries for caching and precompilation",
+          "Monitoring and profiling GraphQL query performance",
+          "Implementing pagination and cursor-based navigation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "thumbnail": "https://example.com/thumbnail22.jpg",
+    "title": "Advanced React Native Techniques",
+    "timeline": "2024-03-28",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Mastering React Native Development",
+      "paragraph": "Learn advanced techniques and patterns for building robust and performant React Native applications. From navigation to animations, we'll explore a variety of topics to help you become a more proficient React Native developer."
+    },
+    "point_description": [
+      {
+        "title": "Navigation and Routing",
+        "points": [
+          "Implementing navigation with React Navigation",
+          "Configuring stack, tab, and drawer navigators",
+          "Navigating between screens with navigation props",
+          "Customizing navigation options and headers",
+          "Handling deep linking and URL parameters",
+          "Testing navigation flows with Jest and Detox"
+        ]
+      },
+      {
+        "title": "Animations and Gestures",
+        "points": [
+          "Creating smooth animations with Animated API",
+          "Using LayoutAnimation for automatic layout transitions",
+          "Handling gestures with PanResponder",
+          "Implementing drag-and-drop interactions",
+          "Animating SVG and Canvas elements",
+          "Performance optimization for animations"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "thumbnail": "https://example.com/thumbnail23.jpg",
+    "title": "Implementing Authentication in GraphQL APIs",
+    "timeline": "2024-03-27",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Securing GraphQL Endpoints",
+      "paragraph": "Learn how to add authentication and authorization to your GraphQL APIs to protect sensitive data and ensure only authorized users can access certain resources. From JWT tokens to custom directives, we'll cover a variety of authentication strategies."
+    },
+    "point_description": [
+      {
+        "title": "JWT Authentication",
+        "points": [
+          "Generating and validating JWT tokens for authentication",
+          "Storing JWT tokens securely in client-side storage",
+          "Passing JWT tokens in HTTP headers for API authentication",
+          "Refreshing JWT tokens to extend user sessions",
+          "Revoking JWT tokens to invalidate sessions",
+          "Securing GraphQL resolvers with authentication middleware"
+        ]
+      },
+      {
+        "title": "Custom Authentication Directives",
+        "points": [
+          "Implementing custom GraphQL directives for authentication",
+          "Defining directive logic for checking user permissions",
+          "Applying directives to schema fields and operations",
+          "Handling directive execution and error handling",
+          "Integrating directives with authentication services",
+          "Testing directives with GraphQL schema validation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "thumbnail": "https://example.com/thumbnail24.jpg",
+    "title": "Building Full-Stack Applications with Prisma",
+    "timeline": "2024-03-26",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Accelerating Development with Prisma",
+      "paragraph": "Discover how to streamline your full-stack development workflow with Prisma, the modern database toolkit. From schema design to data modeling, we'll cover everything you need to know to build scalable and maintainable applications."
+    },
+    "point_description": [
+      {
+        "title": "Getting Started with Prisma",
+        "points": [
+          "Installing Prisma CLI and initializing a new project",
+          "Defining database models with Prisma schema",
+          "Generating database migrations and schema updates",
+          "Seeding initial data with Prisma CLI",
+          "Connecting Prisma to your application server",
+          "Querying and mutating data with Prisma Client"
+        ]
+      },
+      {
+        "title": "Advanced Prisma Features",
+        "points": [
+          "Implementing database transactions with Prisma Client",
+          "Optimizing database queries with Prisma Client",
+          "Using Prisma Studio for visual database management",
+          "Deploying Prisma to production environments",
+          "Migrating data between database versions",
+          "Monitoring and troubleshooting Prisma performance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "thumbnail": "https://example.com/thumbnail25.jpg",
+    "title": "Exploring Serverless Computing with AWS Lambda",
+    "timeline": "2024-03-25",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Understanding Serverless Architecture",
+      "paragraph": "Learn the fundamentals of serverless computing and how to leverage AWS Lambda for building scalable and cost-effective applications. From event-driven functions to serverless APIs, we'll cover everything you need to know to get started with serverless."
+    },
+    "point_description": [
+      {
+        "title": "Introduction to Serverless Computing",
+        "points": [
+          "Understanding the principles of serverless architecture",
+          "Comparing serverless to traditional hosting models",
+          "Exploring use cases for serverless applications",
+          "Benefits and challenges of serverless computing",
+          "Key components of serverless platforms",
+          "Common misconceptions about serverless"
+        ]
+      },
+      {
+        "title": "Getting Started with AWS Lambda",
+        "points": [
+          "Creating and deploying your first Lambda function",
+          "Configuring triggers for invoking Lambda functions",
+          "Working with different programming languages in Lambda",
+          "Scaling and monitoring Lambda functions",
+          "Integrating Lambda with other AWS services",
+          "Best practices for developing and deploying Lambda functions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "thumbnail": "https://example.com/thumbnail26.jpg",
+    "title": "Building Real-Time Applications with GraphQL Subscriptions",
+    "timeline": "2024-03-24",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Interactive and Real-Time Experiences",
+      "paragraph": "Explore how to implement real-time features in your GraphQL APIs using subscriptions. From live chat to collaborative editing, we'll cover everything you need to know to add real-time capabilities to your applications."
+    },
+    "point_description": [
+      {
+        "title": "Understanding GraphQL Subscriptions",
+        "points": [
+          "Introduction to the GraphQL subscriptions spec",
+          "Defining subscription types in your GraphQL schema",
+          "Implementing subscription resolvers for data streams",
+          "Configuring WebSocket connections for real-time communication",
+          "Handling subscription lifecycle events",
+          "Monitoring and troubleshooting subscriptions"
+        ]
+      },
+      {
+        "title": "Building Real-Time Features",
+        "points": [
+          "Creating a real-time chat application with GraphQL subscriptions",
+          "Updating client UI in response to subscription events",
+          "Implementing presence indicators and user statuses",
+          "Optimizing subscriptions for performance and scalability",
+          "Securing subscriptions with authentication and authorization",
+          "Testing real-time features with GraphQL subscriptions"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "thumbnail": "https://example.com/thumbnail27.jpg",
+    "title": "Optimizing React Native Apps for Performance",
+    "timeline": "2024-03-23",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Maximizing Performance and Responsiveness",
+      "paragraph": "Learn how to optimize your React Native applications for better performance and responsiveness. From reducing bundle size to minimizing rendering overhead, we'll cover a variety of techniques to ensure your apps run smoothly on all devices."
+    },
+    "point_description": [
+      {
+        "title": "Reducing Bundle Size",
+        "points": [
+          "Analyzing and optimizing dependencies for smaller bundles",
+          "Lazy loading components and routes for better performance",
+          "Using code splitting and dynamic imports",
+          "Minifying and compressing JavaScript assets",
+          "Tree shaking to remove unused code",
+          "Optimizing images and other assets"
+        ]
+      },
+      {
+        "title": "Improving Rendering Performance",
+        "points": [
+          "Identifying and optimizing performance bottlenecks with React DevTools",
+          "Implementing shouldComponentUpdate and PureComponent for efficient rendering",
+          "Memoizing expensive computations with useMemo and useCallback",
+          "Reducing re-renders with React.memo and PureComponent",
+          "Optimizing flat lists and other collection components",
+          "Profiling and debugging performance issues"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "thumbnail": "https://example.com/thumbnail28.jpg",
+    "title": "Managing Data with Redux Toolkit",
+    "timeline": "2024-03-22",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Simplifying Redux State Management",
+      "paragraph": "Discover how to streamline your Redux state management with Redux Toolkit, the official Redux package for efficient and ergonomic state updates. From configuring your store to writing concise reducers, we'll cover everything you need to know to use Redux Toolkit effectively."
+    },
+    "point_description": [
+      {
+        "title": "Setting Up Redux Toolkit",
+        "points": [
+          "Installing Redux Toolkit via npm or yarn",
+          "Configuring your Redux store with configureStore",
+          "Defining slices for logically grouped state",
+          "Writing concise reducers with createSlice",
+          "Dispatching actions with the useDispatch hook",
+          "Accessing state with the useSelector hook"
+        ]
+      },
+      {
+        "title": "Advanced Redux Toolkit Features",
+        "points": [
+          "Creating async thunks for handling side effects",
+          "Caching data with createAsyncThunk and createSlice",
+          "Optimizing performance with memoized selectors",
+          "Testing Redux logic with Redux Toolkit",
+          "Migrating existing Redux code to Redux Toolkit",
+          "Debugging Redux Toolkit applications"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "thumbnail": "https://example.com/thumbnail29.jpg",
+    "title": "Building Serverless Applications with Firebase",
+    "timeline": "2024-03-21",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Accelerating Development with Firebase",
+      "paragraph": "Learn how to build serverless applications with Firebase, Google's comprehensive platform for mobile and web development. From authentication to real-time databases, we'll cover the core features of Firebase and how to use them to build scalable and reliable apps."
+    },
+    "point_description": [
+      {
+        "title": "Setting Up Firebase Project",
+        "points": [
+          "Creating a new Firebase project in the Firebase Console",
+          "Configuring Firebase authentication providers",
+          "Integrating Firebase SDK with your web or mobile app",
+          "Setting up Firebase Realtime Database or Firestore",
+          "Deploying Firebase functions for serverless APIs",
+          "Enabling Firebase Hosting for web applications"
+        ]
+      },
+      {
+        "title": "Implementing Authentication and Authorization",
+        "points": [
+          "Adding email/password authentication to your app",
+          "Configuring social authentication providers like Google and Facebook",
+          "Implementing custom authentication with Firebase SDK",
+          "Protecting routes and resources with Firebase rules",
+          "Storing user data securely in Firestore",
+          "Monitoring authentication and user activity"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "thumbnail": "https://example.com/thumbnail30.jpg",
+    "title": "Implementing OAuth 2.0 Authentication in Node.js",
+    "timeline": "2024-03-20",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Secure Authentication with OAuth 2.0",
+      "paragraph": "Learn how to implement OAuth 2.0 authentication in your Node.js applications to allow users to sign in with their existing accounts from providers like Google, Facebook, and GitHub. From authorization codes to access tokens, we'll cover everything you need to know to integrate OAuth 2.0 into your app."
+    },
+    "point_description": [
+      {
+        "title": "Understanding OAuth 2.0",
+        "points": [
+          "Overview of the OAuth 2.0 authorization framework",
+          "Roles of clients, resource owners, authorization servers, and resource servers",
+          "OAuth 2.0 flows: authorization code, implicit, password, client credentials",
+          "Access tokens, refresh tokens, and authorization codes",
+          "OAuth 2.0 scopes for controlling access to resources",
+          "Security considerations and best practices"
+        ]
+      },
+      {
+        "title": "Implementing OAuth 2.0 in Node.js",
+        "points": [
+          "Configuring OAuth 2.0 client credentials for your app",
+          "Implementing authorization code flow with OAuth 2.0 packages",
+          "Handling callback redirects and token exchange",
+          "Storing and refreshing access tokens securely",
+          "Accessing user data from OAuth providers",
+          "Customizing authentication UI for OAuth"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "thumbnail": "https://example.com/thumbnail31.jpg",
+    "title": "Introduction to MongoDB and Mongoose",
+    "timeline": "2024-03-19",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Getting Started with NoSQL Databases",
+      "paragraph": "Learn the basics of MongoDB and Mongoose, the popular object modeling library for MongoDB in Node.js. From schema design to querying, we'll cover everything you need to know to start using MongoDB in your projects."
+    },
+    "point_description": [
+      {
+        "title": "Understanding MongoDB",
+        "points": [
+          "Introduction to MongoDB and NoSQL databases",
+          "Key differences between SQL and NoSQL databases",
+          "Document-oriented data model in MongoDB",
+          "Collections, documents, and fields in MongoDB",
+          "CRUD operations in MongoDB",
+          "Indexes, queries, and aggregation pipelines"
+        ]
+      },
+      {
+        "title": "Working with Mongoose",
+        "points": [
+          "Introduction to Mongoose and object modeling",
+          "Defining schemas and models with Mongoose",
+          "CRUD operations with Mongoose models",
+          "Querying and updating documents with Mongoose",
+          "Data validation and middleware in Mongoose",
+          "Connecting to MongoDB Atlas for cloud-hosted databases"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "thumbnail": "https://example.com/thumbnail32.jpg",
+    "title": "Mastering React Hooks",
+    "timeline": "2024-03-18",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Unlocking the Power of React Hooks",
+      "paragraph": "Discover how to use React hooks to simplify your component logic and build more flexible and reusable React applications. From state management to side effects, we'll cover everything you need to know to master React hooks."
+    },
+    "point_description": [
+      {
+        "title": "Understanding React Hooks",
+        "points": [
+          "Introduction to React hooks and their benefits",
+          "Key hooks: useState, useEffect, useContext, useReducer",
+          "Rules of hooks and how to use them correctly",
+          "Custom hooks for sharing logic between components",
+          "Replacing class components with functional components",
+          "Testing hooks with React Testing Library"
+        ]
+      },
+      {
+        "title": "Building Custom Hooks",
+        "points": [
+          "Creating custom hooks for reusable logic",
+          "Extracting common logic into custom hooks",
+          "Using hooks to encapsulate complex behavior",
+          "Best practices for naming and organizing custom hooks",
+          "Testing custom hooks with Jest and React Testing Library",
+          "Sharing custom hooks with the community"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "thumbnail": "https://example.com/thumbnail33.jpg",
+    "title": "Building Server-Side Rendered Applications with Next.js",
+    "timeline": "2024-03-17",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Enhancing Performance with Server-Side Rendering",
+      "paragraph": "Learn how to build server-side rendered (SSR) applications with Next.js for improved performance and SEO. From dynamic routing to data fetching, we'll cover everything you need to know to leverage SSR in your Next.js projects."
+    },
+    "point_description": [
+      {
+        "title": "Getting Started with Next.js",
+        "points": [
+          "Installing Next.js and creating a new project",
+          "Configuring custom server and routing with Next.js",
+          "Rendering pages and components with SSR",
+          "Fetching data on the server with getServerSideProps",
+          "Dynamic routing with catch-all routes and query parameters",
+          "Configuring SEO metadata with Next.js Head component"
+        ]
+      },
+      {
+        "title": "Optimizing Next.js Applications",
+        "points": [
+          "Implementing client-side navigation with Link component",
+          "Preloading data with prefetching and incremental static regeneration",
+          "Optimizing images and assets with Next.js Image component",
+          "Caching data with SWR (Stale-While-Revalidate)",
+          "Deploying Next.js applications to production environments",
+          "Monitoring performance with Next.js Analytics"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "thumbnail": "https://example.com/thumbnail34.jpg",
+    "title": "Practical React Native Navigation",
+    "timeline": "2024-03-16",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Navigating Like a Pro in React Native",
+      "paragraph": "Learn how to implement navigation in your React Native applications using various navigation libraries and techniques. From stack navigation to tab navigation, we'll cover everything you need to know to create a smooth and intuitive navigation experience."
+    },
+    "point_description": [
+      {
+        "title": "React Navigation Basics",
+        "points": [
+          "Introduction to React Navigation library",
+          "Configuring stack navigation for hierarchical UIs",
+          "Navigating between screens with StackNavigator",
+          "Passing params between screens",
+          "Configuring tab navigation with TabNavigator",
+          "Customizing navigation options and headers"
+        ]
+      },
+      {
+        "title": "Advanced Navigation Patterns",
+        "points": [
+          "Implementing drawer navigation for side menus",
+          "Stacking multiple navigators for complex UI flows",
+          "Combining tab and stack navigation for hybrid UIs",
+          "Handling deep linking and URL navigation",
+          "Testing navigation flows with Jest and Detox",
+          "Optimizing navigation performance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "thumbnail": "https://example.com/thumbnail35.jpg",
+    "title": "Building Full-Stack Applications with Next.js and Prisma",
+    "timeline": "2024-03-15",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating End-to-End Solutions with Next.js and Prisma",
+      "paragraph": "Learn how to build full-stack applications with Next.js and Prisma, combining the power of server-side rendering with a modern database toolkit. From data modeling to SSR optimization, we'll cover everything you need to know to build production-ready apps."
+    },
+    "point_description": [
+      {
+        "title": "Setting Up Next.js and Prisma",
+        "points": [
+          "Initializing a new Next.js project with Prisma",
+          "Defining database models with Prisma schema",
+          "Generating database migrations with Prisma CLI",
+          "Seeding initial data with Prisma Client",
+          "Configuring Next.js API routes for serverless functions",
+          "Integrating Prisma Client with Next.js API routes"
+        ]
+      },
+      {
+        "title": "Building Endpoints and Views",
+        "points": [
+          "Creating RESTful API endpoints with Next.js API routes",
+          "Rendering dynamic pages with server-side rendering (SSR)",
+          "Fetching data on the server with getServerSideProps",
+          "Implementing client-side data fetching with SWR",
+          "Optimizing SSR performance with incremental static regeneration",
+          "Securing API endpoints and views"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "thumbnail": "https://example.com/thumbnail36.jpg",
+    "title": "Building Secure APIs with JWT Authentication",
+    "timeline": "2024-03-14",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Protecting Your APIs with JSON Web Tokens",
+      "paragraph": "Learn how to implement secure authentication in your APIs using JSON Web Tokens (JWT). From generating tokens to verifying signatures, we'll cover everything you need to know to protect your APIs from unauthorized access."
+    },
+    "point_description": [
+      {
+        "title": "JWT Basics",
+        "points": [
+          "Understanding the structure of JSON Web Tokens",
+          "Generating JWT tokens with a secret key",
+          "Verifying JWT tokens with the same secret key",
+          "Signing and encrypting JWT tokens for added security",
+          "Configuring token expiration and refresh",
+          "Storing JWT tokens securely on the client side"
+        ]
+      },
+      {
+        "title": "Implementing JWT Authentication",
+        "points": [
+          "Adding JWT authentication middleware to your API routes",
+          "Verifying JWT tokens and extracting payload data",
+          "Protecting routes and resources with authentication middleware",
+          "Handling token expiration and refreshing tokens",
+          "Revoking JWT tokens to invalidate sessions",
+          "Logging in and out users with JWT"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "thumbnail": "https://example.com/thumbnail37.jpg",
+    "title": "Building Real-Time Chat Applications with Socket.IO",
+    "timeline": "2024-03-13",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Interactive Chat Experiences",
+      "paragraph": "Learn how to build real-time chat applications with Socket.IO, a JavaScript library for real-time web applications. From basic chat rooms to advanced features like private messaging, we'll cover everything you need to know to create engaging chat experiences."
+    },
+    "point_description": [
+      {
+        "title": "Getting Started with Socket.IO",
+        "points": [
+          "Setting up a Socket.IO server with Node.js",
+          "Configuring WebSocket connections for real-time communication",
+          "Handling connection events and broadcasting messages",
+          "Joining chat rooms and managing user sessions",
+          "Implementing message history and persistence",
+          "Scaling Socket.IO applications for high concurrency"
+        ]
+      },
+      {
+        "title": "Building Chat Features",
+        "points": [
+          "Creating real-time chat rooms with Socket.IO",
+          "Implementing private messaging and user authentication",
+          "Adding presence indicators and online status",
+          "Integrating chat into existing web applications",
+          "Optimizing chat performance and reliability",
+          "Testing real-time features with Socket.IO"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "thumbnail": "https://example.com/thumbnail38.jpg",
+    "title": "Building Progressive Web Apps (PWAs) with React",
+    "timeline": "2024-03-12",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Fast, Reliable, and Engaging Web Experiences",
+      "paragraph": "Learn how to build Progressive Web Apps (PWAs) with React, combining the power of web technologies with the capabilities of native apps. From offline support to push notifications, we'll cover everything you need to know to create modern web experiences."
+    },
+    "point_description": [
+      {
+        "title": "Introduction to PWAs",
+        "points": [
+          "Understanding the principles of Progressive Web Apps",
+          "Key features: offline support, push notifications, installability",
+          "Advantages of PWAs over traditional web and native apps",
+          "PWA requirements and best practices",
+          "Browser support and compatibility",
+          "Building blocks of PWAs: service workers, web app manifests"
+        ]
+      },
+      {
+        "title": "Building PWAs with React",
+        "points": [
+          "Creating a responsive and mobile-first layout with React",
+          "Implementing service workers for offline support",
+          "Configuring web app manifests for installability",
+          "Adding push notifications with the Notifications API",
+          "Caching assets and data for improved performance",
+          "Testing and debugging PWAs across different devices"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "thumbnail": "https://example.com/thumbnail39.jpg",
+    "title": "Optimizing GraphQL APIs for Mobile Clients",
+    "timeline": "2024-03-11",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Delivering Efficient Data to Mobile Apps",
+      "paragraph": "Explore strategies for optimizing GraphQL APIs to meet the unique requirements of mobile clients. From reducing payload sizes to minimizing network requests, we'll cover techniques to ensure your GraphQL APIs perform well on mobile devices."
+    },
+    "point_description": [
+      {
+        "title": "Reducing Payload Sizes",
+        "points": [
+          "Minimizing field selections and nesting in GraphQL queries",
+          "Using fragments and aliases for efficient data fetching",
+          "Implementing pagination and cursor-based navigation",
+          "Compressing JSON payloads with gzip or Brotli",
+          "Optimizing image and media delivery for mobile devices",
+          "Using persisted queries for caching and precompilation"
+        ]
+      },
+      {
+        "title": "Minimizing Network Requests",
+        "points": [
+          "Combining multiple queries with batched requests",
+          "Implementing data stitching and federation for microservices",
+          "Using persisted queries for reduced round trips",
+          "Caching and prefetching data on the client side",
+          "Using CDN caching for static assets and responses",
+          "Monitoring and profiling network performance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "thumbnail": "https://example.com/thumbnail40.jpg",
+    "title": "Building GraphQL APIs with Apollo Server",
+    "timeline": "2024-03-10",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Scalable and Performant GraphQL APIs",
+      "paragraph": "Learn how to build GraphQL APIs with Apollo Server, the popular GraphQL server library for Node.js. From schema design to data fetching, we'll cover everything you need to know to create production-ready GraphQL APIs with Apollo Server."
+    },
+    "point_description": [
+      {
+        "title": "Setting Up Apollo Server",
+        "points": [
+          "Initializing a new Apollo Server project with npm or yarn",
+          "Defining a GraphQL schema with Apollo Server",
+          "Implementing resolver functions for schema fields",
+          "Fetching data from external APIs or databases",
+          "Configuring Apollo Server with data sources and plugins",
+          "Integrating Apollo Server with existing Node.js applications"
+        ]
+      },
+      {
+        "title": "Optimizing GraphQL Performance",
+        "points": [
+          "Implementing data loaders for efficient data fetching",
+          "Using persisted queries for caching and precompilation",
+          "Reducing resolver complexity with schema stitching and delegation",
+          "Implementing response caching with Apollo Server plugins",
+          "Monitoring and profiling GraphQL query performance",
+          "Scaling Apollo Server for high traffic applications"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "thumbnail": "https://example.com/thumbnail41.jpg",
+    "title": "Automated Testing Strategies for React Applications",
+    "timeline": "2024-03-09",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Ensuring Code Quality and Reliability",
+      "paragraph": "Discover automated testing strategies and best practices for React applications. From unit tests to end-to-end testing, we'll cover a variety of techniques to ensure your React code is reliable, maintainable, and bug-free."
+    },
+    "point_description": [
+      {
+        "title": "Introduction to Automated Testing",
+        "points": [
+          "Understanding the benefits of automated testing",
+          "Different types of automated tests: unit, integration, end-to-end",
+          "Testing pyramid and the balance between different test types",
+          "Tools and libraries for automated testing in React applications",
+          "Setting up testing environments with Jest and React Testing Library",
+          "Writing testable code for easier testing"
+        ]
+      },
+      {
+        "title": "Writing and Running Tests",
+        "points": [
+          "Writing unit tests with Jest and testing React components",
+          "Mocking dependencies for isolated unit tests",
+          "Testing React hooks and custom hooks",
+          "Writing integration tests for complex interactions",
+          "End-to-end testing with tools like Cypress or Selenium",
+          "Running tests locally and in continuous integration"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "thumbnail": "https://example.com/thumbnail42.jpg",
+    "title": "Implementing Authentication and Authorization in Next.js",
+    "timeline": "2024-03-08",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Securing Next.js Applications",
+      "paragraph": "Learn how to implement authentication and authorization in your Next.js applications to protect routes and resources from unauthorized access. From session management to role-based permissions, we'll cover everything you need to know to build secure Next.js apps."
+    },
+    "point_description": [
+      {
+        "title": "Session-Based Authentication",
+        "points": [
+          "Managing user sessions with cookies and server-side storage",
+          "Implementing session authentication middleware",
+          "Protecting routes and resources with session validation",
+          "Storing session data securely and managing expiration",
+          "Logging in and logging out users with session tokens",
+          "Remembering users with persistent sessions"
+        ]
+      },
+      {
+        "title": "Role-Based Authorization",
+        "points": [
+          "Defining user roles and permissions",
+          "Restricting access to routes and resources based on roles",
+          "Implementing role-based authorization middleware",
+          "Handling unauthorized access and redirecting users",
+          "Managing user roles and permissions dynamically",
+          "Auditing user activity and access logs"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "thumbnail": "https://example.com/thumbnail43.jpg",
+    "title": "Building Real-Time Dashboards with React and Chart.js",
+    "timeline": "2024-03-07",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Visualizing Data in Real Time",
+      "paragraph": "Learn how to build real-time dashboards with React and Chart.js, a JavaScript library for data visualization. From live data streaming to interactive charts, we'll cover everything you need to know to create dynamic and responsive dashboards."
+    },
+    "point_description": [
+      {
+        "title": "Getting Started with Chart.js",
+        "points": [
+          "Installing Chart.js and setting up a basic chart",
+          "Configuring chart options and styling",
+          "Creating different types of charts: line, bar, pie, etc.",
+          "Binding data to charts and updating in real time",
+          "Customizing tooltips, legends, and labels",
+          "Handling user interactions with interactive charts"
+        ]
+      },
+      {
+        "title": "Building Real-Time Dashboards",
+        "points": [
+          "Connecting React components to real-time data sources",
+          "Streaming live data to the client with WebSocket or SSE",
+          "Updating charts in real time with new data",
+          "Implementing data aggregation and filtering",
+          "Optimizing dashboard performance for large datasets",
+          "Adding additional features like date range pickers and data exports"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "thumbnail": "https://example.com/thumbnail44.jpg",
+    "title": "Building RESTful APIs with Express.js",
+    "timeline": "2024-03-06",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Robust and Scalable APIs",
+      "paragraph": "Learn how to build RESTful APIs with Express.js, the popular web framework for Node.js. From routing to middleware, we'll cover everything you need to know to create production-ready APIs with Express."
+    },
+    "point_description": [
+      {
+        "title": "Setting Up Express.js",
+        "points": [
+          "Initializing a new Express.js project with npm or yarn",
+          "Creating routes for different API endpoints",
+          "Handling HTTP methods: GET, POST, PUT, DELETE",
+          "Parsing request bodies and handling query parameters",
+          "Implementing middleware for authentication, validation, etc.",
+          "Error handling and response formatting"
+        ]
+      },
+      {
+        "title": "Working with Databases and Models",
+        "points": [
+          "Connecting Express.js to databases like MongoDB or PostgreSQL",
+          "Defining data models with Mongoose or Sequelize",
+          "CRUD operations with database models",
+          "Implementing relationships between models",
+          "Handling database migrations and schema changes",
+          "Optimizing database queries for performance"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "thumbnail": "https://example.com/thumbnail45.jpg",
+    "title": "Building Multiplayer Games with WebSocket and Socket.IO",
+    "timeline": "2024-03-05",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Real-Time Gaming Experiences",
+      "paragraph": "Learn how to build multiplayer games with WebSocket and Socket.IO, enabling real-time communication between players and servers. From game mechanics to network protocols, we'll cover everything you need to know to create engaging multiplayer experiences."
+    },
+    "point_description": [
+      {
+        "title": "Understanding Real-Time Game Development",
+        "points": [
+          "Challenges and considerations for real-time multiplayer games",
+          "Networking protocols for game communication: TCP, UDP, WebSockets",
+          "Server architectures for handling game logic and player interactions",
+          "Latency compensation and synchronization techniques",
+          "Security considerations for multiplayer game servers",
+          "Scalability and performance optimization"
+        ]
+      },
+      {
+        "title": "Building Multiplayer Games with WebSocket",
+        "points": [
+          "Setting up WebSocket server with Node.js and ws library",
+          "Handling connection events and managing game sessions",
+          "Broadcasting game state to connected clients",
+          "Implementing player movement and interactions",
+          "Synchronizing game state across multiple clients",
+          "Optimizing network performance for real-time gaming"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "thumbnail": "https://example.com/thumbnail46.jpg",
+    "title": "Building Scalable Web Scrapers with Node.js",
+    "timeline": "2024-03-04",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Extracting Data from the Web",
+      "paragraph": "Learn how to build web scrapers with Node.js to extract data from websites and APIs. From basic scraping techniques to advanced crawling strategies, we'll cover everything you need to know to build scalable and efficient web scrapers."
+    },
+    "point_description": [
+      {
+        "title": "Introduction to Web Scraping",
+        "points": [
+          "Overview of web scraping and its use cases",
+          "Understanding HTML structure and DOM traversal",
+          "Basic scraping techniques with libraries like Cheerio",
+          "Fetching and parsing HTML content with Node.js",
+          "Handling dynamic content with JavaScript rendering",
+          "Respecting robots.txt and website terms of service"
+        ]
+      },
+      {
+        "title": "Building Web Scrapers with Node.js",
+        "points": [
+          "Implementing web scrapers with Axios and Cheerio",
+          "Configuring scraping pipelines and data extraction",
+          "Handling pagination and dynamic content loading",
+          "Dealing with anti-scraping techniques like rate limiting and IP blocking",
+          "Persisting scraped data to databases or files",
+          "Scaling scrapers for large-scale data extraction"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "thumbnail": "https://example.com/thumbnail47.jpg",
+    "title": "Building Real-Time Collaborative Editing Tools with Yjs",
+    "timeline": "2024-03-03",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Enabling Real-Time Collaboration in Web Applications",
+      "paragraph": "Learn how to build real-time collaborative editing tools with Yjs, a JavaScript library for building collaborative applications. From text editors to whiteboards, we'll cover everything you need to know to create collaborative experiences in your web apps."
+    },
+    "point_description": [
+      {
+        "title": "Getting Started with Yjs",
+        "points": [
+          "Installing Yjs and integrating it into your web application",
+          "Configuring shared data structures with Yjs",
+          "Implementing collaborative text editing with Y.Text",
+          "Handling user cursors and selections in real time",
+          "Synchronizing shared data across multiple clients",
+          "Conflict resolution and operational transforms"
+        ]
+      },
+      {
+        "title": "Building Collaborative Editing Tools",
+        "points": [
+          "Creating real-time text editors with collaborative features",
+          "Implementing presence indicators and user avatars",
+          "Building collaborative drawing and whiteboard applications",
+          "Adding chat and commenting features to collaborative tools",
+          "Optimizing performance and scalability for large user bases",
+          "Testing collaborative features with multiple users"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "thumbnail": "https://example.com/thumbnail48.jpg",
+    "title": "Building Microservices with Node.js and Docker",
+    "timeline": "2024-03-02",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Scaling and Deploying Distributed Systems",
+      "paragraph": "Learn how to build microservices with Node.js and Docker to create scalable and maintainable distributed systems. From service architecture to containerization, we'll cover everything you need to know to design, develop, and deploy microservices."
+    },
+    "point_description": [
+      {
+        "title": "Introduction to Microservices",
+        "points": [
+          "Understanding the principles of microservices architecture",
+          "Advantages of microservices over monolithic architectures",
+          "Decomposing applications into smaller, independent services",
+          "Communication patterns between microservices: REST, gRPC, etc.",
+          "Service discovery and orchestration with tools like Kubernetes",
+          "Challenges and considerations for microservices"
+        ]
+      },
+      {
+        "title": "Building Microservices with Node.js and Docker",
+        "points": [
+          "Creating microservices with Express.js and other Node.js frameworks",
+          "Containerizing microservices with Docker and Docker Compose",
+          "Defining service interfaces and APIs",
+          "Implementing inter-service communication with HTTP or messaging queues",
+          "Scaling microservices horizontally and vertically",
+          "Monitoring and logging for microservices"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "thumbnail": "https://example.com/thumbnail49.jpg",
+    "title": "Building Real-Time Auction Applications with Firebase",
+    "timeline": "2024-03-01",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Creating Dynamic Auction Experiences",
+      "paragraph": "Learn how to build real-time auction applications with Firebase, Google's platform for building mobile and web applications. From real-time bidding to auction management, we'll cover everything you need to know to create engaging auction experiences."
+    },
+    "point_description": [
+      {
+        "title": "Setting Up Firebase for Auctions",
+        "points": [
+          "Creating a new Firebase project in the Firebase Console",
+          "Configuring Firebase Authentication for user management",
+          "Setting up Firebase Realtime Database for real-time data synchronization",
+          "Implementing Firebase Cloud Functions for serverless backend logic",
+          "Deploying auction web app with Firebase Hosting",
+          "Securing Firebase resources with Firebase Security Rules"
+        ]
+      },
+      {
+        "title": "Building Auction Features",
+        "points": [
+          "Creating real-time bidding interfaces with Firebase Realtime Database",
+          "Implementing auction countdowns and status updates",
+          "Handling bid validation and auction rules",
+          "Notifying users of auction events with Firebase Cloud Messaging",
+          "Implementing user authentication and authorization",
+          "Monitoring auction activity and analytics"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "thumbnail": "https://example.com/thumbnail50.jpg",
+    "title": "Introduction to Deno: A Secure Runtime for JavaScript",
+    "timeline": "2024-02-29",
+    "author": "Khandoker Shamimul Haque",
+    "paragraph_description": {
+      "header": "Exploring the Next Generation JavaScript Runtime",
+      "paragraph": "Discover Deno, a secure runtime for JavaScript and TypeScript built on the V8 JavaScript engine and Rust. From module system to security features, we'll cover everything you need to know to get started with Deno."
+    },
+    "point_description": [
+      {
+        "title": "Understanding Deno",
+        "points": [
+          "Introduction to Deno and its creator, Ryan Dahl",
+          "Key differences between Deno and Node.js",
+          "Secure by default: Deno's security model and permissions",
+          "Module system and import statements in Deno",
+          "Built-in utilities and standard library in Deno",
+          "Compatibility with existing Node.js modules"
+        ]
+      },
+      {
+        "title": "Getting Started with Deno",
+        "points": [
+          "Installing Deno on your system with Shell or Package Manager",
+          "Running Deno scripts and applications",
+          "Managing dependencies with import statements",
+          "Using Deno runtime flags for configuration",
+          "Building and distributing Deno applications",
+          "Exploring Deno's standard library and third-party modules"
+        ]
+      }
+    ]
+  }
+]

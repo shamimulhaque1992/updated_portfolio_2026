@@ -1,0 +1,46 @@
+{
+  "navItems": [
+    {
+      "id": 1,
+      "link": "/",
+      "title": "Home",
+      "slug": "homeIntro"
+    },
+    {
+      "id": 2,
+      "link": "/",
+      "title": "Projects",
+      "slug": "landingProjects"
+    },
+    {
+      "id": 3,
+      "link": "/",
+      "title": "Skills",
+      "slug": "skillsSection"
+    },
+    {
+      "id": 4,
+      "link": "/",
+      "title": "Experience",
+      "slug": "experienceSection"
+    },
+    {
+      "id": 5,
+      "link": "/",
+      "title": "About",
+      "slug": "aboutSection"
+    },
+    {
+      "id": 6,
+      "link": "/",
+      "title": "Blogs",
+      "slug": "blogSection"
+    },
+    {
+      "id": 7,
+      "link": "/",
+      "title": "Contact",
+      "slug": "contactSection"
+    }
+  ]
+}

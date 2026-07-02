@@ -1,0 +1,497 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "_postman_id": "ccc24899-e2e8-4c03-9636-3c380a1e2f6b",
+    "name": "University Management System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "18756538"
+  },
+  "item": [
+    {
+      "name": "Academic Semester",
+      "item": [
+        {
+          "name": "Create Academic Semester",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\":\"Fall\",\r\n    \"year\":2022,\r\n    \"code\":\"03\",\r\n    \"startMonth\":\"January\",\r\n    \"endMonth\":\"May\"\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/academic-semesters/create-academic-semester",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-semesters", "create-academic-semester"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Academic Semesters",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-semesters/?sortBy=year&sortOrder=asc",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-semesters", ""],
+              "query": [
+                {
+                  "key": "sortBy",
+                  "value": "year"
+                },
+                {
+                  "key": "sortOrder",
+                  "value": "asc"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Semesters",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-semesters/?searchTerm=fall",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-semesters", ""],
+              "query": [
+                {
+                  "key": "searchTerm",
+                  "value": "fall"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Filter",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-semesters/?title=Autumn&code=01&year=2023",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-semesters", ""],
+              "query": [
+                {
+                  "key": "title",
+                  "value": "Autumn"
+                },
+                {
+                  "key": "code",
+                  "value": "01"
+                },
+                {
+                  "key": "year",
+                  "value": "2023"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single Semester",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-semesters/64e24e732d83a7e6c79",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-semesters", "64e24e732d83a7e6c79"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update Academic Semester",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\":\"Autumn\",\r\n    \"code\":\"01\",\r\n    \"year\":\"2023\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/academic-semesters/64c1596b6a65b8ee24f5bf3a",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-semesters", "64c1596b6a65b8ee24f5bf3a"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Semester",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-semesters/64c1596b6a65b8ee24f5bf3a",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-semesters", "64c1596b6a65b8ee24f5bf3a"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Academic Faculty",
+      "item": [
+        {
+          "name": "Create Academic Faculty",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n    \"title\":\"Faculty of \"\r\n\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/academic-faculty/create-academic-faculty",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-faculty", "create-academic-faculty"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Academic Faculty",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-faculty/?searchTerm=science&limit=2",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-faculty", ""],
+              "query": [
+                {
+                  "key": "searchTerm",
+                  "value": "science"
+                },
+                {
+                  "key": "limit",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Single Faculty",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-faculty/64e84f40b12af33e032dede",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-faculty", "64e84f40b12af33e032dede"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Academic Faculty",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n    \"title\":\"Faculty of Architecture and Design\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/academic-faculty/64ea563a3e379afe262c70e0",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-faculty", "64ea563a3e379afe262c70e0"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Academic Faculty",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-faculty/64ea563a3e379afe262c70e0",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-faculty", "64ea563a3e379afe262c70e0"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "User",
+      "item": [
+        {
+          "name": "Create Users as Student",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"password\": \"shamim8992\",     \r\n\r\n    \"student\": {\r\n        \"name\": {\r\n            \"firstName\": \"Khandoker\",\r\n            \"middleName\": \"Shamimul\",\r\n            \"lastName\": \"Haque\"\r\n        },\r\n        \"dateOfBirth\": \"24-04-1998\",\r\n        \"gender\":\"male\",\r\n        \"bloodGroup\": \"O+\",\r\n        \"email\": \"khanodkershamimu4564lhaque@gmail.com\",\r\n        \"contactNo\": \"4777945699000\",\r\n        \"emergencyContactNo\": \"017\",\r\n        \"presentAddress\": \"CTG\",\r\n        \"permanentAddress\": \"CTG\",\r\n        \"academicFaculty\": \"64e84ef6b12af33e032dedda\",\r\n        \"academicDepartment\": \"64fca3be6ae90125bd70f2a5\",\r\n        \"academicSemester\": \"64c15b6e8151a9d6e8ee78e5\",\r\n        \"guardian\": {\r\n            \"fatherName\": \"Khandoker MOhoshinul Haque\",\r\n            \"fatherOccupation\": \"Retired Govment Employee\",\r\n            \"fatherContactNo\": \"01600000000\",\r\n            \"motherName\": \"Shahanaz Pervin\",\r\n            \"motherOccupation\": \"Housewife\",\r\n            \"motherContactNo\": \"01600000000\",\r\n            \"address\": \"CTG\"\r\n        },\r\n        \"localGuardian\": {\r\n            \"name\": \"Maruf\",\r\n            \"occupation\": \"Service Holder\",\r\n            \"contactNo\": \"01600000000\",\r\n            \"address\": \"Dhaka\"\r\n        }\r\n\r\n      }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/users/create-student",
+              "host": ["{{University Menagement System}}"],
+              "path": ["users", "create-student"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create User as Faculty",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"password\": \"shamim8992\",     \r\n\r\n    \"faculty\": {\r\n        \"name\": {\r\n            \"firstName\": \"Khandoker\",\r\n            \"middleName\": \"Shamimul\",\r\n            \"lastName\": \"Haque\"\r\n        },\r\n        \"dateOfBirth\": \"24-04-1998\",\r\n        \"gender\":\"male\",\r\n        \"bloodGroup\": \"O+\",\r\n        \"email\": \"khandgodkershamigdfghmudfghaque@gmail.com\",\r\n        \"contactNo\": \"47dfg779dg45699000dfg\",\r\n        \"emergencyContactNo\": \"017\",\r\n        \"presentAddress\": \"CTG\",\r\n        \"permanentAddress\": \"CTG\",\r\n        \"academicFaculty\": \"64e84ef6b12af33e032dedda\",\r\n        \"academicDepartment\": \"64fca3be6ae90125bd70f2a5\",\r\n        \"designation\": \"faculty\"\r\n\r\n      }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/users/create-faculty",
+              "host": ["{{University Menagement System}}"],
+              "path": ["users", "create-faculty"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Create Users as Admin",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"password\": \"shamim8992\",     \r\n\r\n    \"admin\": {\r\n        \"name\": {\r\n            \"firstName\": \"Khandoker\",\r\n            \"middleName\": \"Shamimul\",\r\n            \"lastName\": \"Haque\"\r\n        },\r\n        \"dateOfBirth\": \"24-04-1998\",\r\n        \"gender\":\"male\",\r\n        \"bloodGroup\": \"O+\",\r\n        \"email\": \"khandgodkershamigdfghmudfghaque@gmail.com\",\r\n        \"contactNo\": \"47dfg779dg45699000dfg\",\r\n        \"emergencyContactNo\": \"017\",\r\n        \"presentAddress\": \"CTG\",\r\n        \"permanentAddress\": \"CTG\",\r\n        \"managementDepartment\":\"6589dc8497372c110d004fcb\",\r\n        \"designation\": \"faculty\"\r\n\r\n      }\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/users/create-admin",
+              "host": ["{{University Menagement System}}"],
+              "path": ["users", "create-admin"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Academic Department",
+      "item": [
+        {
+          "name": "CreateDepartment",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\":\"Electrical and Electronics Engineering\",\r\n    \"academicFaculty\":\"64e84ef6b12af33e032dedda\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/academic-departments/create-department",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-departments", "create-department"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GetDepartment",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/academic-departments",
+              "host": ["{{University Menagement System}}"],
+              "path": ["academic-departments"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Student",
+      "item": [
+        {
+          "name": "Get All Student",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/students",
+              "host": ["{{University Menagement System}}"],
+              "path": ["students"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Student",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/students/230200004",
+              "host": ["{{University Menagement System}}"],
+              "path": ["students", "230200004"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Faculties",
+      "item": [
+        {
+          "name": "Get all Faculties",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        },
+        {
+          "name": "Delete faculty",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{University Menagement System}}/faculties/F-00003",
+              "host": ["{{University Menagement System}}"],
+              "path": ["faculties", "F-00003"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Management Department",
+      "item": [
+        {
+          "name": "Create Management Deparment",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\":\"Department of Student Management\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/management-departments/create-management-department",
+              "host": ["{{University Menagement System}}"],
+              "path": ["management-departments", "create-management-department"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "Login User",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":\"230200005\",\r\n    \"password\":\"shamim8992\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/auth/login",
+              "host": ["{{University Menagement System}}"],
+              "path": ["auth", "login"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh Token",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{University Menagement System}}/auth/refresh-token",
+              "host": ["{{University Menagement System}}"],
+              "path": ["auth", "refresh-token"]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

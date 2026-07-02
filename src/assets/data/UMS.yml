@@ -1,0 +1,395 @@
+openapi: 3.0.0
+info:
+  title: University Management System
+  version: 1.0.0
+servers:
+  - url: https://university-auth-service-backend-server.vercel.app/api/v1
+tags:
+  - name: Academic Semester
+  - name: Academic Faculty
+  - name: User
+  - name: Academic Department
+  - name: Student
+  - name: Faculties
+  - name: Management Department
+  - name: Auth
+paths:
+  /academic-semesters/create-academic-semester:
+    post:
+      tags:
+        - Academic Semester
+      summary: Create Academic Semester
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: Fall
+                year: 2022
+                code: '03'
+                startMonth: January
+                endMonth: May
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-semesters/:
+    get:
+      tags:
+        - Academic Semester
+      summary: Filter
+      parameters:
+        - name: title
+          in: query
+          schema:
+            type: string
+          example: Autumn
+        - name: code
+          in: query
+          schema:
+            type: integer
+          example: '01'
+        - name: year
+          in: query
+          schema:
+            type: integer
+          example: '2023'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-semesters/64e24e732d83a7e6c79:
+    get:
+      tags:
+        - Academic Semester
+      summary: Get Single Semester
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-semesters/64c1596b6a65b8ee24f5bf3a:
+    patch:
+      tags:
+        - Academic Semester
+      summary: update Academic Semester
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: Autumn
+                code: '01'
+                year: '2023'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    delete:
+      tags:
+        - Academic Semester
+      summary: Delete Semester
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-faculty/create-academic-faculty:
+    post:
+      tags:
+        - Academic Faculty
+      summary: Create Academic Faculty
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: 'Faculty of '
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-faculty/:
+    get:
+      tags:
+        - Academic Faculty
+      summary: Get Academic Faculty
+      parameters:
+        - name: searchTerm
+          in: query
+          schema:
+            type: string
+          example: science
+        - name: limit
+          in: query
+          schema:
+            type: integer
+          example: '2'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-faculty/64e84f40b12af33e032dede:
+    get:
+      tags:
+        - Academic Faculty
+      summary: Get Single Faculty
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-faculty/64ea563a3e379afe262c70e0:
+    patch:
+      tags:
+        - Academic Faculty
+      summary: Update Academic Faculty
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: Faculty of Architecture and Design
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+    delete:
+      tags:
+        - Academic Faculty
+      summary: Delete Academic Faculty
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /users/create-student:
+    post:
+      tags:
+        - User
+      summary: Create Users as Student
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                password: shamim8992
+                student:
+                  name:
+                    firstName: Khandoker
+                    middleName: Shamimul
+                    lastName: Haque
+                  dateOfBirth: 24-04-1998
+                  gender: male
+                  bloodGroup: O+
+                  email: khanodkershamimu4564lhaque@gmail.com
+                  contactNo: '4777945699000'
+                  emergencyContactNo: '017'
+                  presentAddress: CTG
+                  permanentAddress: CTG
+                  academicFaculty: 64e84ef6b12af33e032dedda
+                  academicDepartment: 64fca3be6ae90125bd70f2a5
+                  academicSemester: 64c15b6e8151a9d6e8ee78e5
+                  guardian:
+                    fatherName: Khandoker MOhoshinul Haque
+                    fatherOccupation: Retired Govment Employee
+                    fatherContactNo: '01600000000'
+                    motherName: Shahanaz Pervin
+                    motherOccupation: Housewife
+                    motherContactNo: '01600000000'
+                    address: CTG
+                  localGuardian:
+                    name: Maruf
+                    occupation: Service Holder
+                    contactNo: '01600000000'
+                    address: Dhaka
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /users/create-faculty:
+    post:
+      tags:
+        - User
+      summary: Create User as Faculty
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                password: shamim8992
+                faculty:
+                  name:
+                    firstName: Khandoker
+                    middleName: Shamimul
+                    lastName: Haque
+                  dateOfBirth: 24-04-1998
+                  gender: male
+                  bloodGroup: O+
+                  email: khandgodkershamigdfghmudfghaque@gmail.com
+                  contactNo: 47dfg779dg45699000dfg
+                  emergencyContactNo: '017'
+                  presentAddress: CTG
+                  permanentAddress: CTG
+                  academicFaculty: 64e84ef6b12af33e032dedda
+                  academicDepartment: 64fca3be6ae90125bd70f2a5
+                  designation: faculty
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /users/create-admin:
+    post:
+      tags:
+        - User
+      summary: Create Users as Admin
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                password: shamim8992
+                admin:
+                  name:
+                    firstName: Khandoker
+                    middleName: Shamimul
+                    lastName: Haque
+                  dateOfBirth: 24-04-1998
+                  gender: male
+                  bloodGroup: O+
+                  email: khandgodkershamigdfghmudfghaque@gmail.com
+                  contactNo: 47dfg779dg45699000dfg
+                  emergencyContactNo: '017'
+                  presentAddress: CTG
+                  permanentAddress: CTG
+                  managementDepartment: 6589dc8497372c110d004fcb
+                  designation: faculty
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-departments/create-department:
+    post:
+      tags:
+        - Academic Department
+      summary: CreateDepartment
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: Electrical and Electronics Engineering
+                academicFaculty: 64e84ef6b12af33e032dedda
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /academic-departments:
+    get:
+      tags:
+        - Academic Department
+      summary: GetDepartment
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /students:
+    get:
+      tags:
+        - Student
+      summary: Get All Student
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /students/230200004:
+    delete:
+      tags:
+        - Student
+      summary: Delete Student
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /faculties/F-00003:
+    delete:
+      tags:
+        - Faculties
+      summary: Delete faculty
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /management-departments/create-management-department:
+    post:
+      tags:
+        - Management Department
+      summary: Create Management Deparment
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                title: Department of Student Management
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /auth/login:
+    post:
+      tags:
+        - Auth
+      summary: Login User
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                id: '230200005'
+                password: shamim8992
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /auth/refresh-token:
+    post:
+      tags:
+        - Auth
+      summary: Refresh Token
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example: ''
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}

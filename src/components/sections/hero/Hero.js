@@ -84,7 +84,7 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
                   {role}
                 </span>
                 <span className="text-sm font-medium text-[var(--foreground-muted)]">
-                  TypeScript · Next.js · Express.js · Prisma
+                  Next.js · TypeScript · Express.js · PostgreSQL
                 </span>
               </div>
             </motion.div>

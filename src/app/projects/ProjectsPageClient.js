@@ -42,30 +42,7 @@ const caseStudies = {
       "Build a mobile-responsive client portal view for on-the-go access.",
     ],
   },
-  aranya: {
-    responsibilities: [
-      "My responsibility was to design and develop the front end of that website including the integration of the payment gateway and Facebook pixel integration.",
-      "The website showcases a diverse collection of clothing options, from trendy casual wear to elegant formal attire. Customers can also explore accessories including handbags, footwear, and jewelry.",
-      "Implemented multi-currency pricing, eCourier and DHL shipping integrations, and geolocation-based currency detection.",
-      "Built the cart and checkout flow with SSLCOMMERZ payment gateway integration, boosting checkout conversion by 25%.",
-      "Managed state with Redux Toolkit and RTK Query, handling complex cart variants (color, size combinations) persisted across sessions.",
-      "Ensured a seamless shopping experience with user-friendly navigation, secure payment options, and prompt delivery services.",
-    ],
-    challenges: [
-      "Implementing multi-currency pricing that recalculates in real time across cart, checkout, and order history without stale values.",
-      "Integrating eCourier and DHL shipping APIs with dynamic rate calculation based on product weight and destination.",
-      "Managing a large product catalog with pagination, lazy loading, and infinite scroll simultaneously without performance degradation.",
-      "Handling complex cart state with multiple product variants (color, size combinations) persisted across sessions.",
-      "Synchronizing payment status from SSLCOMMERZ with order state in real time to prevent order fulfillment errors.",
-    ],
-    improvements: [
-      "Introduce a wishlist-to-cart conversion funnel with email reminders for abandoned wishlists.",
-      "Add AI-powered product recommendations based on browsing and purchase history.",
-      "Build a mobile app using React Native to extend the shopping experience.",
-      "Implement a loyalty points system to improve customer retention.",
-      "Add real-time inventory tracking to prevent overselling on high-demand items.",
-    ],
-  },
+
   "gain-io": {
     responsibilities: [
       "Served as the main frontend developer, owning the architecture and end-to-end delivery of the multi-tenant CRM SaaS platform.",
@@ -136,6 +113,30 @@ const caseStudies = {
       "Build a customer-facing self-service portal integrated with the knowledge base.",
       "Add sentiment analysis on feedback to automatically flag negative trends.",
       "Implement multi-channel support (email, chat, social) within a unified inbox.",
+    ],
+  },
+  aranya: {
+    responsibilities: [
+      "My responsibility was to design and develop the front end of that website including the integration of the payment gateway and Facebook pixel integration.",
+      "The website showcases a diverse collection of clothing options, from trendy casual wear to elegant formal attire. Customers can also explore accessories including handbags, footwear, and jewelry.",
+      "Implemented multi-currency pricing, eCourier and DHL shipping integrations, and geolocation-based currency detection.",
+      "Built the cart and checkout flow with SSLCOMMERZ payment gateway integration, boosting checkout conversion by 25%.",
+      "Managed state with Redux Toolkit and RTK Query, handling complex cart variants (color, size combinations) persisted across sessions.",
+      "Ensured a seamless shopping experience with user-friendly navigation, secure payment options, and prompt delivery services.",
+    ],
+    challenges: [
+      "Implementing multi-currency pricing that recalculates in real time across cart, checkout, and order history without stale values.",
+      "Integrating eCourier and DHL shipping APIs with dynamic rate calculation based on product weight and destination.",
+      "Managing a large product catalog with pagination, lazy loading, and infinite scroll simultaneously without performance degradation.",
+      "Handling complex cart state with multiple product variants (color, size combinations) persisted across sessions.",
+      "Synchronizing payment status from SSLCOMMERZ with order state in real time to prevent order fulfillment errors.",
+    ],
+    improvements: [
+      "Introduce a wishlist-to-cart conversion funnel with email reminders for abandoned wishlists.",
+      "Add AI-powered product recommendations based on browsing and purchase history.",
+      "Build a mobile app using React Native to extend the shopping experience.",
+      "Implement a loyalty points system to improve customer retention.",
+      "Add real-time inventory tracking to prevent overselling on high-demand items.",
     ],
   },
   "mave-cms": {

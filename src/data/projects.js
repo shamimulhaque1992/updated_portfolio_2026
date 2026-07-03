@@ -1,15 +1,15 @@
-import websureThumb  from "@/assets/images/projectImages/websure-internal/web_int_bnr.png";
-import aranyaThumb   from "@/assets/images/projectImages/aranya/aranya_shop_new-1-cut.png";
-import gainThumb     from "@/assets/images/projectImages/gain-io/mockup-1.webp";
-import payrunThumb   from "@/assets/images/projectImages/payrun/Browser.png.webp";
+import websureThumb from "@/assets/images/projectImages/websure-internal/web_int_bnr.png";
+import aranyaThumb from "@/assets/images/projectImages/aranya/aranya_shop_new-1-cut.png";
+import gainThumb from "@/assets/images/projectImages/gain-io/mockup-1.webp";
+import payrunThumb from "@/assets/images/projectImages/payrun/Browser.png.webp";
 import easydeskThumb from "@/assets/images/projectImages/easy-desk/More-Support-Requests-With-AI-Powered-Agents.webp";
-import maveThumb     from "@/assets/images/projectImages/mave/thumb-update.jpeg";
-import uhlThumb      from "@/assets/images/projectImages/uhl/landingImg.png";
+import maveThumb from "@/assets/images/projectImages/mave/thumb-update.jpeg";
+import uhlThumb from "@/assets/images/projectImages/uhl/landingImg.png";
 import almuslimThumb from "@/assets/images/projectImages/al-muslim/landing.png";
-import slicThumb     from "@/assets/images/projectImages/slic/Home.png";
-import aygazThumb    from "@/assets/images/projectImages/aygaz/landing.png";
-import umsThumb      from "@/assets/images/projectImages/ums/ums-hat-tall.jpg";
-import compThumb     from "@/assets/images/projectImages/cs-compsolution/landing.png";
+import slicThumb from "@/assets/images/projectImages/slic/Home.png";
+import aygazThumb from "@/assets/images/projectImages/aygaz/landing.png";
+import umsThumb from "@/assets/images/projectImages/ums/ums-hat-tall.jpg";
+import compThumb from "@/assets/images/projectImages/cs-compsolution/landing.png";
 
 export const projects = [
   {
@@ -19,7 +19,8 @@ export const projects = [
     period: "April 2026 – Present",
     liveUrl: null,
     githubUrl: null,
-    description: "An internal agency management platform with session-based auth, RBAC-driven UI, Clockify integration for retainer tracking, and a centralized proxy layer for route protection.",
+    description:
+      "An internal agency management platform with session-based auth, RBAC-driven UI, Clockify integration for retainer tracking, and a centralized proxy layer for route protection.",
     thumb: websureThumb,
     points: [
       "Session-based auth with RBAC-driven UI access control across internal and client portal surfaces.",
@@ -27,24 +28,16 @@ export const projects = [
       "Centralized proxy layer for audience-aware route protection.",
       "Built reusable component system with shadcn/ui, cutting UI development time across the platform.",
     ],
-    stack: ["Next.js", "TypeScript", "SWR", "RBAC", "Server Actions", "shadcn/ui"],
-  },
-  {
-    slug: "aranya",
-    title: "Aranya — B2C Ecommerce",
-    category: "Ecommerce Platform",
-    period: "Oct 2022 – Apr 2025",
-    liveUrl: "https://aranya.com.bd",
-    githubUrl: null,
-    description: "Developed an engaging e-commerce platform for Aranya, a renowned Bangladesh clothing brand. Leveraged Next.js, Material UI, Redux, and Firebase for front-end, with Laravel and MySQL for robust back-end functionality. Seamlessly integrates sales of men's, women's, children's clothing, and jewelry.",
-    thumb: aranyaThumb,
-    points: [
-      "Full frontend ownership for a clothing brand serving 1000+ daily active users.",
-      "Multi-currency support, eCourier & DHL shipping integrations, and geolocation.",
-      "Secure payment flow that boosted checkout conversion by 25%.",
+    stack: [
+      "Next.js",
+      "TypeScript",
+      "SWR",
+      "RBAC",
+      "Server Actions",
+      "shadcn/ui",
     ],
-    stack: ["Next.js", "Redux", "RTK Query", "Material UI", "Firebase"],
   },
+
   {
     slug: "gain-io",
     title: "Gain.io — CRM SaaS",
@@ -52,7 +45,8 @@ export const projects = [
     period: "Apr 2025 – Mar 2026",
     liveUrl: "https://gain.io/",
     githubUrl: null,
-    description: "A multi-tenant CRM SaaS with RBAC, dynamic billing, user management, and notification modules — built with GraphQL and owned end-to-end as the main frontend developer.",
+    description:
+      "A multi-tenant CRM SaaS with RBAC, dynamic billing, user management, and notification modules — built with GraphQL and owned end-to-end as the main frontend developer.",
     thumb: gainThumb,
     points: [
       "Main developer — owned frontend architecture and end-to-end delivery for a multi-tenant SaaS.",
@@ -68,7 +62,8 @@ export const projects = [
     period: "Apr 2025 – Mar 2026",
     liveUrl: "https://payrun.app/",
     githubUrl: null,
-    description: "An HRM platform with role-based access for employees, managers, and HR admins — covering leave management, time tracking, hiring pipelines, and insights dashboards via GraphQL.",
+    description:
+      "An HRM platform with role-based access for employees, managers, and HR admins — covering leave management, time tracking, hiring pipelines, and insights dashboards via GraphQL.",
     thumb: payrunThumb,
     points: [
       "Role-based access and employee management workflows for scalable HR operations.",
@@ -83,7 +78,8 @@ export const projects = [
     period: "Apr 2025 – Mar 2026",
     liveUrl: "https://easydesk.app/",
     githubUrl: null,
-    description: "A customer support ticketing SaaS with Canned Responses, Knowledge Base, and Feedback Management modules — built to improve support team efficiency and response quality.",
+    description:
+      "A customer support ticketing SaaS with Canned Responses, Knowledge Base, and Feedback Management modules — built to improve support team efficiency and response quality.",
     thumb: easydeskThumb,
     points: [
       "Built Canned Responses and Knowledge Base, improving team reply efficiency by 30%.",
@@ -92,13 +88,31 @@ export const projects = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
   },
   {
+    slug: "aranya",
+    title: "Aranya — B2C Ecommerce",
+    category: "Ecommerce Platform",
+    period: "Oct 2022 – Apr 2025",
+    liveUrl: "https://aranya.com.bd",
+    githubUrl: null,
+    description:
+      "Developed an engaging e-commerce platform for Aranya, a renowned Bangladesh clothing brand. Leveraged Next.js, Material UI, Redux, and Firebase for front-end, with Laravel and MySQL for robust back-end functionality. Seamlessly integrates sales of men's, women's, children's clothing, and jewelry.",
+    thumb: aranyaThumb,
+    points: [
+      "Full frontend ownership for a clothing brand serving 1000+ daily active users.",
+      "Multi-currency support, eCourier & DHL shipping integrations, and geolocation.",
+      "Secure payment flow that boosted checkout conversion by 25%.",
+    ],
+    stack: ["Next.js", "Redux", "RTK Query", "Material UI", "Firebase"],
+  },
+  {
     slug: "mave-cms",
     title: "Mave CMS",
     category: "Headless CMS",
     period: "Dec 2023 – Ongoing",
     liveUrl: "https://mave.etherstaging.xyz/",
     githubUrl: null,
-    description: "Introducing our headless CMS built on Next.js and Ant Design for sleek front-end experiences. Powered by Laravel and MySQL on the back end for seamless content management. Simplify your workflow and elevate your web projects with our powerful solution.",
+    description:
+      "Introducing our headless CMS built on Next.js and Ant Design for sleek front-end experiences. Powered by Laravel and MySQL on the back end for seamless content management. Simplify your workflow and elevate your web projects with our powerful solution.",
     thumb: maveThumb,
     points: [
       "Upload media items like images, videos, PDFs, etc.",
@@ -116,7 +130,8 @@ export const projects = [
     period: "Nov 2022 – Ongoing",
     liveUrl: "https://uhlbd.com/",
     githubUrl: null,
-    description: "Crafted an intuitive medical website for United Hospital Limited, Bangladesh, using React.js with Bootstrap for frontend excellence. Integrated Swiper.js for dynamic content display and AOS for captivating animations, ensuring a seamless and engaging user experience.",
+    description:
+      "Crafted an intuitive medical website for United Hospital Limited, Bangladesh, using React.js with Bootstrap for frontend excellence. Integrated Swiper.js for dynamic content display and AOS for captivating animations, ensuring a seamless and engaging user experience.",
     thumb: uhlThumb,
     points: [
       "Department selection via interactive male/female body diagrams.",
@@ -133,7 +148,8 @@ export const projects = [
     period: "Mar 2024 – Apr 2024",
     liveUrl: null,
     githubUrl: null,
-    description: "Crafted a dynamic website for Al Muslim Group, integrating Next.js and Bootstrap for seamless UI/UX. Employed AOS and React-animate-on-scroll for engaging animations. Delivered a modern digital presence with Next.js proficiency at the forefront.",
+    description:
+      "Crafted a dynamic website for Al Muslim Group, integrating Next.js and Bootstrap for seamless UI/UX. Employed AOS and React-animate-on-scroll for engaging animations. Delivered a modern digital presence with Next.js proficiency at the forefront.",
     thumb: almuslimThumb,
     points: [
       "Company profile, certificates, machinery, trusted partners, audit, training, CSR, sister concerns, and gallery.",
@@ -149,7 +165,8 @@ export const projects = [
     period: "Feb 2023 – Apr 2023",
     liveUrl: null,
     githubUrl: null,
-    description: "Crafted a user-friendly insurance website integrating Next.js, Material UI, and SwiperJS. Developed a precise premium calculator for accurate insurance estimations. Included sections for company details, board members, partners, and policies.",
+    description:
+      "Crafted a user-friendly insurance website integrating Next.js, Material UI, and SwiperJS. Developed a precise premium calculator for accurate insurance estimations. Included sections for company details, board members, partners, and policies.",
     thumb: slicThumb,
     points: [
       "Premium calculator for accurate insurance amount estimations based on user input.",
@@ -166,7 +183,8 @@ export const projects = [
     period: "Oct 2022 – May 2023",
     liveUrl: "https://unitedaygaz.com/",
     githubUrl: null,
-    description: "Design and develop UnitedAygaz's dual-language website using Next.js, Redux, and Bootstrap, featuring product details, order management, dealership forms, and a user-friendly interface for optimal performance.",
+    description:
+      "Design and develop UnitedAygaz's dual-language website using Next.js, Redux, and Bootstrap, featuring product details, order management, dealership forms, and a user-friendly interface for optimal performance.",
     thumb: aygazThumb,
     points: [
       "Dual-language support (English & Bengali) for wider accessibility.",
@@ -181,9 +199,12 @@ export const projects = [
     title: "University Management System",
     category: "API Server (Back-end)",
     period: "May 2023 – Dec 2023",
-    liveUrl: "https://university-auth-service-backend-server.vercel.app/api/v1/students",
-    githubUrl: "https://github.com/shamimulhaque1992/university_managemetn_system_AUTH_service/tree/main",
-    description: "This university management system API, built with Express.js, MongoDB, Mongoose, and TypeScript, provides a robust backend for managing students, faculty, courses, and administrative tasks. Leverages secure endpoints for CRUD operations, ensuring type safety and scalability.",
+    liveUrl:
+      "https://university-auth-service-backend-server.vercel.app/api/v1/students",
+    githubUrl:
+      "https://github.com/shamimulhaque1992/university_managemetn_system_AUTH_service/tree/main",
+    description:
+      "This university management system API, built with Express.js, MongoDB, Mongoose, and TypeScript, provides a robust backend for managing students, faculty, courses, and administrative tasks. Leverages secure endpoints for CRUD operations, ensuring type safety and scalability.",
     thumb: umsThumb,
     points: [
       "Creation and management of users as students, faculty, and administrators.",
@@ -200,8 +221,10 @@ export const projects = [
     category: "Full Stack B2B Website",
     period: "May 2022 – Sep 2022",
     liveUrl: "https://comp-solution-ab5ea.web.app/",
-    githubUrl: "https://github.com/shamimulhaque1992/CompSolution_client_fullstack-react-node/tree/main",
-    description: "Cs - Compsolution represents a comprehensive approach to PC component retail, leveraging React.js, Express.js, MongoDB, Tailwind, and Firebase. The platform ensures seamless user experience and robust backend support, providing customers with the latest in hardware solutions.",
+    githubUrl:
+      "https://github.com/shamimulhaque1992/CompSolution_client_fullstack-react-node/tree/main",
+    description:
+      "Cs - Compsolution represents a comprehensive approach to PC component retail, leveraging React.js, Express.js, MongoDB, Tailwind, and Firebase. The platform ensures seamless user experience and robust backend support, providing customers with the latest in hardware solutions.",
     thumb: compThumb,
     points: [
       "Firebase authentication with Google login and JWT for email login.",
@@ -209,6 +232,14 @@ export const projects = [
       "Admin dashboard for order management and product management.",
       "User profile with order history and status tracking.",
     ],
-    stack: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "Stripe", "Tailwind CSS"],
+    stack: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Firebase",
+      "Stripe",
+      "Tailwind CSS",
+    ],
   },
 ];

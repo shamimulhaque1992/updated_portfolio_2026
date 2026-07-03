@@ -401,8 +401,9 @@ export const siteConfig = {
     "Over 3 years, I've gone from writing my first component to being the main developer behind a CRM SaaS — owning the architecture, the decisions, and the delivery. Along the way, I built the full frontend of an ecommerce platform serving 1000+ daily users, led the core features of a headless CMS, and contributed meaningfully to an HRM and a ticketing platform. I care about code that scales, interfaces that feel right, and work that actually ships.",
   heroHighlights: ["Next.js", "PostgreSQL", "Express.js", "Prisma"],
   socialLinks: {
-    github: "#",
-    linkedin: "#",
-    facebook: "#",
+    github: "https://github.com/shamimulhaque1992",
+    linkedin: "https://www.linkedin.com/in/khandoker-shamimul-haque/",
+    twitter: "https://twitter.com/shamimul_hq1992",
+    facebook: "https://www.facebook.com/khandokershamimulhaque.kashfee.58",
   },
 };

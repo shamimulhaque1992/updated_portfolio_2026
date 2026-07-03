@@ -12,6 +12,7 @@ import {
   Send,
   CheckCircle2,
   AlertCircle,
+  Facebook,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 
@@ -201,10 +202,10 @@ export function Contact() {
             <div className="col-span-12 lg:col-span-6 grid grid-cols-2 gap-4">
               {[
                 {
-                  label: "Email",
-                  icon: Mail,
-                  href: "mailto:khandokershamimulhaque@gmail.com",
-                  value: "khandokershamimulhaque\n@gmail.com",
+                  label: "FaceBook",
+                  icon: Facebook,
+                  href: "https://www.facebook.com/khandokershamimulhaque.kashfee.58",
+                  value: "khandokershamimulhaque.\nkashfee.58",
                 },
                 {
                   label: "LinkedIn",

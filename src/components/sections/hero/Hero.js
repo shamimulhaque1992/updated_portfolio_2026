@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, Facebook, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDown, Facebook, Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -135,6 +135,15 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
                 className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)] shadow-sm transition-colors duration-300"
               >
                 <Linkedin className="h-5 w-5" />
+              </motion.a>
+              <motion.a
+                href={siteConfig.socialLinks.twitter}
+                target="_blank"
+                rel="noreferrer"
+                whileHover={{ y: -2, scale: 1.05 }}
+                className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--surface)] text-[var(--foreground)] shadow-sm transition-colors duration-300"
+              >
+                <Twitter className="h-5 w-5" />
               </motion.a>
               <motion.a
                 href={siteConfig.socialLinks.facebook}

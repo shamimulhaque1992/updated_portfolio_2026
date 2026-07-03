@@ -1,4 +1,5 @@
 import { Navbar } from "@/components/layout/navbar";
+import { Footer } from "@/components/layout/Footer";
 import { Hero } from "@/components/sections/hero/Hero";
 import { About } from "@/components/sections/about";
 import { Experience } from "@/components/sections/experience";
@@ -37,6 +38,7 @@ export default function Home() {
       <Education />
       <Awards />
       <Contact />
+      <Footer />
     </main>
   );
 }

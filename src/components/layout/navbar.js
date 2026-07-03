@@ -135,19 +135,27 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
-  // active section
+  // active section — fires on the section whose top edge is nearest the viewport top
   useEffect(() => {
-    const obs = navItems.map(({ slug }) => {
-      const el = document.getElementById(slug);
-      if (!el) return null;
-      const o = new IntersectionObserver(
-        ([e]) => { if (e.isIntersecting) setActiveSlug(slug); },
-        { threshold: 0.3 }
-      );
-      o.observe(el);
-      return o;
-    });
-    return () => obs.forEach((o) => o?.disconnect());
+    const handleScroll = () => {
+      const scrollY = window.scrollY + window.innerHeight * 0.25;
+      let closest = navItems[0].slug;
+      let closestDist = Infinity;
+      navItems.forEach(({ slug }) => {
+        const el = document.getElementById(slug);
+        if (!el) return;
+        const top = el.getBoundingClientRect().top + window.scrollY;
+        const dist = Math.abs(top - scrollY);
+        if (dist < closestDist) {
+          closestDist = dist;
+          closest = slug;
+        }
+      });
+      setActiveSlug(closest);
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   // desktop pill: measure available width for nav items

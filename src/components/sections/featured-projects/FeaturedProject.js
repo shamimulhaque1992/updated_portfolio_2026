@@ -197,11 +197,8 @@ export function FeaturedProject() {
                 </div>
               </div>
 
-              {/* divider vertical */}
-              <div className="hidden lg:block w-px bg-[var(--border)]" />
-
               {/* stack */}
-              <div className="p-8 lg:p-10 space-y-6 border-t border-[var(--border)] lg:border-t-0">
+              <div className="p-8 lg:p-10 space-y-6 border-t border-[var(--border)] lg:border-t-0 lg:border-l lg:border-l-[var(--border)]">
                 <p className="text-xs uppercase tracking-[0.35em] text-[var(--foreground-muted)]">
                   Tech Stack
                 </p>

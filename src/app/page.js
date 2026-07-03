@@ -5,6 +5,7 @@ import { Experience } from "@/components/sections/experience";
 import { Skills } from "@/components/sections/skills";
 import { FeaturedProject } from "@/components/sections/featured-projects/FeaturedProject";
 import { FeaturedProjects } from "@/components/sections/featured-projects/FeaturedProjects";
+import { Education } from "@/components/sections/education";
 import { Services } from "@/components/sections/services";
 import { siteConfig, aboutData, experienceData, skillsData } from "@/lib/resume";
 
@@ -31,6 +32,7 @@ export default function Home() {
       <FeaturedProjects />
       <FeaturedProject />
       <Services />
+      <Education />
     </main>
   );
 }

@@ -7,7 +7,6 @@ import {
   CheckCircle2,
   ChevronUp,
   ChevronDown,
-  ImageOff,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
@@ -72,6 +71,7 @@ export function FeaturedProject() {
                     alt={gainioProject.title}
                     fill
                     className="object-cover"
+                    placeholder="blur"
                   />
                 </div>
                 {/* overlay gradient */}

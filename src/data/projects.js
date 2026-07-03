@@ -1,8 +1,8 @@
-import websureThumb from "@/assets/images/projectImages/mave/thumb-update.jpeg";
-import aranyaThumb from "@/assets/images/projectImages/aranya/aranya_shop_new-thumb.png";
-import gainThumb from "@/assets/images/projectImages/mave/thumb.jpeg";
-import payrunThumb from "@/assets/images/projectImages/cs-compsolution/landing.png";
-import easydeskThumb from "@/assets/images/projectImages/cs-compsolution/admin-dashboard.png";
+import websureThumb  from "@/assets/images/projectImages/websure-internal/web_int_bnr.png";
+import aranyaThumb   from "@/assets/images/projectImages/aranya/aranya_shop_new-1-cut.png";
+import gainThumb     from "@/assets/images/projectImages/gain-io/mockup-1.webp";
+import payrunThumb   from "@/assets/images/projectImages/payrun/Browser.png.webp";
+import easydeskThumb from "@/assets/images/projectImages/easy-desk/More-Support-Requests-With-AI-Powered-Agents.webp";
 
 export const projects = [
   {

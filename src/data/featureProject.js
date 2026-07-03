@@ -1,3 +1,5 @@
+import gainIoMockup from "@/assets/images/projectImages/gain-io/mockup-1.webp";
+
 export const gainioProject = {
   slug: "gain-io",
   title: "Gain.io",
@@ -6,7 +8,7 @@ export const gainioProject = {
   role: "Main Frontend Developer",
   period: "April 2025 – March 2026",
   company: "Gain Solutions",
-  img_url:"/assets/images/projectImages/gain-io/mockup-1.webp",
+  img_url: gainIoMockup,
   liveUrl: "https://gain.io",
   stack: [
     "Next.js 15",

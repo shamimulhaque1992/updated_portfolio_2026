@@ -75,7 +75,10 @@ export function Contact() {
   const onSubmit = async (e) => {
     e.preventDefault();
     const errs = validate();
-    if (Object.keys(errs).length) { setErrors(errs); return; }
+    if (Object.keys(errs).length) {
+      setErrors(errs);
+      return;
+    }
 
     setStatus("loading");
     try {
@@ -127,7 +130,6 @@ export function Contact() {
 
           {/* 12-col grid */}
           <motion.div variants={fadeInUp} className="grid grid-cols-12 gap-4">
-
             {/* ── ROW 1 ── */}
 
             {/* Availability card — col 1–6 */}
@@ -143,11 +145,15 @@ export function Contact() {
                   </p>
                 </div>
                 <p className="text-sm leading-7 text-[var(--foreground-muted)] font-light">
-                  I&apos;m a full-stack developer with 3+ years of experience building scalable web applications.
-                  Open to full-time roles, part-time engagements, contract work, and freelance projects — remote or on-site.
+                  I&apos;m a full-stack developer with 3+ years of experience
+                  building scalable web applications. Open to full-time roles,
+                  part-time engagements, contract work, and freelance projects —
+                  remote or on-site.
                 </p>
                 <p className="text-sm leading-7 text-[var(--foreground-muted)] font-light">
-                  Whether you have a product idea, need an extra hand on your team, or just want to talk tech — feel free to reach out. I&apos;ll get back to you within 24 hours.
+                  Whether you have a product idea, need an extra hand on your
+                  team, or just want to talk tech — feel free to reach out.
+                  I&apos;ll get back to you within 24 hours.
                 </p>
               </div>
 
@@ -155,26 +161,38 @@ export function Contact() {
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   {[
                     { label: "Experience", value: "3+ Years" },
-                    { label: "Projects",   value: "10+ Delivered" },
-                    { label: "Stack",      value: "Typescript . Next · Express · PostgreSQL" },
-                    { label: "Location",   value: "Dhaka, BD · Remote" },
+                    { label: "Projects", value: "10+ Delivered" },
+                    {
+                      label: "Stack",
+                      value: "Typescript . Next · Express · PostgreSQL",
+                    },
+                    { label: "Location", value: "Dhaka, BD · Remote" },
                   ].map(({ label, value }) => (
-                    <div key={label} className="rounded-xl border border-[var(--border)] bg-[var(--background)] px-3 py-2">
-                      <p className="text-[10px] uppercase tracking-[0.15em] text-[var(--foreground-muted)]">{label}</p>
-                      <p className="mt-0.5 font-medium text-[var(--foreground)]">{value}</p>
+                    <div
+                      key={label}
+                      className="rounded-xl border border-[var(--border)] bg-[var(--background)] px-3 py-2"
+                    >
+                      <p className="text-[10px] uppercase tracking-[0.15em] text-[var(--foreground-muted)]">
+                        {label}
+                      </p>
+                      <p className="mt-0.5 font-medium text-[var(--foreground)]">
+                        {value}
+                      </p>
                     </div>
                   ))}
                 </div>
 
                 <div className="flex flex-wrap gap-2">
-                  {["Full-time", "Part-time", "Contract", "Freelance"].map((tag) => (
-                    <span
-                      key={tag}
-                      className="rounded-full border border-[var(--border)] bg-[var(--background)] px-3 py-0.5 text-xs font-medium text-[var(--foreground-muted)]"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  {["Full-time", "Part-time", "Contract", "Freelance"].map(
+                    (tag) => (
+                      <span
+                        key={tag}
+                        className="rounded-full border border-[var(--border)] bg-[var(--background)] px-3 py-0.5 text-xs font-medium text-[var(--foreground-muted)]"
+                      >
+                        {tag}
+                      </span>
+                    ),
+                  )}
                 </div>
               </div>
             </div>
@@ -182,10 +200,30 @@ export function Contact() {
             {/* 4 social square cards — col 7–12, 2×2 grid */}
             <div className="col-span-12 lg:col-span-6 grid grid-cols-2 gap-4">
               {[
-                { label: "Email",    icon: Mail,     href: "mailto:khandokershamimulhaque@gmail.com",               value: "khandokershamimulhaque\n@gmail.com" },
-                { label: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/khandoker-shamimul-haque/", value: "khandoker-shamimul\n-haque" },
-                { label: "GitHub",   icon: Github,   href: "https://github.com/shamimulhaque1992",                  value: "shamimulhaque1992" },
-                { label: "Twitter",  icon: Twitter,  href: "https://twitter.com/shamimul_hq1992",                   value: "shamimul_hq1992" },
+                {
+                  label: "Email",
+                  icon: Mail,
+                  href: "mailto:khandokershamimulhaque@gmail.com",
+                  value: "khandokershamimulhaque\n@gmail.com",
+                },
+                {
+                  label: "LinkedIn",
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/khandoker-shamimul-haque/",
+                  value: "khandoker-shamimul\n-haque",
+                },
+                {
+                  label: "GitHub",
+                  icon: Github,
+                  href: "https://github.com/shamimulhaque1992",
+                  value: "shamimulhaque1992",
+                },
+                {
+                  label: "Twitter",
+                  icon: Twitter,
+                  href: "https://twitter.com/shamimul_hq1992",
+                  value: "shamimul_hq1992",
+                },
               ].map(({ label, icon: Icon, href, value }) => (
                 <a
                   key={label}
@@ -195,11 +233,18 @@ export function Contact() {
                   className="group flex flex-col items-center justify-center gap-2 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-4 shadow-sm text-center transition-all duration-300 hover:border-[var(--primary)]/50 hover:bg-[var(--primary)]/5"
                 >
                   <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[var(--primary)]/10 transition-colors duration-300 group-hover:bg-[var(--primary)]/20">
-                    <Icon className="h-5 w-5" style={{ color: "var(--primary)" }} />
+                    <Icon
+                      className="h-5 w-5"
+                      style={{ color: "var(--primary)" }}
+                    />
                   </span>
                   <div>
-                    <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--foreground-muted)]">{label}</p>
-                    <p className="mt-0.5 text-xs font-medium text-[var(--foreground)] leading-tight whitespace-pre-line">{value}</p>
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--foreground-muted)]">
+                      {label}
+                    </p>
+                    <p className="mt-0.5 text-xs font-medium text-[var(--foreground)] leading-tight whitespace-pre-line">
+                      {value}
+                    </p>
                   </div>
                 </a>
               ))}
@@ -220,11 +265,18 @@ export function Contact() {
                     className="flex flex-col items-center justify-center gap-4 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-10 shadow-sm text-center"
                   >
                     <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[var(--primary)]/10">
-                      <CheckCircle2 className="h-6 w-6" style={{ color: "var(--primary)" }} />
+                      <CheckCircle2
+                        className="h-6 w-6"
+                        style={{ color: "var(--primary)" }}
+                      />
                     </span>
                     <div className="space-y-1">
-                      <p className="font-semibold text-[var(--foreground)]">Message sent!</p>
-                      <p className="text-sm text-[var(--foreground-muted)]">I&apos;ll get back to you as soon as possible.</p>
+                      <p className="font-semibold text-[var(--foreground)]">
+                        Message sent!
+                      </p>
+                      <p className="text-sm text-[var(--foreground-muted)]">
+                        I&apos;ll get back to you as soon as possible.
+                      </p>
                     </div>
                     <button
                       onClick={() => setStatus(null)}
@@ -283,7 +335,9 @@ export function Contact() {
                         onChange={onChange}
                         placeholder="Your message…"
                         rows={4}
-                        className={cls(errors.message) + " resize-none rounded-2xl"}
+                        className={
+                          cls(errors.message) + " resize-none rounded-2xl"
+                        }
                       />
                     </Field>
 
@@ -297,8 +351,7 @@ export function Contact() {
                     <button
                       type="submit"
                       disabled={status === "loading"}
-                      className="mt-auto inline-flex w-full items-center justify-center gap-2 rounded-full px-6 py-2.5 text-sm font-semibold transition-all duration-200 disabled:opacity-60"
-                      style={{ background: "var(--primary)", color: "var(--background)" }}
+                      className="mt-auto inline-flex w-full items-center justify-center gap-1 rounded-full border border-[var(--primary)]/40 bg-[#0077c0] px-2 py-3 text-[5px] font-semibold text-white transition-colors duration-200 hover:bg-[#0069a8] disabled:opacity-60 dark:bg-[#697565] dark:text-[#ffffff] dark:hover:bg-[#5a6357]"
                     >
                       <Send className="h-4 w-4" />
                       {status === "loading" ? "Sending…" : "Send Message"}
@@ -317,20 +370,32 @@ export function Contact() {
                 <div className="space-y-5">
                   <div className="flex items-start gap-3">
                     <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/10">
-                      <Phone className="h-3.5 w-3.5" style={{ color: "var(--primary)" }} />
+                      <Phone
+                        className="h-3.5 w-3.5"
+                        style={{ color: "var(--primary)" }}
+                      />
                     </span>
                     <div>
-                      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--foreground-muted)]">Phone</p>
-                      <p className="mt-0.5 text-sm font-medium text-[var(--foreground)]">+880 1521-547 789</p>
+                      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--foreground-muted)]">
+                        Phone
+                      </p>
+                      <p className="mt-0.5 text-sm font-medium text-[var(--foreground)]">
+                        +880 1521-547 789
+                      </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
                     <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/10">
-                      <Mail className="h-3.5 w-3.5" style={{ color: "var(--primary)" }} />
+                      <Mail
+                        className="h-3.5 w-3.5"
+                        style={{ color: "var(--primary)" }}
+                      />
                     </span>
                     <div>
-                      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--foreground-muted)]">Email</p>
+                      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--foreground-muted)]">
+                        Email
+                      </p>
                       <p className="mt-0.5 text-sm font-medium text-[var(--foreground)] break-all">
                         khandokershamimulhaque@gmail.com
                       </p>
@@ -339,12 +404,19 @@ export function Contact() {
 
                   <div className="flex items-start gap-3">
                     <span className="mt-0.5 inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--primary)]/10">
-                      <MapPin className="h-3.5 w-3.5" style={{ color: "var(--primary)" }} />
+                      <MapPin
+                        className="h-3.5 w-3.5"
+                        style={{ color: "var(--primary)" }}
+                      />
                     </span>
                     <div>
-                      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--foreground-muted)]">Address</p>
+                      <p className="text-[10px] uppercase tracking-[0.2em] text-[var(--foreground-muted)]">
+                        Address
+                      </p>
                       <p className="mt-0.5 text-sm font-medium text-[var(--foreground)] leading-relaxed">
-                        Uttar Badda, Dhaka<br />Bangladesh — 1212
+                        Uttar Badda, Dhaka
+                        <br />
+                        Bangladesh — 1212
                       </p>
                     </div>
                   </div>
@@ -357,13 +429,15 @@ export function Contact() {
                 </p>
                 <p className="text-sm text-[var(--foreground-muted)] font-light">
                   Usually within{" "}
-                  <span className="font-semibold" style={{ color: "var(--primary)" }}>
+                  <span
+                    className="font-semibold"
+                    style={{ color: "var(--primary)" }}
+                  >
                     24 hours
                   </span>
                 </p>
               </div>
             </div>
-
           </motion.div>
         </motion.div>
       </Container>

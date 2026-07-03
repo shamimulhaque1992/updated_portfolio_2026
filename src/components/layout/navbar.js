@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import {
   Terminal, Home, FolderGit2, Cpu, Briefcase,
   User, Mail, MoreHorizontal, Star, Wrench, GraduationCap, Award,
@@ -62,7 +63,7 @@ function ScrambleName() {
 }
 
 // ── shared overflow popup ──────────────────────────────────────────────────
-function OverflowMenu({ overflowItems, activeSlug, resumeUrl, onClose, align = "right", direction = "up", showControls = true }) {
+function OverflowMenu({ overflowItems, activeSlug, resumeUrl, onClose, align = "right", direction = "up", showControls = true, onNavClick }) {
   return (
     <div
       className={cn(
@@ -76,12 +77,11 @@ function OverflowMenu({ overflowItems, activeSlug, resumeUrl, onClose, align = "
         const Icon = navIcons[item.slug] ?? Home;
         const isActive = activeSlug === item.slug;
         return (
-          <a
+          <button
             key={item.id}
-            href={`#${item.slug}`}
-            onClick={onClose}
+            onClick={() => { onNavClick(item.slug); onClose(); }}
             className={cn(
-              "flex items-center gap-3 px-4 py-3 text-sm font-medium transition",
+              "flex w-full items-center gap-3 px-4 py-3 text-sm font-medium transition",
               isActive
                 ? "bg-[var(--primary)]/10 text-[var(--primary)]"
                 : "text-[var(--foreground)] hover:bg-[var(--primary)]/10 hover:text-[var(--primary)]"
@@ -89,7 +89,7 @@ function OverflowMenu({ overflowItems, activeSlug, resumeUrl, onClose, align = "
           >
             <Icon className="h-4 w-4 shrink-0" />
             {item.title}
-          </a>
+          </button>
         );
       })}
       {overflowItems.length > 0 && <div className="mx-4 border-t border-[var(--border)]" />}
@@ -115,6 +115,21 @@ function OverflowMenu({ overflowItems, activeSlug, resumeUrl, onClose, align = "
 }
 
 export function Navbar() {
+  const pathname = usePathname();
+  const router = useRouter();
+  const isHome = pathname === "/";
+
+  // Navigate to a section: on home scroll directly, on other pages push then scroll after navigation
+  const handleNav = useCallback((slug) => {
+    if (isHome) {
+      document.getElementById(slug)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // Store target slug so we can scroll after the home page mounts
+      sessionStorage.setItem("scrollTo", slug);
+      router.push("/");
+    }
+  }, [isHome, router]);
+
   const [scrolled, setScrolled]         = useState(false);
   const [activeSlug, setActiveSlug]     = useState("homeIntro");
   const [desktopCount, setDesktopCount] = useState(navItems.length);
@@ -135,8 +150,15 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
-  // active section — fires on the section whose top edge is nearest the viewport top
+  // active section — on home track scroll position, on other pages match by pathname
   useEffect(() => {
+    if (!isHome) {
+      // Map known pathnames to their nav slug
+      const pathSlugMap = { "/projects": "landingProjects" };
+      setActiveSlug(pathSlugMap[pathname] ?? "");
+      return;
+    }
+
     const handleScroll = () => {
       const scrollY = window.scrollY + window.innerHeight * 0.25;
       let closest = navItems[0].slug;
@@ -156,7 +178,7 @@ export function Navbar() {
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isHome, pathname]);
 
   // desktop pill: measure available width for nav items
   useEffect(() => {
@@ -228,12 +250,12 @@ export function Navbar() {
         <div className="flex items-center gap-4">
 
           {/* Name */}
-          <Link
-            href="#homeIntro"
+          <button
+            onClick={() => handleNav("homeIntro")}
             className="shrink-0 font-mono text-sm font-bold text-[var(--foreground)] transition-opacity hover:opacity-70"
           >
             <ScrambleName />
-          </Link>
+          </button>
 
           {/* Nav pill — flex-1 so it fills remaining space */}
           <div
@@ -242,9 +264,9 @@ export function Navbar() {
             style={{ background: pillBg, boxShadow: "var(--nav-shadow)" }}
           >
             {desktopVisible.map((item) => (
-              <a
+              <button
                 key={item.id}
-                href={`#${item.slug}`}
+                onClick={() => handleNav(item.slug)}
                 className={cn(
                   "whitespace-nowrap rounded-full px-3 py-1.5 transition",
                   activeSlug === item.slug
@@ -253,7 +275,7 @@ export function Navbar() {
                 )}
               >
                 {item.title}
-              </a>
+              </button>
             ))}
 
             {/* Desktop three-dot */}
@@ -278,6 +300,7 @@ export function Navbar() {
                   align="right"
                   direction="down"
                   showControls={false}
+                  onNavClick={handleNav}
                 />
               )}
             </div>
@@ -309,9 +332,9 @@ export function Navbar() {
         className="fixed left-0 right-0 top-0 z-50 flex items-center px-5 py-3 backdrop-blur-md lg:hidden"
         style={{ background: "var(--nav-bg-scrolled)", boxShadow: "var(--nav-shadow)" }}
       >
-        <Link href="#homeIntro" className="font-mono text-xs font-bold text-[var(--foreground)]">
+        <button onClick={() => handleNav("homeIntro")} className="font-mono text-xs font-bold text-[var(--foreground)]">
           <ScrambleName />
-        </Link>
+        </button>
       </header>
 
       {/* ══════════════════════════════════════
@@ -334,10 +357,9 @@ export function Navbar() {
             const Icon = navIcons[item.slug] ?? Home;
             const isActive = activeSlug === item.slug;
             return (
-              <a
+              <button
                 key={item.id}
-                href={`#${item.slug}`}
-                onClick={() => setMobileOpen(false)}
+                onClick={() => { handleNav(item.slug); setMobileOpen(false); }}
                 className={cn(
                   "flex flex-col items-center gap-0.5 rounded-full px-2 py-2 transition-all duration-200",
                   isActive
@@ -347,7 +369,7 @@ export function Navbar() {
               >
                 <Icon className={cn("h-5 w-5 transition-transform duration-200", isActive && "scale-110")} />
                 <span className="text-[9px] font-medium leading-none">{item.title}</span>
-              </a>
+              </button>
             );
           })}
 
@@ -376,6 +398,7 @@ export function Navbar() {
                 resumeUrl={siteConfig.resumeUrl}
                 onClose={() => setMobileOpen(false)}
                 align="right"
+                onNavClick={handleNav}
               />
             )}
           </div>

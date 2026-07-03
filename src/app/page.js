@@ -11,13 +11,15 @@ import { Awards } from "@/components/sections/awards";
 import { Services } from "@/components/sections/services";
 import { Contact } from "@/components/sections/contact/Contact";
 import { siteConfig, aboutData, experienceData, skillsData } from "@/lib/resume";
+import { ScrollToSection } from "@/components/layout/ScrollToSection";
 
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-background text-foreground">
+      <ScrollToSection />
       <Navbar />
       <Hero
-        greeting="Crafting elegant interfaces for modern web applications"
+        greeting="Full-Stack Engineering, Sharpened by AI."
         name={siteConfig.name}
         role={siteConfig.role}
         summary={siteConfig.heroSummary}

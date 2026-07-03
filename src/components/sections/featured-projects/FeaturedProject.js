@@ -2,11 +2,13 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 import {
   ExternalLink,
   CheckCircle2,
   ChevronUp,
   ChevronDown,
+  ArrowRight,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
@@ -124,6 +126,16 @@ export function FeaturedProject() {
                       Live Product
                     </Button>
                   </a>
+                  <Link className="rounded-full bg-[#0077c0] text-white hover:bg-[#0069a8] dark:bg-[#697565] dark:text-[#ECDFCC] dark:hover:bg-[#5a6357]" href={`/projects?project=${gainioProject.slug}`}>
+                    <Button
+                      size="default"
+                      variant="outline"
+                      className="gap-2 rounded-full"
+                    >
+                      <ArrowRight className="h-4 w-4" />
+                      View Details
+                    </Button>
+                  </Link>
                 </div>
               </motion.div>
             </div>

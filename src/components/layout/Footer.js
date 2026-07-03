@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useCallback } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import {
   Github,
@@ -26,6 +27,25 @@ const MARQUEE_TEXT =
 
 export function Footer() {
   const track = useRef(null);
+  const pathname = usePathname();
+  const router = useRouter();
+  const isHome = pathname === "/";
+
+  const handleNav = useCallback((slug) => {
+    if (isHome) {
+      const lenis = window.__lenis;
+      const el = document.getElementById(slug);
+      if (!el) return;
+      if (lenis) {
+        lenis.scrollTo(el, { offset: -80, duration: 1.4 });
+      } else {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      sessionStorage.setItem("scrollTo", slug);
+      router.push("/");
+    }
+  }, [isHome, router]);
 
   // duplicate content so the loop is seamless
   useEffect(() => {
@@ -110,11 +130,7 @@ export function Footer() {
               {navItems.map(({ id, title, slug }) => (
                 <li key={id}>
                   <button
-                    onClick={() =>
-                      document
-                        .getElementById(slug)
-                        ?.scrollIntoView({ behavior: "smooth" })
-                    }
+                    onClick={() => handleNav(slug)}
                     className="text-xs text-[var(--foreground-muted)] transition-colors duration-200 hover:text-[var(--primary)] text-left"
                   >
                     {title}
@@ -141,11 +157,7 @@ export function Footer() {
               </p>
             </div>
             <button
-              onClick={() =>
-                document
-                  .getElementById("contactSection")
-                  ?.scrollIntoView({ behavior: "smooth" })
-              }
+              onClick={() => handleNav("contactSection")}
               className="mt-2 inline-flex items-center gap-1.5 rounded-full border border-[var(--primary)]/40 bg-[#0077c0] px-4 py-1.5 text-xs font-semibold text-white transition-colors duration-200 hover:bg-[#0069a8] dark:bg-[#697565] dark:text-[#ECDFCC] dark:hover:bg-[#5a6357]"
             >
               Say hello

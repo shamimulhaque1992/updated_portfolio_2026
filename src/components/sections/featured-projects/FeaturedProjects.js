@@ -69,7 +69,7 @@ function CardLinks({ liveUrl, slug }) {
         </a>
       )}
       <Link
-        href={`/projects/${slug}`}
+        href={`/projects?project=${slug}`}
         className="inline-flex items-center gap-1 rounded-full border border-[var(--border)] px-2 py-0 text-[5px] font-semibold text-[var(--foreground-muted)] transition-colors duration-200 hover:border-[var(--primary)]/40 hover:text-[var(--primary)]"
       >
         Details
@@ -261,13 +261,22 @@ export function FeaturedProjects() {
           className="space-y-12"
         >
           {/* heading */}
-          <motion.div variants={fadeUp} className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.35em] text-[var(--primary)]">
-              Selected Work
-            </p>
-            <h2 className="text-4xl font-semibold tracking-tight text-[var(--foreground)] sm:text-3xl">
-              Featured Projects
-            </h2>
+          <motion.div variants={fadeUp} className="flex items-end justify-between gap-4">
+            <div className="space-y-4">
+              <p className="text-sm uppercase tracking-[0.35em] text-[var(--primary)]">
+                Selected Work
+              </p>
+              <h2 className="text-4xl font-semibold tracking-tight text-[var(--foreground)] sm:text-3xl">
+                Featured Projects
+              </h2>
+            </div>
+            <Link
+              href="/projects"
+              className="shrink-0 inline-flex items-center gap-1.5 rounded-full border border-[var(--border)] px-4 py-2 text-sm font-medium text-white transition-colors hover:border-[var(--primary)]/40 bg-[#0077c0] text-white hover:bg-[#0069a8] dark:bg-[#697565] dark:text-[#ECDFCC] dark:hover:bg-[#5a6357]"
+            >
+              View all
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
           </motion.div>
 
           {/* grid */}

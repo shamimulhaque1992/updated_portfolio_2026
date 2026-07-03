@@ -39,7 +39,7 @@ export const projects = [
     title: "Gain.io — CRM SaaS",
     category: "CRM Platform",
     period: "Apr 2025 – Mar 2026",
-    liveUrl: null,
+    liveUrl: "https://gain.io/",
     thumb: gainThumb,
     points: [
       "Main developer — owned frontend architecture and end-to-end delivery for a multi-tenant SaaS.",
@@ -53,7 +53,7 @@ export const projects = [
     title: "Payrun — HRM System",
     category: "HR Management",
     period: "Apr 2025 – Mar 2026",
-    liveUrl: null,
+    liveUrl: "https://payrun.app/",
     thumb: payrunThumb,
     points: [
       "Role-based access and employee management workflows for scalable HR operations.",
@@ -66,7 +66,7 @@ export const projects = [
     title: "EasyDesk — Ticketing SaaS",
     category: "Customer Support Platform",
     period: "Apr 2025 – Mar 2026",
-    liveUrl: null,
+    liveUrl: "https://easydesk.app/",
     thumb: easydeskThumb,
     points: [
       "Built Canned Responses and Knowledge Base, improving team reply efficiency by 30%.",

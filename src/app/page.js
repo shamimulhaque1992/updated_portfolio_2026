@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/hero/Hero";
 import { About } from "@/components/sections/about";
 import { Experience } from "@/components/sections/experience";
 import { Skills } from "@/components/sections/skills";
+import { FeaturedProject } from "@/components/sections/featured-projects/FeaturedProject";
 import { FeaturedProjects } from "@/components/sections/featured-projects/FeaturedProjects";
 import { siteConfig, aboutData, experienceData, skillsData } from "@/lib/resume";
 
@@ -27,6 +28,7 @@ export default function Home() {
       <Experience experiences={experienceData} />
       <Skills skills={skillsData} />
       <FeaturedProjects />
+      <FeaturedProject />
     </main>
   );
 }

@@ -2,7 +2,8 @@ import { Navbar } from "@/components/layout/navbar";
 import { Hero } from "@/components/sections/hero/Hero";
 import { About } from "@/components/sections/about";
 import { Experience } from "@/components/sections/experience";
-import { siteConfig, aboutData, experienceData } from "@/lib/resume";
+import { Skills } from "@/components/sections/skills";
+import { siteConfig, aboutData, experienceData, skillsData } from "@/lib/resume";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         availability={aboutData.availability}
       />
       <Experience experiences={experienceData} />
+      <Skills skills={skillsData} />
     </main>
   );
 }

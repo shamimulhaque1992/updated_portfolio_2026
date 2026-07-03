@@ -1,16 +1,34 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { motion, AnimatePresence } from "framer-motion";
 
+// useSyncExternalStore-based mount check: server snapshot = false, client snapshot = true
+const subscribe = () => () => {};
+const getSnapshot = () => true;
+const getServerSnapshot = () => false;
+
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
-  const [mounted] = useState(() => typeof window !== "undefined");
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const isDark = mounted ? resolvedTheme === "dark" : false;
+  const mounted = useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot);
+
+  const isDark = mounted && resolvedTheme === "dark";
+
+  if (!mounted) {
+    return (
+      <div
+        className="h-[26px] w-[48px] rounded-full"
+        style={{
+          background: "rgba(0,119,192,0.08)",
+          border: "1px solid rgba(0,119,192,0.25)",
+        }}
+      />
+    );
+  }
 
   const handleToggle = () => {
     if (isAnimating) return;

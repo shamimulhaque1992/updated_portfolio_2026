@@ -321,24 +321,24 @@ export function Awards() {
 
                           <div className="h-px bg-[var(--border)] mb-6" />
 
-                          {/* image + points side by side */}
-                          <div style={{ display: "flex", flexDirection: "row", gap: "24px", alignItems: "flex-start" }}>
+                          {/* image + points — stacked on mobile, side by side on sm+ */}
+                          <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:gap-6">
 
-                            {/* image — fixed size left */}
+                            {/* image */}
                             {current.image && (
-                              <div className="shrink-0 overflow-hidden rounded-2xl border border-[var(--border)] shadow-sm" style={{ width: "200px", height: "200px" }}>
+                              <div className="w-full overflow-hidden rounded-2xl border border-[var(--border)] shadow-sm sm:w-[180px] sm:shrink-0">
                                 <Image
                                   src={current.image}
                                   alt={current.title}
-                                  className="w-full h-full object-cover object-center"
+                                  className="h-48 w-full object-cover object-center sm:h-[180px]"
                                   placeholder="blur"
                                 />
                               </div>
                             )}
 
-                            {/* bullet points — right */}
-                            <div className="flex-1 pt-1">
-                              <ul className="space-y-4">
+                            {/* bullet points */}
+                            <div className="flex-1">
+                              <ul className="space-y-3">
                                 {current.points.map((pt, i) => (
                                   <li key={i} className="flex items-start gap-2.5 text-sm leading-6 text-[var(--foreground-muted)]">
                                     <CheckCircle2 className="mt-1 h-3.5 w-3.5 shrink-0" style={{ color: "var(--primary)" }} />

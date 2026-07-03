@@ -143,13 +143,20 @@ export function Education() {
 
               <p className="text-xs uppercase tracking-[0.3em] text-[var(--foreground-muted)]">Secondary Education</p>
 
-              {/* timeline — flex-1 fills remaining height */}
-              <div className="relative flex flex-col gap-4 flex-1">
+              {/* timeline */}
+              <div className="relative flex flex-col gap-4">
 
-                {/* vertical line centered on dot (w-10 → center = left-5) */}
+                {/* single line: from center of first dot to center of last dot
+                    dot: mt-5(20px) + h-10/2(20px) = 40px from top of each row
+                    row height ≈ card height. We use top/bottom anchored to dot centers */}
                 <div
-                  className="absolute left-5 top-5 bottom-5 w-px"
-                  style={{ background: "var(--border)" }}
+                  className="absolute w-px pointer-events-none"
+                  style={{
+                    background: "var(--border)",
+                    left: "19px",
+                    top: "40px",
+                    bottom: "40px",
+                  }}
                 />
 
                 {secondaryRecords.map((rec) => (

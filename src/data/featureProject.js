@@ -6,13 +6,24 @@ export const gainioProject = {
   role: "Main Frontend Developer",
   period: "April 2025 – March 2026",
   company: "Gain Solutions",
+  img_url:"/assets/images/projectImages/gain-io/mockup-1.webp",
   liveUrl: "https://gain.io",
   stack: [
-    "Next.js 15", "React 19", "Apollo Client", "GraphQL",
-    "Redux Toolkit", "Ant Design 6", "Tailwind CSS",
-    "Stripe", "TypeScript", "i18next", "PostHog", "RxJS",
+    "Next.js 15",
+    "React 19",
+    "Apollo Client",
+    "GraphQL",
+    "Redux Toolkit",
+    "Ant Design 6",
+    "Tailwind CSS",
+    "Stripe",
+    "TypeScript",
+    "i18next",
+    "PostHog",
+    "RxJS",
   ],
-  overview: "Gain.io is a full-featured multi-tenant CRM SaaS platform built for managing customer relationships, sales pipelines, and business workflows. I was the main frontend developer — responsible for the architecture, component system, and end-to-end delivery of the entire frontend.",
+  overview:
+    "Gain.io is a full-featured multi-tenant CRM SaaS platform built for managing customer relationships, sales pipelines, and business workflows. I was the main frontend developer — responsible for the architecture, component system, and end-to-end delivery of the entire frontend.",
   highlights: [
     {
       title: "Multi-Tenant Architecture",
@@ -53,5 +64,3 @@ export const gainioProject = {
     },
   ],
 };
-
-

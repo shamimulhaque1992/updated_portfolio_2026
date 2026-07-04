@@ -396,7 +396,7 @@ export const siteConfig = {
   location: "Uttar Badda, Dhaka, Bangladesh",
   email: "khandokershamimulhaque@gmail.com",
   phone: "+880 1779-312970",
-  resumeUrl: "/assets/data/khandoker_shamimul_haque_resume.pdf",
+  resumeUrl: "/khandoker_shamimul_haque_resume.pdf",
   heroSummary:
     "Over 3 years, I've gone from writing my first component to being the main developer behind a CRM SaaS — owning the architecture, the decisions, and the delivery. Along the way, I built the full frontend of an ecommerce platform serving 1000+ daily users, led the core features of a headless CMS, and contributed meaningfully to an HRM and a ticketing platform. I care about code that scales, interfaces that feel right, and work that actually ships.",
   heroHighlights: ["Next.js", "PostgreSQL", "Express.js", "Prisma"],

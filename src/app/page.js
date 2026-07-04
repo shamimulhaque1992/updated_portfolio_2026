@@ -10,7 +10,12 @@ import { Education } from "@/components/sections/education";
 import { Awards } from "@/components/sections/awards";
 import { Services } from "@/components/sections/services";
 import { Contact } from "@/components/sections/contact/Contact";
-import { siteConfig, aboutData, experienceData, skillsData } from "@/lib/resume";
+import {
+  siteConfig,
+  aboutData,
+  experienceData,
+  skillsData,
+} from "@/lib/resume";
 import { ScrollToSection } from "@/components/layout/ScrollToSection";
 
 export default function Home() {

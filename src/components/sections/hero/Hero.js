@@ -3,13 +3,26 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, Facebook, Github, Linkedin, Mail, Twitter, Layers, GitBranch } from "lucide-react";
+import {
+  ArrowDown,
+  Facebook,
+  Github,
+  Linkedin,
+  Mail,
+  Twitter,
+  GitBranch,
+} from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { heroContainer, fadeIn, fadeInUp } from "@/components/sections/hero/animations";
+import {
+  heroContainer,
+  fadeIn,
+  fadeInUp,
+} from "@/components/sections/hero/animations";
 import { siteConfig } from "@/lib/resume";
+import profileImage from "@/assets/images/profile/main_profile_image.jpg";
 
 const typingSteps = [
   "AI driven",
@@ -67,7 +80,10 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
   }, []);
 
   return (
-    <section id="homeIntro" className="relative overflow-hidden pb-24 pt-20 sm:pb-32 sm:pt-36 pb-safe">
+    <section
+      id="homeIntro"
+      className="relative overflow-hidden pb-24 pt-20 sm:pb-32 sm:pt-36 pb-safe"
+    >
       <div className="pointer-events-none absolute right-0 top-16 hidden h-80 w-80 rounded-full bg-[var(--primary)]/5 blur-3xl sm:block" />
 
       <Container>
@@ -78,7 +94,10 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
           className="grid gap-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center"
         >
           <div className="space-y-8">
-            <motion.p variants={fadeInUp} className="text-sm uppercase tracking-[0.35em] text-[var(--primary)]">
+            <motion.p
+              variants={fadeInUp}
+              className="text-sm uppercase tracking-[0.35em] text-[var(--primary)]"
+            >
               {greeting}
             </motion.p>
 
@@ -104,7 +123,10 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
                 <span>{displayText}</span>
                 <span
                   className="inline-block h-8 w-1 align-middle transition-opacity"
-                  style={{ backgroundColor: "var(--foreground)", opacity: cursorVisible ? 1 : 0 }}
+                  style={{
+                    backgroundColor: "var(--foreground)",
+                    opacity: cursorVisible ? 1 : 0,
+                  }}
                 />
               </div>
               <p className="max-w-2xl text-lg leading-8 text-[var(--foreground-muted)] font-[family-name:var(--font-roboto)] font-light tracking-wide">
@@ -112,15 +134,29 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
               </p>
             </motion.div>
 
-            <motion.div variants={fadeInUp} className="flex flex-col gap-4 sm:flex-row">
+            <motion.div
+              variants={fadeInUp}
+              className="flex flex-col gap-4 sm:flex-row"
+            >
               <Link href={resumeUrl} download>
-                <Button size="lg" className="gap-2 rounded-full" variant="default">
+                <Button
+                  size="lg"
+                  className="gap-2 rounded-full"
+                  variant="default"
+                >
                   <ArrowDown className="h-4 w-4" />
                   Download Resume
                 </Button>
               </Link>
-              <a href="mailto:khandokershamimulhaque@gmail.com" className="inline-flex w-fit">
-                <Button size="lg" variant="secondary" className="rounded-full gap-2">
+              <a
+                href="mailto:khandokershamimulhaque@gmail.com"
+                className="inline-flex w-fit"
+              >
+                <Button
+                  size="lg"
+                  variant="secondary"
+                  className="rounded-full gap-2"
+                >
                   <Mail className="h-4 w-4" />
                   Contact Me
                 </Button>
@@ -167,13 +203,19 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
             </motion.div>
           </div>
 
-          <motion.div variants={fadeIn} className="relative mx-auto flex max-w-lg justify-center">
+          <motion.div
+            variants={fadeIn}
+            className="relative mx-auto flex max-w-lg justify-center"
+          >
             <div className="relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-4 shadow-glow backdrop-blur-xl sm:p-6">
               <div className="absolute -left-8 top-8 h-20 w-20 rounded-full bg-[var(--primary)]/15 blur-2xl" />
               <div className="absolute -right-8 bottom-8 h-24 w-24 rounded-full bg-[var(--secondary)]/15 blur-2xl" />
-              <div className="relative overflow-hidden rounded-[1.75rem] bg-[#1D242B]/95" style={{ aspectRatio: "3/4" }}>
+              <div
+                className="relative overflow-hidden rounded-[1.75rem] bg-[#1D242B]/95"
+                style={{ aspectRatio: "3/4" }}
+              >
                 <Image
-                  src="/assets/images/profile/main_profile_image.jpg"
+                  src={profileImage}
                   alt="Portrait of Khandoker Shamimul Haque"
                   fill
                   className="object-cover object-top"
@@ -182,7 +224,9 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
               </div>
               <div className="mt-6 flex items-center justify-between rounded-3xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm shadow-sm">
                 <div>
-                  <p className="font-semibold text-[var(--foreground)]">Architect by craft. Full stack by choice.</p>
+                  <p className="font-semibold text-[var(--foreground)]">
+                    Architect by craft. Full stack by choice.
+                  </p>
                   <p className="text-xs uppercase tracking-[0.24em] text-[var(--foreground-muted)] flex items-center gap-1.5">
                     <span>Shipped</span>
                     <span className="relative inline-block w-full overflow-hidden">
@@ -190,7 +234,10 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
                         <motion.span
                           key={w}
                           initial={{ opacity: 0, y: 6 }}
-                          animate={{ opacity: i === statIdx ? 1 : 0, y: i === statIdx ? 0 : -6 }}
+                          animate={{
+                            opacity: i === statIdx ? 1 : 0,
+                            y: i === statIdx ? 0 : -6,
+                          }}
                           transition={{ duration: 0.4, ease: "easeOut" }}
                           className="absolute left-0 top-0"
                         >

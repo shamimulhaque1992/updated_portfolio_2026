@@ -351,7 +351,7 @@ export const aboutData = {
   highlights: [
     { value: "3+", label: "Years of Experience" },
     { value: "10+", label: "Products Shipped" },
-    { value: "3", label: "Companies Worked With" },
+    { value: "24/7", label: "Learning Mindset" },
     { value: "2", label: "Awards Won" },
   ],
   focus: [

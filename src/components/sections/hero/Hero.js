@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, Facebook, Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { ArrowDown, Facebook, Github, Linkedin, Mail, Twitter, Layers, GitBranch } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -17,9 +17,12 @@ const typingSteps = [
   "with more than 3 years of experience",
 ];
 
+const statWords = ["SaaS", "CRM", "HRM", "Ticketing", "Ecommerce"];
+
 export function Hero({ greeting, name, role, summary, resumeUrl }) {
   const [displayText, setDisplayText] = useState("");
   const [cursorVisible, setCursorVisible] = useState(true);
+  const [statIdx, setStatIdx] = useState(0);
   const stepRef = useRef(0);
   const charRef = useRef(0);
   const intervalRef = useRef(null);
@@ -54,6 +57,13 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
   useEffect(() => {
     const blink = setInterval(() => setCursorVisible((v) => !v), 500);
     return () => clearInterval(blink);
+  }, []);
+
+  useEffect(() => {
+    const t = setInterval(() => {
+      setStatIdx((i) => (i + 1) % statWords.length);
+    }, 2000);
+    return () => clearInterval(t);
   }, []);
 
   return (
@@ -172,11 +182,27 @@ export function Hero({ greeting, name, role, summary, resumeUrl }) {
               </div>
               <div className="mt-6 flex items-center justify-between rounded-3xl border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-sm shadow-sm">
                 <div>
-                  <p className="font-semibold text-[var(--foreground)]">Backend & frontend systems</p>
-                  <p className="text-xs uppercase tracking-[0.24em] text-[var(--foreground-muted)]">Built with PostgreSQL & Prisma</p>
+                  <p className="font-semibold text-[var(--foreground)]">Architect by craft. Full stack by choice.</p>
+                  <p className="text-xs uppercase tracking-[0.24em] text-[var(--foreground-muted)] flex items-center gap-1.5">
+                    <span>Shipped</span>
+                    <span className="relative inline-block w-full overflow-hidden">
+                      {statWords.map((w, i) => (
+                        <motion.span
+                          key={w}
+                          initial={{ opacity: 0, y: 6 }}
+                          animate={{ opacity: i === statIdx ? 1 : 0, y: i === statIdx ? 0 : -6 }}
+                          transition={{ duration: 0.4, ease: "easeOut" }}
+                          className="absolute left-0 top-0"
+                        >
+                          {w}
+                        </motion.span>
+                      ))}
+                      <span className="invisible">{statWords[statIdx]}</span>
+                    </span>
+                  </p>
                 </div>
                 <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)]/10 text-[var(--primary)]">
-                  N
+                  <GitBranch className="h-4 w-4" />
                 </span>
               </div>
             </div>

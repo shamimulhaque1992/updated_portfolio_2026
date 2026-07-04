@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { ScrollProvider } from "@/components/layout/scroll-provider";
+import { PageLoader } from "@/components/layout/PageLoader";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full bg-background text-foreground transition-colors duration-300">
         <ThemeProvider>
+          <PageLoader />
           <ScrollProvider>{children}</ScrollProvider>
         </ThemeProvider>
       </body>

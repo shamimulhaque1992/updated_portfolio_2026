@@ -202,77 +202,83 @@ function DetailPanel({ project }) {
       {/* Divider */}
       <div className="h-px w-full bg-[var(--border)]" />
 
-      {/* Case Study */}
-      <div className="space-y-8">
-        <h2 className="text-lg font-semibold text-[var(--foreground)]">
+      {/* Case Study heading */}
+      <div className="space-y-3">
+        <p className="text-xs uppercase tracking-[0.3em] text-[var(--primary)] font-medium">
           Case Study
+        </p>
+        <h2 className="text-2xl font-semibold tracking-tight text-[var(--foreground)]">
+          Behind the Build
         </h2>
-
-        {/* Challenges */}
-        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 space-y-4">
-          <div className="flex items-center gap-2">
-            <AlertTriangle className="h-4 w-4 text-amber-500 shrink-0" />
-            <h3 className="text-sm font-semibold text-[var(--foreground)]">
-              Challenges Faced
-            </h3>
-          </div>
-          <ul className="space-y-3">
-            {cs.challenges.map((c, i) => (
-              <li
-                key={i}
-                className="flex items-start gap-3 text-sm leading-6 text-[var(--foreground-muted)]"
-              >
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500/70" />
-                {c}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Improvements */}
-        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 space-y-4">
-          <div className="flex items-center gap-2">
-            <Lightbulb className="h-4 w-4 text-[var(--primary)] shrink-0" />
-            <h3 className="text-sm font-semibold text-[var(--foreground)]">
-              Potential Improvements & Future Plans
-            </h3>
-          </div>
-          <ul className="space-y-3">
-            {cs.improvements.map((imp, i) => (
-              <li
-                key={i}
-                className="flex items-start gap-3 text-sm leading-6 text-[var(--foreground-muted)]"
-              >
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--primary)]/60" />
-                {imp}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Responsibilities */}
-        {cs.responsibilities?.length > 0 && (
-          <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 space-y-4">
-            <div className="flex items-center gap-2">
-              <ChevronRight className="h-4 w-4 text-emerald-500 shrink-0" />
-              <h3 className="text-sm font-semibold text-[var(--foreground)]">
-                My Responsibilities
-              </h3>
-            </div>
-            <ul className="space-y-3">
-              {cs.responsibilities.map((r, i) => (
-                <li
-                  key={i}
-                  className="flex items-start gap-3 text-sm leading-6 text-[var(--foreground-muted)]"
-                >
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500/70" />
-                  {r}
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+        <p className="text-sm text-[var(--foreground-muted)]">
+          A deeper look at the challenges, decisions, and future direction of this project.
+        </p>
       </div>
+
+      {/* Challenges */}
+      <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 space-y-4">
+        <div className="flex items-center gap-2">
+          <AlertTriangle className="h-4 w-4 text-amber-500 shrink-0" />
+          <h3 className="text-sm font-semibold text-[var(--foreground)]">
+            Challenges Faced
+          </h3>
+        </div>
+        <ul className="space-y-3">
+          {cs.challenges.map((c, i) => (
+            <li
+              key={i}
+              className="flex items-start gap-3 text-sm leading-6 text-[var(--foreground-muted)]"
+            >
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500/70" />
+              {c}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Improvements */}
+      <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 space-y-4">
+        <div className="flex items-center gap-2">
+          <Lightbulb className="h-4 w-4 text-[var(--primary)] shrink-0" />
+          <h3 className="text-sm font-semibold text-[var(--foreground)]">
+            Potential Improvements & Future Plans
+          </h3>
+        </div>
+        <ul className="space-y-3">
+          {cs.improvements.map((imp, i) => (
+            <li
+              key={i}
+              className="flex items-start gap-3 text-sm leading-6 text-[var(--foreground-muted)]"
+            >
+              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[var(--primary)]/60" />
+              {imp}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Responsibilities */}
+      {cs.responsibilities?.length > 0 && (
+        <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 space-y-4">
+          <div className="flex items-center gap-2">
+            <ChevronRight className="h-4 w-4 text-emerald-500 shrink-0" />
+            <h3 className="text-sm font-semibold text-[var(--foreground)]">
+              My Responsibilities
+            </h3>
+          </div>
+          <ul className="space-y-3">
+            {cs.responsibilities.map((r, i) => (
+              <li
+                key={i}
+                className="flex items-start gap-3 text-sm leading-6 text-[var(--foreground-muted)]"
+              >
+                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500/70" />
+                {r}
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </motion.div>
   );
 }

@@ -14,6 +14,8 @@ import {
   Star,
   CheckCircle2,
   ExternalLink,
+  X,
+  ZoomIn,
 } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import {
@@ -23,14 +25,14 @@ import {
   fadeInRight,
 } from "./animations";
 
-import awardHustler from "@/assets/images/awards-and-certificates/award-hustler.png";
-import awardYoungstar from "@/assets/images/awards-and-certificates/award-youngstar.png";
-import certGcpc from "@/assets/images/awards-and-certificates/cert-gcpc.jpg";
-import certClickup from "@/assets/images/awards-and-certificates/cert-clickup.png";
-import certPython from "@/assets/images/awards-and-certificates/cert-python.png";
-import certSql from "@/assets/images/awards-and-certificates/cert-sql.png";
-import certLinux from "@/assets/images/awards-and-certificates/cert-linux.png";
-import certStats from "@/assets/images/awards-and-certificates/cert-stats.png";
+import awardHustler from "@/assets/images/awards-and-certificates/huslar_of_the_year.png";
+import awardYoungstar from "@/assets/images/awards-and-certificates/young_star_of_the_year.png";
+import certGcpc from "@/assets/images/awards-and-certificates/gcpc_cirtificat.png";
+import certClickup from "@/assets/images/awards-and-certificates/click_up.png";
+import certPython from "@/assets/images/awards-and-certificates/p_for_ev.png";
+import certSql from "@/assets/images/awards-and-certificates/sql_for_data.png";
+import certLinux from "@/assets/images/awards-and-certificates/lnx.png";
+import certStats from "@/assets/images/awards-and-certificates/probability.png";
 
 const tabs = [
   { id: "awards", label: "Awards", icon: Trophy },
@@ -155,10 +157,49 @@ const certificates = [
   },
 ];
 
+function CertModal({ image, title, onClose }) {
+  return (
+    <AnimatePresence>
+      <motion.div
+        className="fixed inset-0 z-50 flex items-center justify-center p-4"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={onClose}
+      >
+        <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" />
+        <motion.div
+          className="relative z-10 max-w-3xl w-full max-h-[90vh]"
+          initial={{ scale: 0.85, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          exit={{ scale: 0.85, opacity: 0 }}
+          transition={{ type: "spring", stiffness: 300, damping: 25 }}
+          onClick={(e) => e.stopPropagation()}
+        >
+          <button
+            onClick={onClose}
+            className="absolute -top-3 -right-3 z-20 inline-flex h-8 w-8 items-center justify-center rounded-full bg-[var(--surface)] border border-[var(--border)] text-[var(--foreground)] shadow-lg hover:text-[var(--primary)] transition-colors"
+          >
+            <X className="h-4 w-4" />
+          </button>
+          <div className="rounded-2xl overflow-hidden border border-[var(--border)] shadow-2xl">
+            <Image
+              src={image}
+              alt={title}
+              className="w-full h-auto object-contain max-h-[85vh]"
+            />
+          </div>
+        </motion.div>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
 export function Awards() {
   const [activeTab, setActiveTab] = useState("awards");
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(1);
+  const [modalImage, setModalImage] = useState(null);
 
   const items = activeTab === "awards" ? awards : certificates;
   const current = items[index];
@@ -368,13 +409,34 @@ export function Awards() {
                           <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:gap-6">
                             {/* image */}
                             {current.image && (
-                              <div className="w-full overflow-hidden rounded-2xl border border-[var(--border)] shadow-sm sm:w-[180px] sm:shrink-0">
-                                <Image
-                                  src={current.image}
-                                  alt={current.title}
-                                  className="h-48 w-full object-cover object-center sm:h-[180px]"
-                                  placeholder="blur"
-                                />
+                              <div
+                                className="group relative w-full rounded-2xl sm:w-[230px] sm:shrink-0 transition-shadow duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.35)] cursor-pointer"
+                                onClick={() =>
+                                  setModalImage({
+                                    image: current.image,
+                                    title: current.title,
+                                  })
+                                }
+                              >
+                                <div className="overflow-hidden rounded-2xl border border-[var(--border)]">
+                                  <motion.div
+                                    whileHover={{ scale: 1.04 }}
+                                    transition={{
+                                      duration: 0.3,
+                                      ease: "easeOut",
+                                    }}
+                                  >
+                                    <Image
+                                      src={current.image}
+                                      alt={current.title}
+                                      className="h-48 w-full object-cover object-center sm:h-[180px]"
+                                      placeholder="blur"
+                                    />
+                                  </motion.div>
+                                </div>
+                                <div className="absolute inset-0 rounded-2xl bg-black/0 group-hover:bg-black/50 transition-all duration-300 flex items-center justify-center">
+                                  <ZoomIn className="h-7 w-7 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                </div>
                               </div>
                             )}
 
@@ -394,6 +456,20 @@ export function Awards() {
                                   </li>
                                 ))}
                               </ul>
+                              {current.image && (
+                                <button
+                                  onClick={() =>
+                                    setModalImage({
+                                      image: current.image,
+                                      title: current.title,
+                                    })
+                                  }
+                                  className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-[var(--primary)]/40 bg-[#0077c0] px-3 py-1.5 text-xs font-semibold text-white transition-colors duration-200 hover:bg-[#0069a8] dark:bg-[#697565] dark:text-[#ECDFCC] dark:hover:bg-[#5a6357]"
+                                >
+                                  <ZoomIn className="h-3.5 w-3.5" />
+                                  View Certificate
+                                </button>
+                              )}
                             </div>
                           </div>
                         </motion.div>
@@ -446,6 +522,14 @@ export function Awards() {
           </div>
         </motion.div>
       </Container>
+
+      {modalImage && (
+        <CertModal
+          image={modalImage.image}
+          title={modalImage.title}
+          onClose={() => setModalImage(null)}
+        />
+      )}
     </section>
   );
 }

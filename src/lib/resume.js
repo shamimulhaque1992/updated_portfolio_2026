@@ -278,7 +278,7 @@ export const experienceData = [
         description:
           "A CRM web application for managing customer relationships and business workflows.",
         bullets: [
-          "Main developer behind the CRM — owned the frontend architecture, component system, and end-to-end delivery for a multi-tenant SaaS platform.",
+          "Main engineer behind the CRM — owned the frontend architecture, component system, and end-to-end delivery for a multi-tenant SaaS platform.",
           "Implemented role-based access control for multi-tenant organizations, ensuring secure and scalable collaboration.",
           "Optimized front-end performance with Next.js and streamlined GraphQL APIs, improving speed and efficiency.",
           "Enhanced platform configurability with dynamic user management, billing, and notifications, reducing admin effort by 40%.",
@@ -347,7 +347,7 @@ export const experienceData = [
 ];
 
 export const aboutData = {
-  bio: "I'm a frontend-focused full stack developer based in Dhaka, Bangladesh, with 3+ years of experience building production-grade web applications. My core is frontend — architecture, component systems, performance — but I'm equally comfortable on the backend with Express, PostgreSQL, Prisma, and TypeScript. I grew from a junior dev into the main developer behind a full CRM SaaS, owning the stack from UI to API.",
+  bio: "I'm a Ai driven full stack engineer based in Dhaka, Bangladesh, with 3+ years of experience building production-grade web applications. My core is frontend — architecture, component systems, performance — but I'm equally comfortable on the backend with Express, PostgreSQL, Prisma, and TypeScript. I grew from a junior dev into the main engineer behind a full CRM SaaS front end part, owning the stack from UI to API.",
   highlights: [
     { value: "3+", label: "Years of Experience" },
     { value: "10+", label: "Products Shipped" },
@@ -398,7 +398,7 @@ export const siteConfig = {
   phone: "+880 1779-312970",
   resumeUrl: "/khandoker_shamimul_haque_resume.pdf",
   heroSummary:
-    "Over 3 years, I've gone from writing my first component to being the main developer behind a CRM SaaS — owning the architecture, the decisions, and the delivery. Along the way, I built the full frontend of an ecommerce platform serving 1000+ daily users, led the core features of a headless CMS, and contributed meaningfully to an HRM and a ticketing platform. I care about code that scales, interfaces that feel right, and work that actually ships.",
+    "Over 3 years, I've gone from writing my first component to being the main engineer behind a CRM SaaS — owning the architecture, the decisions, and the delivery. Along the way, I built the full frontend of an ecommerce platform serving 1000+ daily users, led the core features of a headless CMS, and contributed meaningfully to an HRM and a ticketing platform. I care about code that scales, interfaces that feel right, and work that actually ships.",
   heroHighlights: ["Next.js", "PostgreSQL", "Express.js", "Prisma"],
   socialLinks: {
     github: "https://github.com/shamimulhaque1992",

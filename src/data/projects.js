@@ -49,11 +49,11 @@ export const projects = [
     liveUrl: "https://gain.io/",
     githubUrl: null,
     description:
-      "A multi-tenant CRM SaaS with RBAC, dynamic billing, user management, and notification modules — built with GraphQL and owned end-to-end as the main frontend developer.",
+      "A multi-tenant CRM SaaS with RBAC, dynamic billing, user management, and notification modules — built with GraphQL and owned end-to-end as the main frontend engineer.",
     thumb: gainThumb,
     details_thumbnail_url: gain_details_thumbnail_url,
     points: [
-      "Main developer — owned frontend architecture and end-to-end delivery for a multi-tenant SaaS.",
+      "Main engineer — owned frontend architecture and end-to-end delivery for a multi-tenant SaaS.",
       "RBAC for multi-tenant orgs with dynamic billing, user management, and notifications.",
       "Reduced admin effort by 40% through platform configurability improvements.",
     ],
@@ -279,7 +279,7 @@ export const caseStudies = {
 
   "gain-io": {
     responsibilities: [
-      "Served as the main frontend developer, owning the architecture and end-to-end delivery of the multi-tenant CRM SaaS platform.",
+      "Served as the main frontend engineer, owning the architecture and end-to-end delivery of the multi-tenant CRM SaaS platform.",
       "Designed and implemented the RBAC system for multi-tenant organizations, ensuring isolated data and role configurations per org.",
       "Built dynamic billing, user management, and notification modules that adapt to each tenant's configuration.",
       "Optimized GraphQL queries using fragments and memoization to prevent over-fetching across complex relational CRM data.",

@@ -5,7 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Projects | Khandoker Shamimul Haque",
-  description: "All projects by Khandoker Shamimul Haque — frontend developer.",
+  description: "All projects by Khandoker Shamimul Haque — Ai driven full stack software engineer",
 };
 
 export default function ProjectsPage() {

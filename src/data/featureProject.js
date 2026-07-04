@@ -5,7 +5,7 @@ export const gainioProject = {
   title: "Gain.io",
   tagline: "CRM SaaS Platform",
   category: "Multi-Tenant CRM SaaS",
-  role: "Main Frontend Developer",
+  role: "Main Frontend Engineer",
   period: "April 2025 – March 2026",
   company: "Gain Solutions",
   img_url: gainIoMockup,
@@ -25,7 +25,7 @@ export const gainioProject = {
     "RxJS",
   ],
   overview:
-    "Gain.io is a full-featured multi-tenant CRM SaaS platform built for managing customer relationships, sales pipelines, and business workflows. I was the main frontend developer — responsible for the architecture, component system, and end-to-end delivery of the entire frontend.",
+    "Gain.io is a full-featured multi-tenant CRM SaaS platform built for managing customer relationships, sales pipelines, and business workflows. I was the main frontend engineer — responsible for the architecture, component system, and end-to-end delivery of the entire frontend.",
   highlights: [
     {
       title: "Multi-Tenant Architecture",

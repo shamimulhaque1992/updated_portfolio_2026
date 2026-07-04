@@ -146,7 +146,7 @@ export function Contact() {
                   </p>
                 </div>
                 <p className="text-sm leading-7 text-[var(--foreground-muted)] font-light">
-                  I&apos;m a full-stack developer with 3+ years of experience
+                  I&apos;m a full-stack engineer with 3+ years of experience
                   building scalable web applications. Open to full-time roles,
                   part-time engagements, contract work, and freelance projects —
                   remote or on-site.
@@ -381,7 +381,7 @@ export function Contact() {
                         Phone
                       </p>
                       <p className="mt-0.5 text-sm font-medium text-[var(--foreground)]">
-                        +880 1521-547 789
+                        +880 1779312970
                       </p>
                     </div>
                   </div>

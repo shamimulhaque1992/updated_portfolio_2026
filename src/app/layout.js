@@ -21,8 +21,9 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-  title: "Khandoker Shamimul Haque | Front End Developer",
-  description: "Premium Next.js portfolio for Khandoker Shamimul Haque.",
+  title: "Khandoker Shamimul Haque | Ai driven full stack software engineer",
+  description:
+    "Full-stack engineer building scalable backend systems and modern web apps with Node.js, TypeScript, PostgreSQL, and Next.js.",
 };
 
 export default function RootLayout({ children }) {

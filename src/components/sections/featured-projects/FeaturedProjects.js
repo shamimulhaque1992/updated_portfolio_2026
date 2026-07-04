@@ -114,7 +114,6 @@ function MobileCard({ project }) {
           fill
           className="object-cover object-top"
           sizes="100vw"
-          placeholder="blur"
         />
       </div>
       <div className="p-4">
@@ -137,7 +136,6 @@ function TabletCard({ project }) {
           fill
           className="object-cover object-top"
           sizes="144px"
-          placeholder="blur"
         />
       </div>
       <div className="flex flex-col justify-between p-4 flex-1 min-w-0">
@@ -186,7 +184,7 @@ function DesktopMediumCard() {
       className="rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--surface)] flex flex-row"
       style={{ height: `${ARANYA_H}px` }}
     >
-      <div className="relative w-36 shrink-0">
+      <div className="relative w-36 shrink-0 self-stretch">
         <Image
           src={aranya.thumb}
           alt={aranya.title}
@@ -214,14 +212,17 @@ function DesktopSmallCard({ project }) {
       className="rounded-2xl overflow-hidden border border-[var(--border)] bg-[var(--surface)] flex flex-row"
       style={{ height: `${RIGHT_CARD}px` }}
     >
-      <div className="relative w-32 shrink-0">
+      <div
+        className="relative w-32 shrink-0"
+        style={{ height: `${RIGHT_CARD}px` }}
+      >
         <Image
           src={project.thumb}
           alt={project.title}
           fill
           className="object-cover object-top"
-          sizes="128px"
-          placeholder="blur"
+          sizes="256px"
+          quality={90}
         />
       </div>
       <div className="flex flex-col justify-between flex-1 min-w-0 overflow-hidden p-3">
@@ -261,7 +262,10 @@ export function FeaturedProjects() {
           className="space-y-12"
         >
           {/* heading */}
-          <motion.div variants={fadeUp} className="flex items-end justify-between gap-4">
+          <motion.div
+            variants={fadeUp}
+            className="flex items-end justify-between gap-4"
+          >
             <div className="space-y-4">
               <p className="text-sm uppercase tracking-[0.35em] text-[var(--primary)]">
                 Selected Work

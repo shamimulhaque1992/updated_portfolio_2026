@@ -114,7 +114,7 @@ function DetailPanel({ project }) {
         style={{ aspectRatio: "16/7" }}
       >
         <Image
-          src={project.thumb}
+          src={project.details_thumbnail_url || project.thumb}
           alt={project.title}
           fill
           className="object-cover object-top"

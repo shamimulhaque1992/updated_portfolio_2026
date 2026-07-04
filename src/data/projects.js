@@ -1,8 +1,11 @@
 import websureThumb from "@/assets/images/projectImages/websure-internal/web_int_bnr.png";
 import aranyaThumb from "@/assets/images/projectImages/aranya/aranya_shop_new-1-cut.png";
-import gainThumb from "@/assets/images/projectImages/gain-io/mockup-1.webp";
-import payrunThumb from "@/assets/images/projectImages/payrun/Browser.png.webp";
-import easydeskThumb from "@/assets/images/projectImages/easy-desk/More-Support-Requests-With-AI-Powered-Agents.webp";
+import gainThumb from "@/assets/images/projectImages/gain-io/gain_thumb.png";
+import payrunThumb from "@/assets/images/projectImages/payrun/pay_thumb.png";
+import easydeskThumb from "@/assets/images/projectImages/easy-desk/easy_thumb.png";
+import gain_details_thumbnail_url from "@/assets/images/projectImages/gain-io/mockup-1.webp";
+import payrun_details_thumbnail_url from "@/assets/images/projectImages/payrun/Browser.png.webp";
+import easydesk_details_thumbnail_url from "@/assets/images/projectImages/easy-desk/More-Support-Requests-With-AI-Powered-Agents.webp";
 import maveThumb from "@/assets/images/projectImages/mave/thumb-update.jpeg";
 import uhlThumb from "@/assets/images/projectImages/uhl/landingImg.png";
 import almuslimThumb from "@/assets/images/projectImages/al-muslim/landing.png";
@@ -48,6 +51,7 @@ export const projects = [
     description:
       "A multi-tenant CRM SaaS with RBAC, dynamic billing, user management, and notification modules — built with GraphQL and owned end-to-end as the main frontend developer.",
     thumb: gainThumb,
+    details_thumbnail_url: gain_details_thumbnail_url,
     points: [
       "Main developer — owned frontend architecture and end-to-end delivery for a multi-tenant SaaS.",
       "RBAC for multi-tenant orgs with dynamic billing, user management, and notifications.",
@@ -65,6 +69,7 @@ export const projects = [
     description:
       "An HRM platform with role-based access for employees, managers, and HR admins — covering leave management, time tracking, hiring pipelines, and insights dashboards via GraphQL.",
     thumb: payrunThumb,
+    details_thumbnail_url: payrun_details_thumbnail_url,
     points: [
       "Role-based access and employee management workflows for scalable HR operations.",
       "Fast time tracking, leave management, and insights dashboards via GraphQL.",
@@ -81,6 +86,7 @@ export const projects = [
     description:
       "A customer support ticketing SaaS with Canned Responses, Knowledge Base, and Feedback Management modules — built to improve support team efficiency and response quality.",
     thumb: easydeskThumb,
+    details_thumbnail_url: easydesk_details_thumbnail_url,
     points: [
       "Built Canned Responses and Knowledge Base, improving team reply efficiency by 30%.",
       "Feedback Management module for tracking, prioritizing, and assigning user feedback.",
@@ -243,7 +249,6 @@ export const projects = [
     ],
   },
 ];
-
 
 // ── Case study content per project ──────────────────────────────────────────
 export const caseStudies = {
